@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:monitor-runbook",
+    "kind": "document",
+    "title": "Resource Monitor \u00b7 working guide",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Resource Monitor means the system monitoring infrastructure capacity. An owner is the team responsible for keeping this system working.\n\nResource Monitor has primary owner Site Reliability.\n\nResource Monitor depends on Configuration Registry."
+  },
+  "claims": [
+    {
+      "subject_id": "service:monitor",
+      "predicate": "OWNED_BY",
+      "object_id": "team:reliability",
+      "scalar": null,
+      "quote": "Resource Monitor has primary owner Site Reliability.",
+      "start": 137,
+      "end": 189,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:monitor",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:configuration",
+      "scalar": null,
+      "quote": "Resource Monitor depends on Configuration Registry.",
+      "start": 191,
+      "end": 242,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

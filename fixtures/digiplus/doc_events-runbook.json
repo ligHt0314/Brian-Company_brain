@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:events-runbook",
+    "kind": "document",
+    "title": "Event Pipeline \u00b7 working guide",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Event Pipeline means the pipeline carrying operational events. An owner is the team responsible for keeping this system working.\n\nEvent Pipeline has primary owner Client Support."
+  },
+  "claims": [
+    {
+      "subject_id": "service:events",
+      "predicate": "OWNED_BY",
+      "object_id": "team:client-support",
+      "scalar": null,
+      "quote": "Event Pipeline has primary owner Client Support.",
+      "start": 130,
+      "end": 178,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

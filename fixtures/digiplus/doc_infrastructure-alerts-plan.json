@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:infrastructure-alerts-plan",
+    "kind": "document",
+    "title": "Infrastructure Alerts \u00b7 delivery plan",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Business purpose: Monitor production capacity for Harbor Telecom. The facts below show which systems the project needs.\n\nInfrastructure Alerts uses Resource Monitor.\n\nResource Monitor depends on Configuration Registry."
+  },
+  "claims": [
+    {
+      "subject_id": "project:infrastructure-alerts",
+      "predicate": "USES",
+      "object_id": "service:monitor",
+      "scalar": null,
+      "quote": "Infrastructure Alerts uses Resource Monitor.",
+      "start": 121,
+      "end": 165,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:monitor",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:configuration",
+      "scalar": null,
+      "quote": "Resource Monitor depends on Configuration Registry.",
+      "start": 167,
+      "end": 218,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

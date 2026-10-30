@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-102",
+    "kind": "ticket",
+    "title": "T-102 \u00b7 Portal smoke tests",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "T-102 blocks Portal API.\n\nT-102 has status done."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-102",
+      "predicate": "BLOCKS",
+      "object_id": "service:portal",
+      "scalar": null,
+      "quote": "T-102 blocks Portal API.",
+      "start": 0,
+      "end": 24,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-102",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "done",
+      "quote": "T-102 has status done.",
+      "start": 26,
+      "end": 48,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

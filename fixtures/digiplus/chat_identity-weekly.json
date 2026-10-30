@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:identity-weekly",
+    "kind": "chat",
+    "title": "Identity Gateway \u00b7 weekly handover",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Fictional exported team discussion. The people below contributed to this system; that alone does not make them its owner.\n\nSara Thomas worked on Identity Gateway."
+  },
+  "claims": [
+    {
+      "subject_id": "person:sara-thomas",
+      "predicate": "WORKED_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Sara Thomas worked on Identity Gateway.",
+      "start": 123,
+      "end": 162,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-108",
+    "kind": "document",
+    "title": "Vertex Manufacturing \u00b7 Consultant Scheduling promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-108 requires Consultant Scheduling.\n\nC-108 is made to Vertex Manufacturing.\n\nC-108 is due on 2026-10-24."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-108",
+      "predicate": "REQUIRES",
+      "object_id": "project:consultant-scheduling",
+      "scalar": null,
+      "quote": "C-108 requires Consultant Scheduling.",
+      "start": 165,
+      "end": 202,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-108",
+      "predicate": "MADE_TO",
+      "object_id": "customer:fresh",
+      "scalar": null,
+      "quote": "C-108 is made to Vertex Manufacturing.",
+      "start": 204,
+      "end": 242,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-108",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-24",
+      "quote": "C-108 is due on 2026-10-24.",
+      "start": 244,
+      "end": 271,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

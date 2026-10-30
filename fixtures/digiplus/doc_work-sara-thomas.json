@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-sara-thomas",
+    "kind": "document",
+    "title": "Sara Thomas \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Workflow Engine is the engine coordinating approval workflows.\n\nSara Thomas worked on Workflow Engine.\n\nSara Thomas worked on Partner Workspace."
+  },
+  "claims": [
+    {
+      "subject_id": "person:sara-thomas",
+      "predicate": "WORKED_ON",
+      "object_id": "service:workflow-engine",
+      "scalar": null,
+      "quote": "Sara Thomas worked on Workflow Engine.",
+      "start": 148,
+      "end": 186,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:sara-thomas",
+      "predicate": "WORKED_ON",
+      "object_id": "project:partner-workspace",
+      "scalar": null,
+      "quote": "Sara Thomas worked on Partner Workspace.",
+      "start": 188,
+      "end": 228,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

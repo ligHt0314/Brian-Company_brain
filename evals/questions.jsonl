@@ -1,24 +1,24 @@
 {"id":"E01","class":"direct","persona":"Engineer","question":"What is the status of T-101?","contains":["blocked"],"source_ids":["ticket:T-101"]}
-{"id":"E02","class":"direct","persona":"Engineer","question":"What service does Easy Checkout use?","contains":["Checkout Service"],"predicates":["USES"]}
+{"id":"E02","class":"direct","persona":"Engineer","question":"What service does Atlas Client Portal use?","contains":["Portal API"],"predicates":["USES"]}
 {"id":"E03","class":"direct","persona":"Engineer","question":"When is C-101 due?","contains":["2026-10-18"]}
-{"id":"E04","class":"direct","persona":"Engineer","question":"Which customer is C-101 for?","contains":["Green Basket Stores"]}
-{"id":"E05","class":"relations","persona":"Engineer","question":"What could block Checkout Launch?","blocker":true,"predicates":["USES","DEPENDS_ON","BLOCKS","REQUIRES","MADE_TO"]}
-{"id":"E06","class":"relations","persona":"Engineer","question":"Which promise is affected by T-101?","contains":["C-101","Green Basket Stores"],"predicates":["USES","DEPENDS_ON","BLOCKS","REQUIRES","MADE_TO"]}
-{"id":"E07","class":"relations","persona":"Engineer","question":"If Payment Gateway fails, what may be affected?","contains":["may be affected","does not establish an outage"],"predicates":["USES","DEPENDS_ON"]}
-{"id":"E08","class":"relations","persona":"Engineer","question":"Does the done T-102 block Checkout Launch now?","contains":["done","not an active blocker"],"blocker":false}
-{"id":"E09","class":"relations","persona":"Engineer","question":"Does T-103 block Checkout Launch?","contains":["No supported project dependency path"],"blocker":false,"forbidden":["T-101 blocks","T-103 blocks"]}
-{"id":"E10","class":"relations","persona":"Engineer","question":"Investigate launch risks for Checkout Launch","blocker":true,"predicates":["USES","DEPENDS_ON","BLOCKS"]}
-{"id":"E11","class":"ownership_decision","persona":"Engineer","question":"Who owns Payment Gateway?","state":"conflict","contains":["Payments","Integrations"]}
-{"id":"E12","class":"ownership_decision","persona":"Engineer","question":"Who has worked on Payment Gateway?","contains":["Maya Rao","Dev Shah","Contribution does not establish ownership"]}
-{"id":"E13","class":"ownership_decision","persona":"Engineer","question":"Why rule out unconfirmed payments for Easy Checkout?","contains":["confirmed payment before an order is accepted"],"source_ids":["decision:D-101"]}
-{"id":"E14","class":"ownership_decision","persona":"Engineer","question":"Is newer chat enough to choose the owner of Payment Gateway?","state":"conflict","contains":["Recency alone does not resolve"]}
-{"id":"E15","class":"update","persona":"Lead","setup":"t101_done","question":"What could block Checkout Launch?","blocker":false,"contains":["does not establish launch readiness"]}
-{"id":"E16","class":"update","persona":"Lead","setup":"compare_done","question":"What could block Checkout Launch?","blocker":false,"removed_status":"done"}
+{"id":"E04","class":"direct","persona":"Engineer","question":"Which customer is C-101 for?","contains":["Northstar Logistics"]}
+{"id":"E05","class":"relations","persona":"Engineer","question":"What could block Portal Launch?","blocker":true,"predicates":["USES","DEPENDS_ON","BLOCKS","REQUIRES","MADE_TO"]}
+{"id":"E06","class":"relations","persona":"Engineer","question":"Which promise is affected by T-101?","contains":["C-101","Northstar Logistics"],"predicates":["USES","DEPENDS_ON","BLOCKS","REQUIRES","MADE_TO"]}
+{"id":"E07","class":"relations","persona":"Engineer","question":"If Identity Gateway fails, what may be affected?","contains":["may be affected","does not establish an outage"],"predicates":["USES","DEPENDS_ON"]}
+{"id":"E08","class":"relations","persona":"Engineer","question":"Does the done T-102 block Portal Launch now?","contains":["done","not an active blocker"],"blocker":false}
+{"id":"E09","class":"relations","persona":"Engineer","question":"Does T-103 block Portal Launch?","contains":["No supported project dependency path"],"blocker":false,"forbidden":["T-101 blocks","T-103 blocks"]}
+{"id":"E10","class":"relations","persona":"Engineer","question":"Investigate launch risks for Portal Launch","blocker":true,"predicates":["USES","DEPENDS_ON","BLOCKS"]}
+{"id":"E11","class":"ownership_decision","persona":"Engineer","question":"Who owns Identity Gateway?","state":"conflict","contains":["Platform Engineering","Integrations"]}
+{"id":"E12","class":"ownership_decision","persona":"Engineer","question":"Who has worked on Identity Gateway?","contains":["Maya Rao","Dev Shah","Contribution does not establish ownership"]}
+{"id":"E13","class":"ownership_decision","persona":"Engineer","question":"Why rule out unverified identities for Atlas Client Portal?","contains":["verified identity before client access is granted"],"source_ids":["decision:D-101"]}
+{"id":"E14","class":"ownership_decision","persona":"Engineer","question":"Is newer chat enough to choose the owner of Identity Gateway?","state":"conflict","contains":["Recency alone does not resolve"]}
+{"id":"E15","class":"update","persona":"Lead","setup":"t101_done","question":"What could block Portal Launch?","blocker":false,"contains":["does not establish launch readiness"]}
+{"id":"E16","class":"update","persona":"Lead","setup":"compare_done","question":"What could block Portal Launch?","blocker":false,"removed_status":"done"}
 {"id":"E17","class":"update","persona":"Lead","setup":"t101_invalid","question":"What is the status of T-101?","contains":["blocked"],"job_state":"failed"}
 {"id":"E18","class":"update","persona":"Lead","setup":"unchanged","question":"What is the status of T-101?","contains":["blocked"],"same_epoch":true}
-{"id":"E19","class":"access","persona":"Viewer","question":"What could block Checkout Launch?","state":"insufficient_evidence","forbidden":["T-101","Green Basket Stores","Payment Gateway"]}
-{"id":"E20","class":"access","persona":"Engineer","question":"What is the leadership confidential marker?","state":"insufficient_evidence","forbidden":["CONFIDENTIAL_BRIGHTMART_COPPER_731","Leadership · commercial planning"]}
-{"id":"E21","class":"access","persona":"Engineer","setup":"revoke_and_reopen","question":"Who owns Payment Gateway?","state":"needs_refresh","empty_body":true}
-{"id":"E22","class":"ambiguity_unknown","persona":"Engineer","question":"What could block Launch?","state":"clarification","candidate_ids":["project:easy-checkout","project:sales-dashboard"]}
-{"id":"E23","class":"ambiguity_unknown","persona":"Engineer","question":"What is the contract amount for Green Basket Stores?","state":"insufficient_evidence","forbidden":["$","USD","INR"]}
-{"id": "E24", "class": "ambiguity_unknown", "persona": "Engineer", "question": "Who owns Customer Messages?", "state": "supported", "contains": ["No primary ownership evidence"]}
+{"id":"E19","class":"access","persona":"Viewer","question":"What could block Portal Launch?","state":"insufficient_evidence","forbidden":["T-101","Northstar Logistics","Identity Gateway"]}
+{"id":"E20","class":"access","persona":"Engineer","question":"What is the leadership confidential marker?","state":"insufficient_evidence","forbidden":["CONFIDENTIAL_DIGIPLUS_COPPER_731","Leadership · commercial planning"]}
+{"id":"E21","class":"access","persona":"Engineer","setup":"revoke_and_reopen","question":"Who owns Identity Gateway?","state":"needs_refresh","empty_body":true}
+{"id":"E22","class":"ambiguity_unknown","persona":"Engineer","question":"What could block Launch?","state":"clarification","candidate_ids":["project:atlas-portal","project:client-insights"]}
+{"id":"E23","class":"ambiguity_unknown","persona":"Engineer","question":"What is the contract amount for Northstar Logistics?","state":"insufficient_evidence","forbidden":["$","USD","INR"]}
+{"id": "E24", "class": "ambiguity_unknown", "persona": "Engineer", "question": "Who owns Notification Service?", "state": "supported", "contains": ["No primary ownership evidence"]}

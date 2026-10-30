@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-meera-nair",
+    "kind": "document",
+    "title": "Meera Nair \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Knowledge Search is the search service for team knowledge.\n\nMeera Nair worked on Knowledge Search.\n\nMeera Nair worked on Consultant Scheduling."
+  },
+  "claims": [
+    {
+      "subject_id": "person:meera-nair",
+      "predicate": "WORKED_ON",
+      "object_id": "service:search",
+      "scalar": null,
+      "quote": "Meera Nair worked on Knowledge Search.",
+      "start": 144,
+      "end": 182,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:meera-nair",
+      "predicate": "WORKED_ON",
+      "object_id": "project:consultant-scheduling",
+      "scalar": null,
+      "quote": "Meera Nair worked on Consultant Scheduling.",
+      "start": 184,
+      "end": 227,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-simran-kaur",
+    "kind": "document",
+    "title": "Simran Kaur \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Event Pipeline is the pipeline carrying operational events.\n\nSimran Kaur worked on Event Pipeline.\n\nSimran Kaur worked on Claims Automation."
+  },
+  "claims": [
+    {
+      "subject_id": "person:simran-kaur",
+      "predicate": "WORKED_ON",
+      "object_id": "service:events",
+      "scalar": null,
+      "quote": "Simran Kaur worked on Event Pipeline.",
+      "start": 145,
+      "end": 182,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:simran-kaur",
+      "predicate": "WORKED_ON",
+      "object_id": "project:claims-automation",
+      "scalar": null,
+      "quote": "Simran Kaur worked on Claims Automation.",
+      "start": 184,
+      "end": 224,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

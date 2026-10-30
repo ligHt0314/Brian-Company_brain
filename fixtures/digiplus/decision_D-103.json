@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-103",
+    "kind": "decision",
+    "title": "D-103 \u00b7 Analytics backfill",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "D-103 is about Client Insights: complete the backfill before the analytics review."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-103",
+      "predicate": "ABOUT",
+      "object_id": "project:client-insights",
+      "scalar": null,
+      "quote": "D-103 is about Client Insights: complete the backfill before the analytics review.",
+      "start": 0,
+      "end": 82,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -19,7 +19,7 @@ import app.main as main
 
 if not settings.llm_api_key or not settings.llm_model:
     raise SystemExit("Configure LLM_API_KEY and LLM_MODEL first")
-body = "Maya Rao worked on Customer Messages.\n\nCustomer Messages depends on Payment Gateway."
+body = "Maya Rao worked on Notification Service.\n\nNotification Service depends on Identity Gateway."
 source_id = "doc:live-gemini-verification"
 report = {
     "generated_at": now_iso(),
@@ -76,7 +76,7 @@ with tempfile.TemporaryDirectory() as tmp:
             live_claims = [c for c in claims if c.evidence.source_id == source_id]
             required = {
                 ("person:maya", "WORKED_ON", "service:messages"),
-                ("service:messages", "DEPENDS_ON", "service:payments"),
+                ("service:messages", "DEPENDS_ON", "service:identity"),
             }
             assert required <= {(c.subject_id, c.predicate, c.object_id) for c in live_claims}
             assert all(
@@ -107,7 +107,7 @@ with tempfile.TemporaryDirectory() as tmp:
                 assert answer["status"] == "complete"
                 return answer
 
-            answer = ask("Who has worked on Customer Messages?")
+            answer = ask("Who has worked on Notification Service?")
             assert answer["execution_mode"] == "live_model"
             assert any(
                 e["source_id"] == source_id and e["extraction_method"] == "model" for e in answer["evidence"]
@@ -116,7 +116,7 @@ with tempfile.TemporaryDirectory() as tmp:
             report["new_document_investigation"] = {
                 k: answer[k] for k in ["execution_mode", "answer_state", "intent", "metrics"]
             }
-            release = ask("What could block Easy Checkout, and which customer commitment is affected?")
+            release = ask("What could block Atlas Client Portal, and which customer commitment is affected?")
             report["release_investigation"] = {
                 k: release[k]
                 for k in ["execution_mode", "answer_state", "intent", "metrics", "scope", "agent_trace"]
@@ -129,7 +129,7 @@ with tempfile.TemporaryDirectory() as tmp:
             )
             assert release["conflicts"]
             client.post("/api/v1/demo/session", json={"persona": "Viewer"}).raise_for_status()
-            viewer = ask("Who has worked on Customer Messages?")
+            viewer = ask("Who has worked on Notification Service?")
             assert not viewer["evidence"] and source_id not in json.dumps(viewer)
             report["viewer_isolation_passed"] = True
             report["passed"] = True

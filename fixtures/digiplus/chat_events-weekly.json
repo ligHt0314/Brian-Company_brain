@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:events-weekly",
+    "kind": "chat",
+    "title": "Event Pipeline \u00b7 weekly handover",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Fictional exported team discussion. The people below contributed to this system; that alone does not make them its owner.\n\nSana Sheikh worked on Event Pipeline."
+  },
+  "claims": [
+    {
+      "subject_id": "person:sana-sheikh",
+      "predicate": "WORKED_ON",
+      "object_id": "service:events",
+      "scalar": null,
+      "quote": "Sana Sheikh worked on Event Pipeline.",
+      "start": 123,
+      "end": 160,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

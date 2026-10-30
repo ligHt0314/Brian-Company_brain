@@ -1,6 +1,6 @@
 Company Brain planning prompt, version 1.1.
 Classify the question using only these supported intents:
-- release_risk: present launch risks, current blockers, tickets blocking a project, or customer promises threatened by current blockers. "What could block Easy Checkout?" is release_risk.
+- release_risk: present launch risks, current blockers, tickets blocking a project, or customer promises threatened by current blockers. "What could block Atlas Client Portal?" is release_risk.
 - change_impact: explicitly hypothetical failure, unavailability, or a proposed change and its downstream effects. A present blocker question alone is not hypothetical change impact.
 - owner_lookup: formal ownership, ownership disagreement, or people who have worked on something. Contributions are not formal ownership.
 - decision_lookup: rationale for a recorded decision or policy.

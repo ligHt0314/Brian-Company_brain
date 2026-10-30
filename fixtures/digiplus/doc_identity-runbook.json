@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:identity-runbook",
+    "kind": "document",
+    "title": "Identity Gateway \u00b7 operational runbook",
+    "source_updated_at": "2026-08-20T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Runbook from the previous operating cycle. Confirm ownership before paging a team.\n\nIdentity Gateway has primary owner Platform Engineering.\n\nMaya Rao worked on Identity Gateway."
+  },
+  "claims": [
+    {
+      "subject_id": "service:identity",
+      "predicate": "OWNED_BY",
+      "object_id": "team:platform",
+      "scalar": null,
+      "quote": "Identity Gateway has primary owner Platform Engineering.",
+      "start": 84,
+      "end": 140,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:maya",
+      "predicate": "WORKED_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Maya Rao worked on Identity Gateway.",
+      "start": 142,
+      "end": 178,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

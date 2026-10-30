@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-109",
+    "kind": "decision",
+    "title": "D-109 \u00b7 Explain failed invoice reconciliation",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional recorded product decision. The quotation explains the reason; it is not a claim that this policy applies to every project.\n\nD-109 is about Client Success: explain failed invoice reconciliation so finance can resolve a mismatch without duplicate billing."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-109",
+      "predicate": "ABOUT",
+      "object_id": "project:client-success",
+      "scalar": null,
+      "quote": "D-109 is about Client Success: explain failed invoice reconciliation so finance can resolve a mismatch without duplicate billing.",
+      "start": 136,
+      "end": 265,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

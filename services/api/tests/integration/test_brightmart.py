@@ -39,13 +39,13 @@ def test_complete_dataset_and_pagination(world):
 def test_other_stories_and_cross_project_impact(world):
     repo, store, ingest, client = world
     login(client)
-    delivery = ask(client, "What could block Delivery Tracking?")
+    delivery = ask(client, "What could block Delivery Operations?")
     assert any(f["category"] == "blocker" and "ticket:T-109" in f["entity_ids"] for f in delivery["findings"])
-    refund = ask(client, "What could block Quick Refunds?")
+    refund = ask(client, "What could block Claims Automation?")
     assert any(f["category"] == "blocker" and "ticket:T-101" in f["entity_ids"] for f in refund["findings"])
-    impact = ask(client, "What may be affected if Payment Gateway becomes unavailable?")
+    impact = ask(client, "What may be affected if Identity Gateway becomes unavailable?")
     text = " ".join(b["text"] for b in impact["blocks"])
-    assert all(name in text for name in ["Easy Checkout", "Quick Refunds", "Fresh Subscriptions"])
+    assert all(name in text for name in ["Atlas Client Portal", "Claims Automation", "Managed Cloud Migration"])
     assert all(e["evidence_ids"] for e in impact["graph"]["edges"])
     assert "does not establish an outage" in text
 
@@ -55,8 +55,8 @@ def test_service_impact_keeps_three_dependency_hop_limit(world):
     from app.reasoning.investigate import Investigator
 
     repo, store, ingest, client = world
-    links = [("service:catalog", "service:search"), ("service:search", "service:support")]
-    texts = ["Product Catalog depends on Product Search.", "Product Search depends on Help Desk."]
+    links = [("service:configuration", "service:search"), ("service:search", "service:support")]
+    texts = ["Configuration Registry depends on Knowledge Search.", "Knowledge Search depends on Support Queue."]
     body = "\n\n".join(texts)
     candidates = [
         Candidate(
@@ -78,15 +78,15 @@ def test_service_impact_keeps_three_dependency_hop_limit(world):
         body=body,
     )
     assert ingest.import_source(envelope, "operator", candidates, True)["status"] == "complete"
-    # Stock Counter -> Product Catalog -> Product Search -> Help Desk is 3 DEPENDS_ON hops.
-    # Help Desk -> Customer Messages would be hop 4 and must be excluded.
+    # Resource Monitor -> Configuration Registry -> Knowledge Search -> Support Queue is 3 DEPENDS_ON hops.
+    # Support Queue -> Notification Service would be hop 4 and must be excluded.
     answer = Investigator(repo).run(
         "hop_budget",
-        "What may be affected if Customer Messages becomes unavailable?",
+        "What may be affected if Notification Service becomes unavailable?",
         ["all_employees", "engineering"],
     )
     assert not any(
-        "project:stock-alerts" in f.entity_ids for f in answer.findings if f.category == "conditional_impact"
+        "project:infrastructure-alerts" in f.entity_ids for f in answer.findings if f.category == "conditional_impact"
     )
     assert answer.scope.truncated
     node_ids = {n.id for n in answer.graph.nodes}

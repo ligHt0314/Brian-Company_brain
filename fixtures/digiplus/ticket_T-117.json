@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-117",
+    "kind": "ticket",
+    "title": "T-117 \u00b7 Approval workflow references a missing reviewer (check 1)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-117 blocks Workflow Engine.\n\nT-117 has status done.\n\nVikram Joshi worked on T-117."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-117",
+      "predicate": "BLOCKS",
+      "object_id": "service:workflow-engine",
+      "scalar": null,
+      "quote": "T-117 blocks Workflow Engine.",
+      "start": 136,
+      "end": 165,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-117",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "done",
+      "quote": "T-117 has status done.",
+      "start": 167,
+      "end": 189,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:vikram-joshi",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-117",
+      "scalar": null,
+      "quote": "Vikram Joshi worked on T-117.",
+      "start": 191,
+      "end": 220,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

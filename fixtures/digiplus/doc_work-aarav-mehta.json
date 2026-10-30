@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-aarav-mehta",
+    "kind": "document",
+    "title": "Aarav Mehta \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Partner API is the API used by delivery partners.\n\nAarav Mehta worked on Partner API.\n\nAarav Mehta worked on Service Desk Modernization."
+  },
+  "claims": [
+    {
+      "subject_id": "person:aarav-mehta",
+      "predicate": "WORKED_ON",
+      "object_id": "service:partner-api",
+      "scalar": null,
+      "quote": "Aarav Mehta worked on Partner API.",
+      "start": 135,
+      "end": 169,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:aarav-mehta",
+      "predicate": "WORKED_ON",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "Aarav Mehta worked on Service Desk Modernization.",
+      "start": 171,
+      "end": 220,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

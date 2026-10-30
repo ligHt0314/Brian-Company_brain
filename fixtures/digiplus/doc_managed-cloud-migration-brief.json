@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:managed-cloud-migration-brief",
+    "kind": "document",
+    "title": "Managed Cloud Migration \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Migrate Oakridge Media to managed cloud operations. This project is part of the fictional DigiPlus Services demonstration.\n\nDiya Kapoor worked on Managed Cloud Migration."
+  },
+  "claims": [
+    {
+      "subject_id": "person:diya-kapoor",
+      "predicate": "WORKED_ON",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "Diya Kapoor worked on Managed Cloud Migration.",
+      "start": 124,
+      "end": 170,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

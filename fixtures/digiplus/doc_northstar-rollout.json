@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:northstar-rollout",
+    "kind": "document",
+    "title": "Northstar Logistics \u00b7 rollout commitment",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "The promised rollout includes identity verification. This is synthetic customer information.\n\nC-101 requires Atlas Client Portal.\n\nC-101 is made to Northstar Logistics.\n\nC-101 is due on 2026-10-18."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-101",
+      "predicate": "REQUIRES",
+      "object_id": "project:atlas-portal",
+      "scalar": null,
+      "quote": "C-101 requires Atlas Client Portal.",
+      "start": 94,
+      "end": 129,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-101",
+      "predicate": "MADE_TO",
+      "object_id": "customer:northstar",
+      "scalar": null,
+      "quote": "C-101 is made to Northstar Logistics.",
+      "start": 131,
+      "end": 168,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-101",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-18",
+      "quote": "C-101 is due on 2026-10-18.",
+      "start": 170,
+      "end": 197,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

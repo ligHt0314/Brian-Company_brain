@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-126",
+    "kind": "ticket",
+    "title": "T-126 \u00b7 Configuration update arrives late (check 2)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-126 blocks Partner API.\n\nT-126 has status cancelled.\n\nPooja Desai worked on T-126."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-126",
+      "predicate": "BLOCKS",
+      "object_id": "service:partner-api",
+      "scalar": null,
+      "quote": "T-126 blocks Partner API.",
+      "start": 136,
+      "end": 161,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-126",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "cancelled",
+      "quote": "T-126 has status cancelled.",
+      "start": 163,
+      "end": 190,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:pooja-desai",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-126",
+      "scalar": null,
+      "quote": "Pooja Desai worked on T-126.",
+      "start": 192,
+      "end": 220,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

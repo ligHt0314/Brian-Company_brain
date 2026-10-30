@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-leah",
+    "kind": "document",
+    "title": "Leah Chen \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Claims API is the API processing insurance claims.\n\nLeah Chen worked on Claims API.\n\nLeah Chen worked on Infrastructure Alerts."
+  },
+  "claims": [
+    {
+      "subject_id": "person:leah",
+      "predicate": "WORKED_ON",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "Leah Chen worked on Claims API.",
+      "start": 136,
+      "end": 167,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:leah",
+      "predicate": "WORKED_ON",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "Leah Chen worked on Infrastructure Alerts.",
+      "start": 169,
+      "end": 211,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

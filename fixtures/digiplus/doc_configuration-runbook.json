@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:configuration-runbook",
+    "kind": "document",
+    "title": "Configuration Registry \u00b7 working guide",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Configuration Registry means the registry of deployed applications and configuration. An owner is the team responsible for keeping this system working.\n\nConfiguration Registry has primary owner Platform Engineering."
+  },
+  "claims": [
+    {
+      "subject_id": "service:configuration",
+      "predicate": "OWNED_BY",
+      "object_id": "team:platform",
+      "scalar": null,
+      "quote": "Configuration Registry has primary owner Platform Engineering.",
+      "start": 153,
+      "end": 215,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

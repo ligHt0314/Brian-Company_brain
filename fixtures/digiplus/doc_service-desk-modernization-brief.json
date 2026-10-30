@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:service-desk-modernization-brief",
+    "kind": "document",
+    "title": "Service Desk Modernization \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Modernize the support desk for Pioneer Travel. This project is part of the fictional DigiPlus Services demonstration.\n\nVikram Joshi worked on Service Desk Modernization."
+  },
+  "claims": [
+    {
+      "subject_id": "person:vikram-joshi",
+      "predicate": "WORKED_ON",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "Vikram Joshi worked on Service Desk Modernization.",
+      "start": 119,
+      "end": 169,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

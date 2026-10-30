@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-111",
+    "kind": "document",
+    "title": "Pioneer Travel \u00b7 Service Desk Modernization promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-111 requires Service Desk Modernization.\n\nC-111 is made to Pioneer Travel.\n\nC-111 is due on 2026-10-27."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-111",
+      "predicate": "REQUIRES",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "C-111 requires Service Desk Modernization.",
+      "start": 165,
+      "end": 207,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-111",
+      "predicate": "MADE_TO",
+      "object_id": "customer:value",
+      "scalar": null,
+      "quote": "C-111 is made to Pioneer Travel.",
+      "start": 209,
+      "end": 241,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-111",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-27",
+      "quote": "C-111 is due on 2026-10-27.",
+      "start": 243,
+      "end": 270,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 import json
 import threading
 import time
-import logging
 from app.domain.models import uid
 
 from falkordb import FalkorDB
@@ -9,7 +8,7 @@ from redis.exceptions import ResponseError
 from app.config import settings
 from app.domain.models import Claim, Evidence, iso, ms
 
-logger = logging.getLogger("company_brain.graph")
+from app.observability import event
 
 # Every claim query joins its own source policy. Never filter only the first edge of a path.
 CLAIMS_QUERY = """
@@ -58,16 +57,7 @@ class Repository:
         finally:
             duration = (time.monotonic() - started) * 1000
             self.local.duration_ms = getattr(self.local, "duration_ms", 0) + duration
-            logger.info(
-                json.dumps(
-                    {
-                        "event": "graph_query",
-                        "template": uid("query", text),
-                        "duration_ms": round(duration, 3),
-                        "write": write,
-                    }
-                )
-            )
+            event("graph_query", template=uid("query", text), duration_ms=round(duration, 3), write=write)
 
     def initialize(self, entities: list[dict]):
         with self.lock:

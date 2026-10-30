@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-111",
+    "kind": "decision",
+    "title": "D-111 \u00b7 Send one notification per incident event",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional recorded product decision. The quotation explains the reason; it is not a claim that this policy applies to every project.\n\nD-111 is about Service Desk Modernization: send one notification per incident event so retries do not duplicate alerts."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-111",
+      "predicate": "ABOUT",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "D-111 is about Service Desk Modernization: send one notification per incident event so retries do not duplicate alerts.",
+      "start": 136,
+      "end": 255,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

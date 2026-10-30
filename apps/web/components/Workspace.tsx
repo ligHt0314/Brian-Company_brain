@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import WorkspaceGuide from "./WorkspaceGuide";
+import MeetingsWorkspace from "./MeetingsWorkspace";
 import TicketStatusEditor from "./TicketStatusEditor";
 import {
   Activity,
@@ -12,6 +13,7 @@ import {
   BookOpen,
   Check,
   CheckCheck,
+  ClipboardCheck,
   ChevronDown,
   Clock,
   Database,
@@ -55,22 +57,22 @@ const AnswerGraph = dynamic(() => import("./AnswerGraph"), {
 const prompts = [
   {
     title: "Find launch risks",
-    text: "What could block Easy Checkout, and which customer commitment is affected?",
+    text: "What could block Atlas Client Portal, and which customer commitment is affected?",
     icon: GitBranch,
   },
   {
     title: "Untangle ownership",
-    text: "Who owns Payment Gateway, and who has worked on it?",
+    text: "Who owns Identity Gateway, and who has worked on it?",
     icon: Users,
   },
   {
     title: "Understand an impact",
-    text: "What may be affected if Payment Gateway becomes unavailable?",
+    text: "What may be affected if Identity Gateway becomes unavailable?",
     icon: Network,
   },
   {
     title: "Trace a decision",
-    text: "Why did we rule out unconfirmed payments for Easy Checkout?",
+    text: "Why did we rule out unverified identities for Atlas Client Portal?",
     icon: BookOpen,
   },
 ];
@@ -161,15 +163,20 @@ function Modal({
 export default function Workspace() {
   const pathname = usePathname();
   const params = useSearchParams();
-  const page = pathname.startsWith("/guide")
-    ? "guide"
-    : pathname.startsWith("/sources")
-      ? "sources"
-      : pathname.startsWith("/reviews")
-        ? "reviews"
-        : pathname.startsWith("/history")
-          ? "history"
-          : "investigate";
+  const page =
+    pathname === "/" || pathname.startsWith("/meetings")
+      ? "meetings"
+      : pathname.startsWith("/actions")
+        ? "actions"
+        : pathname.startsWith("/guide")
+          ? "guide"
+          : pathname.startsWith("/sources")
+            ? "sources"
+            : pathname.startsWith("/reviews")
+              ? "reviews"
+              : pathname.startsWith("/history")
+                ? "history"
+                : "investigate";
   const [me, setMe] = useState<Me | null>(null);
   const [boot, setBoot] = useState(true);
   const [error, setError] = useState("");
@@ -468,13 +475,25 @@ export default function Workspace() {
   );
   const nav = [
     {
+      id: "meetings",
+      href: "/meetings",
+      label: "Meetings & handovers",
+      icon: MessageSquare,
+    },
+    {
+      id: "actions",
+      href: "/actions",
+      label: "Action items",
+      icon: CheckCheck,
+    },
+    {
       id: "investigate",
       href: "/investigate",
       label: "Investigate",
       icon: Sparkles,
     },
     { id: "sources", href: "/sources", label: "Sources", icon: Layers },
-    { id: "reviews", href: "/reviews", label: "Reviews", icon: CheckCheck },
+    { id: "reviews", href: "/reviews", label: "Reviews", icon: ClipboardCheck },
     { id: "history", href: "/history", label: "History", icon: History },
     { id: "guide", href: "/guide", label: "Workspace guide", icon: BookOpen },
   ];
@@ -488,19 +507,19 @@ export default function Workspace() {
   return (
     <div className="workspace">
       <aside className="sidebar">
-        <Link href="/investigate" className="brand">
+        <Link href="/" className="brand">
           <span className="brandMark">
             <Network size={23} />
           </span>
-          <span>
-            company<span className="brandLight">brain</span>
-            <span className="brandDot">.</span>
+          <span className="brandText">
+            <strong>Brian</strong>
+            <small>company brain</small>
           </span>
         </Link>
         <div className="workspacePicker">
           <span className="companyMark">B</span>
           <div>
-            <strong>BrightMart</strong>
+            <strong>DigiPlus Services</strong>
             <small>Company workspace</small>
           </div>
           <ChevronDown size={15} />
@@ -592,6 +611,13 @@ export default function Workspace() {
               <LoaderCircle className="spin" />
               Opening your workspace…
             </div>
+          ) : page === "meetings" || page === "actions" ? (
+            <MeetingsWorkspace
+              key={me!.id}
+              me={me!}
+              entities={entities}
+              mode={page}
+            />
           ) : page === "guide" ? (
             <WorkspaceGuide
               entities={entities}
@@ -625,8 +651,8 @@ export default function Workspace() {
               </div>
               <div className="workspaceIntro">
                 <span>
-                  <strong>Your BrightMart workspace.</strong> Connect projects,
-                  people and decisions with the evidence behind them.
+                  <strong>Your DigiPlus Services workspace.</strong> Connect
+                  projects, people and decisions with the evidence behind them.
                 </span>
                 <Link href="/guide">
                   Workspace guide <ArrowRight size={15} />
@@ -662,7 +688,7 @@ export default function Workspace() {
                   <ArrowUpRight size={15} />
                 </Link>
                 <Link href="/reviews">
-                  <CheckCheck size={19} />
+                  <ClipboardCheck size={19} />
                   <div>
                     <strong>
                       {reviews.filter((r) => r.state === "open").length}
@@ -696,7 +722,7 @@ export default function Workspace() {
                 </div>
                 <textarea
                   aria-label="Investigation question"
-                  placeholder="What could block Easy Checkout, and which customer commitment is affected?"
+                  placeholder="What could block Atlas Client Portal, and which customer commitment is affected?"
                   value={question}
                   onChange={(e) => setQuestion(e.target.value)}
                   onKeyDown={(e) => {
@@ -804,7 +830,7 @@ export default function Workspace() {
                         disabled={running}
                         onClick={() =>
                           investigate(
-                            question || "What could block Easy Checkout?",
+                            question || "What could block Atlas Client Portal?",
                             answer.entity_id || "",
                           )
                         }
@@ -1405,7 +1431,7 @@ export default function Workspace() {
                 reviews.map((r) => (
                   <article className="reviewCard" key={r.id}>
                     <div className="reviewCardIcon">
-                      <CheckCheck size={23} />
+                      <ClipboardCheck size={23} />
                     </div>
                     <div>
                       <span className="freshness">Open review</span>
@@ -1439,7 +1465,7 @@ export default function Workspace() {
                 ))
               ) : (
                 <div className="emptyCard">
-                  <CheckCheck size={32} />
+                  <ClipboardCheck size={32} />
                   <h2>No reviews in your visible scope</h2>
                   <p>
                     Investigate a project, then prepare a review from a
@@ -1507,7 +1533,7 @@ export default function Workspace() {
           )}
           <footer className="pageFooter">
             <span>
-              Company Brain <span className="footerDot">·</span> BrightMart
+              Brian <span className="footerDot">·</span> DigiPlus Services
             </span>
             <span>Evidence connects your work.</span>
           </footer>

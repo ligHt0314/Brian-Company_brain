@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-isha-patel",
+    "kind": "document",
+    "title": "Isha Patel \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Support Queue is the queue for client support requests.\n\nIsha Patel worked on Support Queue.\n\nIsha Patel worked on Managed Cloud Migration."
+  },
+  "claims": [
+    {
+      "subject_id": "person:isha-patel",
+      "predicate": "WORKED_ON",
+      "object_id": "service:support",
+      "scalar": null,
+      "quote": "Isha Patel worked on Support Queue.",
+      "start": 141,
+      "end": 176,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:isha-patel",
+      "predicate": "WORKED_ON",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "Isha Patel worked on Managed Cloud Migration.",
+      "start": 178,
+      "end": 223,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-112",
+    "kind": "document",
+    "title": "Oakridge Media \u00b7 Managed Cloud Migration promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-112 requires Managed Cloud Migration.\n\nC-112 is made to Oakridge Media.\n\nC-112 is due on 2026-10-28."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-112",
+      "predicate": "REQUIRES",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "C-112 requires Managed Cloud Migration.",
+      "start": 165,
+      "end": 204,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-112",
+      "predicate": "MADE_TO",
+      "object_id": "customer:organic",
+      "scalar": null,
+      "quote": "C-112 is made to Oakridge Media.",
+      "start": 206,
+      "end": 238,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-112",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-28",
+      "quote": "C-112 is due on 2026-10-28.",
+      "start": 240,
+      "end": 267,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

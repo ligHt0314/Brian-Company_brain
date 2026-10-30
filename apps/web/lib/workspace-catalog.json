@@ -1,5 +1,5 @@
 {
-  "company": "BrightMart",
+  "company": "DigiPlus Services",
   "seed_version": "2.0",
   "scenario_clock": "2026-10-17T04:30:00Z",
   "synthetic": true,
@@ -24,140 +24,140 @@
   },
   "projects": [
     {
-      "id": "project:easy-checkout",
-      "name": "Easy Checkout",
-      "purpose": "Make it easier to place and pay for an online grocery order.",
-      "question": "What could block Easy Checkout?",
-      "system": "Checkout Service"
+      "id": "project:atlas-portal",
+      "name": "Atlas Client Portal",
+      "purpose": "Deliver a secure self-service portal for Northstar Logistics.",
+      "question": "What could block Atlas Client Portal?",
+      "system": "Portal API"
     },
     {
-      "id": "project:sales-dashboard",
-      "name": "Sales Dashboard",
-      "purpose": "Help store managers understand their sales.",
-      "question": "What could block Sales Dashboard?",
-      "system": "Reporting Service"
+      "id": "project:client-insights",
+      "name": "Client Insights",
+      "purpose": "Give Cedar Health a consolidated view of delivery metrics.",
+      "question": "What could block Client Insights?",
+      "system": "Analytics API"
     },
     {
-      "id": "project:delivery-tracking",
-      "name": "Delivery Tracking",
-      "purpose": "Show shoppers and staff where a delivery is.",
-      "question": "What could block Delivery Tracking?",
-      "system": "Delivery Board"
+      "id": "project:delivery-operations",
+      "name": "Delivery Operations",
+      "purpose": "Coordinate application delivery milestones for Summit Banking.",
+      "question": "What could block Delivery Operations?",
+      "system": "Delivery Console"
     },
     {
-      "id": "project:quick-refunds",
-      "name": "Quick Refunds",
-      "purpose": "Return money promptly after an approved cancellation.",
-      "question": "What could block Quick Refunds?",
-      "system": "Refund Service"
+      "id": "project:claims-automation",
+      "name": "Claims Automation",
+      "purpose": "Automate claims workflows for Meridian Insurance.",
+      "question": "What could block Claims Automation?",
+      "system": "Claims API"
     },
     {
-      "id": "project:stock-alerts",
-      "name": "Stock Alerts",
-      "purpose": "Warn stores before popular items run out.",
-      "question": "What could block Stock Alerts?",
-      "system": "Stock Counter"
+      "id": "project:infrastructure-alerts",
+      "name": "Infrastructure Alerts",
+      "purpose": "Monitor production capacity for Harbor Telecom.",
+      "question": "What could block Infrastructure Alerts?",
+      "system": "Resource Monitor"
     },
     {
-      "id": "project:store-pickup",
-      "name": "Store Pickup",
-      "purpose": "Let shoppers collect their order from a store.",
-      "question": "What could block Store Pickup?",
-      "system": "Pickup Scheduler"
+      "id": "project:consultant-scheduling",
+      "name": "Consultant Scheduling",
+      "purpose": "Schedule consulting teams for Vertex Manufacturing.",
+      "question": "What could block Consultant Scheduling?",
+      "system": "Staffing Scheduler"
     },
     {
-      "id": "project:customer-rewards",
-      "name": "Customer Rewards",
-      "purpose": "Give repeat shoppers reward points.",
-      "question": "What could block Customer Rewards?",
-      "system": "Rewards Wallet"
+      "id": "project:client-success",
+      "name": "Client Success",
+      "purpose": "Coordinate client success follow-ups for Aster Education.",
+      "question": "What could block Client Success?",
+      "system": "Success Hub"
     },
     {
-      "id": "project:seller-dashboard",
-      "name": "Seller Dashboard",
-      "purpose": "Help partner stores manage their online business.",
-      "question": "What could block Seller Dashboard?",
-      "system": "Seller Portal"
+      "id": "project:partner-workspace",
+      "name": "Partner Workspace",
+      "purpose": "Deliver a partner workspace for Cobalt Energy.",
+      "question": "What could block Partner Workspace?",
+      "system": "Partner API"
     },
     {
-      "id": "project:help-center",
-      "name": "Help Center",
-      "purpose": "Help shoppers get an answer when something goes wrong.",
-      "question": "What could block Help Center?",
-      "system": "Help Desk"
+      "id": "project:service-desk-modernization",
+      "name": "Service Desk Modernization",
+      "purpose": "Modernize the support desk for Pioneer Travel.",
+      "question": "What could block Service Desk Modernization?",
+      "system": "Support Queue"
     },
     {
-      "id": "project:fresh-subscriptions",
-      "name": "Fresh Subscriptions",
-      "purpose": "Let shoppers receive a regular grocery box.",
-      "question": "What could block Fresh Subscriptions?",
-      "system": "Subscription Billing"
+      "id": "project:managed-cloud-migration",
+      "name": "Managed Cloud Migration",
+      "purpose": "Migrate Oakridge Media to managed cloud operations.",
+      "question": "What could block Managed Cloud Migration?",
+      "system": "Billing API"
     }
   ],
   "glossary": [
     {
-      "name": "Checkout Service",
-      "meaning": "the part of the website where a shopper places an order"
+      "name": "Portal API",
+      "meaning": "the API serving client portal requests"
     },
     {
-      "name": "Payment Gateway",
-      "meaning": "the connection that asks the bank to accept a payment"
+      "name": "Identity Gateway",
+      "meaning": "the shared identity verification gateway"
     },
     {
-      "name": "Reporting Service",
-      "meaning": "the tool that adds up sales for store managers"
+      "name": "Analytics API",
+      "meaning": "the service producing client delivery reports"
     },
     {
-      "name": "Customer Messages",
-      "meaning": "the tool that sends order and delivery messages"
+      "name": "Notification Service",
+      "meaning": "the system delivering incident and project notifications"
     },
     {
-      "name": "Delivery Board",
-      "meaning": "the screen staff use to see where deliveries are"
+      "name": "Delivery Console",
+      "meaning": "the console tracking client delivery milestones"
     },
     {
-      "name": "Route Planner",
-      "meaning": "the tool that chooses a delivery route"
+      "name": "Workflow Engine",
+      "meaning": "the engine coordinating approval workflows"
     },
     {
-      "name": "Refund Service",
-      "meaning": "the tool that returns money after an approved cancellation"
+      "name": "Claims API",
+      "meaning": "the API processing insurance claims"
     },
     {
-      "name": "Stock Counter",
-      "meaning": "the counter that tracks how many items are available"
+      "name": "Resource Monitor",
+      "meaning": "the system monitoring infrastructure capacity"
     },
     {
-      "name": "Product Catalog",
-      "meaning": "the list of products, prices and product details"
+      "name": "Configuration Registry",
+      "meaning": "the registry of deployed applications and configuration"
     },
     {
-      "name": "Rewards Wallet",
-      "meaning": "the balance of a shopper\u2019s reward points"
+      "name": "Success Hub",
+      "meaning": "the hub tracking client success follow-ups"
     },
     {
-      "name": "Seller Portal",
-      "meaning": "the workspace used by partner stores"
+      "name": "Partner API",
+      "meaning": "the API used by delivery partners"
     },
     {
-      "name": "Help Desk",
-      "meaning": "the workspace used to help shoppers"
+      "name": "Support Queue",
+      "meaning": "the queue for client support requests"
     },
     {
-      "name": "Subscription Billing",
-      "meaning": "the tool that charges repeat grocery subscriptions"
+      "name": "Billing API",
+      "meaning": "the service managing client invoicing"
     },
     {
-      "name": "Warehouse Updates",
-      "meaning": "the feed that reports packing and stock movements"
+      "name": "Event Pipeline",
+      "meaning": "the pipeline carrying operational events"
     },
     {
-      "name": "Pickup Scheduler",
-      "meaning": "the tool that reserves a collection time at a store"
+      "name": "Staffing Scheduler",
+      "meaning": "the scheduler allocating consultants"
     },
     {
-      "name": "Product Search",
-      "meaning": "the tool shoppers use to find products"
+      "name": "Knowledge Search",
+      "meaning": "the search service for team knowledge"
     }
   ]
 }

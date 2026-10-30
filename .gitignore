@@ -58,6 +58,7 @@ blob-report/
 coverage/
 /artifacts/
 /evals/results/
+AGENTS.md
 
 # Local logs, editor settings and agent state
 *.log

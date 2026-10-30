@@ -13,9 +13,10 @@ class Settings(BaseSettings):
     falkordb_host: str = "127.0.0.1"
     falkordb_port: int = 6389
     falkordb_password: str | None = None
-    falkordb_graph: str = "company_brain_brightmart_demo"
-    sqlite_path: str = str(ROOT / ".data/operations.sqlite")
+    falkordb_graph: str = "company_brain_digiplus_services"
+    sqlite_path: str = str(ROOT / ".data/digiplus.sqlite")
     upload_dir: str = str(ROOT / ".data/originals")
+    log_path: str = str(ROOT / ".data/logs/application.jsonl")
     llm_request_timeout_ms: int = 10000
     llm_provider: str = "openai-compatible"
     llm_model: str = ""

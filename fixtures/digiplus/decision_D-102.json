@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-102",
+    "kind": "decision",
+    "title": "D-102 \u00b7 Portal identity validation",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "D-102 is about Portal API: validate identity before issuing an access confirmation."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-102",
+      "predicate": "ABOUT",
+      "object_id": "service:portal",
+      "scalar": null,
+      "quote": "D-102 is about Portal API: validate identity before issuing an access confirmation.",
+      "start": 0,
+      "end": 83,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

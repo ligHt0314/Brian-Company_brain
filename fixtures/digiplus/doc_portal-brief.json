@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:portal-brief",
+    "kind": "document",
+    "title": "Atlas Client Portal \u00b7 project brief",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Atlas Client Portal is the secure self-service platform for Northstar Logistics. Alias: Portal Launch. Its technical dependencies are documented in engineering records.\n\nLeah Chen worked on Atlas Client Portal."
+  },
+  "claims": [
+    {
+      "subject_id": "person:leah",
+      "predicate": "WORKED_ON",
+      "object_id": "project:atlas-portal",
+      "scalar": null,
+      "quote": "Leah Chen worked on Atlas Client Portal.",
+      "start": 170,
+      "end": 210,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

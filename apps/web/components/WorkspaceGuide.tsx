@@ -16,25 +16,26 @@ const workflows = [
   {
     title: "Understand launch risks",
     question:
-      "What could block Easy Checkout, and which customer commitment is affected?",
+      "What could block Atlas Client Portal, and which customer commitment is affected?",
     detail:
       "Connect open tickets to the systems, projects and customer commitments they affect.",
   },
   {
     title: "Find ownership and experience",
-    question: "Who owns Payment Gateway, and who has worked on it?",
+    question: "Who owns Identity Gateway, and who has worked on it?",
     detail:
       "Compare ownership records and find people with relevant contributions. Conflicting records stay visible.",
   },
   {
     title: "Assess a proposed change",
-    question: "What may be affected if Payment Gateway becomes unavailable?",
+    question: "What may be affected if Identity Gateway becomes unavailable?",
     detail:
       "Trace dependencies across projects and see which commitments may be affected.",
   },
   {
     title: "Understand a decision",
-    question: "Why did we rule out unconfirmed payments for Easy Checkout?",
+    question:
+      "Why did we rule out unverified identities for Atlas Client Portal?",
     detail:
       "Read the recorded rationale, with a direct reference to the passage that supports it.",
   },
@@ -61,7 +62,8 @@ export default function WorkspaceGuide({
           <div className="eyebrow">WORKSPACE HANDBOOK</div>
           <h1>Work with a clearer picture.</h1>
           <p>
-            Your guide to BrightMart’s projects, people and connected knowledge.
+            Your guide to DigiPlus Services’s projects, people and connected
+            knowledge.
           </p>
         </div>
         <span className="guideHeadingIcon">
@@ -70,13 +72,14 @@ export default function WorkspaceGuide({
       </div>
       <section className="guidePanel companyOverview">
         <div>
-          <span className="sectionEyebrow">BRIGHTMART</span>
+          <span className="sectionEyebrow">DIGIPLUS</span>
           <h2>One workspace. Connected work.</h2>
           <p>
-            BrightMart helps local grocery stores sell online. Teams work
-            together on checkout, payments, deliveries, refunds, stock and
-            customer care. Company Brain connects their records so you can
-            understand what needs attention and why.
+            DigiPlus Services delivers software projects and managed IT support
+            to enterprise clients. Teams work together on portals, identity,
+            project delivery, claims, infrastructure and customer care. Company
+            Brain connects their records so you can understand what needs
+            attention and why.
           </p>
         </div>
         <div className="guideNumbers">

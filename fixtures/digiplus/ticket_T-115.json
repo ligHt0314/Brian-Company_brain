@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-115",
+    "kind": "ticket",
+    "title": "T-115 \u00b7 Support request not assigned (check 1)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-115 blocks Support Queue.\n\nT-115 has status done.\n\nArjun Iyer worked on T-115."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-115",
+      "predicate": "BLOCKS",
+      "object_id": "service:support",
+      "scalar": null,
+      "quote": "T-115 blocks Support Queue.",
+      "start": 136,
+      "end": 163,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-115",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "done",
+      "quote": "T-115 has status done.",
+      "start": 165,
+      "end": 187,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:arjun-iyer",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-115",
+      "scalar": null,
+      "quote": "Arjun Iyer worked on T-115.",
+      "start": 189,
+      "end": 216,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

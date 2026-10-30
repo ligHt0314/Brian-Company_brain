@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:search-weekly",
+    "kind": "chat",
+    "title": "Knowledge Search \u00b7 weekly handover",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Fictional exported team discussion. The people below contributed to this system; that alone does not make them its owner.\n\nNisha Reddy worked on Knowledge Search."
+  },
+  "claims": [
+    {
+      "subject_id": "person:nisha-reddy",
+      "predicate": "WORKED_ON",
+      "object_id": "service:search",
+      "scalar": null,
+      "quote": "Nisha Reddy worked on Knowledge Search.",
+      "start": 123,
+      "end": 162,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

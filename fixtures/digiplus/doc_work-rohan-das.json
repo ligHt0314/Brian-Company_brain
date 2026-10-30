@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-rohan-das",
+    "kind": "document",
+    "title": "Rohan Das \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Billing API is the service managing client invoicing.\n\nRohan Das worked on Billing API.\n\nRohan Das worked on Delivery Operations."
+  },
+  "claims": [
+    {
+      "subject_id": "person:rohan-das",
+      "predicate": "WORKED_ON",
+      "object_id": "service:billing",
+      "scalar": null,
+      "quote": "Rohan Das worked on Billing API.",
+      "start": 139,
+      "end": 171,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:rohan-das",
+      "predicate": "WORKED_ON",
+      "object_id": "project:delivery-operations",
+      "scalar": null,
+      "quote": "Rohan Das worked on Delivery Operations.",
+      "start": 173,
+      "end": 213,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

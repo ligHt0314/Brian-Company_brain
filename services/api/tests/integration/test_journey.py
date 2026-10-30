@@ -12,11 +12,11 @@ def text(answer):
 def test_canonical_paths_provenance_and_personas(world):
     repo, store, ingest, client = world
     login(client)
-    answer = ask(client, "What could block Easy Checkout, and which customer commitment is affected?")
+    answer = ask(client, "What could block Atlas Client Portal, and which customer commitment is affected?")
     assert answer["answer_state"] == "conflict"
     assert any(f["category"] == "blocker" and "ticket:T-101" in f["entity_ids"] for f in answer["findings"])
-    assert "Green Basket Stores" in text(answer)
-    assert "Payments" in text(answer) and "Integrations" in text(answer)
+    assert "Northstar Logistics" in text(answer)
+    assert "Platform Engineering" in text(answer) and "Integrations" in text(answer)
     edges = answer["graph"]["edges"]
     for predicate in ["USES", "DEPENDS_ON", "BLOCKS", "REQUIRES", "MADE_TO"]:
         assert any(e["predicate"] == predicate for e in edges)
@@ -28,11 +28,11 @@ def test_canonical_paths_provenance_and_personas(world):
         response = client.get("/api/v1/evidence/" + ev["id"])
         assert response.status_code == 200 and response.json()["quote"] == ev["quote"]
     login(client, "Viewer")
-    viewer = ask(client, "What could block Easy Checkout?")
+    viewer = ask(client, "What could block Atlas Client Portal?")
     assert viewer["answer_state"] == "insufficient_evidence"
     assert all(
         x not in json.dumps(viewer)
-        for x in ["T-101", "Green Basket Stores", "Payment Gateway", "CONFIDENTIAL_BRIGHTMART"]
+        for x in ["T-101", "Northstar Logistics", "Identity Gateway", "CONFIDENTIAL_DIGIPLUS"]
     )
     assert client.get("/api/v1/investigations/" + answer["run_id"]).status_code == 404
     assert client.get("/api/v1/evidence/" + next(iter(evs))).status_code == 404
@@ -48,7 +48,7 @@ def test_canonical_paths_provenance_and_personas(world):
 def test_revision_update_failed_update_idempotency_and_history(world):
     repo, store, ingest, client = world
     login(client, "Lead")
-    before = ask(client, "What could block Easy Checkout?")
+    before = ask(client, "What could block Atlas Client Portal?")
     old = repo.source("ticket:T-101")["active_revision_id"]
     response = client.post("/api/v1/demo/apply-revision", json={"fixture_id": "t101_invalid"})
     job = client.get("/api/v1/jobs/" + response.json()["job_ids"][0]).json()
@@ -56,7 +56,7 @@ def test_revision_update_failed_update_idempotency_and_history(world):
     response = client.post("/api/v1/demo/apply-revision", json={"fixture_id": "t101_done"})
     job = client.get("/api/v1/jobs/" + response.json()["job_ids"][0]).json()
     assert job["status"] == "complete", job
-    after = ask(client, "What could block Easy Checkout?", previous_run_id=before["run_id"])
+    after = ask(client, "What could block Atlas Client Portal?", previous_run_id=before["run_id"])
     assert not any(
         f["category"] == "blocker" and "ticket:T-101" in f["entity_ids"] for f in after["findings"]
     )
@@ -75,10 +75,10 @@ def test_revision_update_failed_update_idempotency_and_history(world):
 def test_review_confirmation_idempotency_and_revocation(world):
     repo, store, ingest, client = world
     login(client, "Engineer")
-    answer = ask(client, "Who owns Payment Gateway?")
+    answer = ask(client, "Who owns Identity Gateway?")
     data = dict(
         run_id=answer["run_id"],
-        entity_id="service:payments",
+        entity_id="service:identity",
         assignee_id="person:maya",
         reason="Confirm ownership",
     )
@@ -106,12 +106,12 @@ def test_review_confirmation_idempotency_and_revocation(world):
 def test_proposal_epoch_and_csrf(world):
     repo, store, ingest, client = world
     login(client, "Lead")
-    answer = ask(client, "Who owns Payment Gateway?")
+    answer = ask(client, "Who owns Identity Gateway?")
     draft = client.post(
         "/api/v1/reviews/proposals",
         json=dict(
             run_id=answer["run_id"],
-            entity_id="service:payments",
+            entity_id="service:identity",
             assignee_id="person:dev",
             reason="Review",
         ),
@@ -135,23 +135,23 @@ def test_proposal_epoch_and_csrf(world):
     "question,state,required",
     [
         ("What is the status of T-101?", "supported", "blocked"),
-        ("What service does Easy Checkout use?", "supported", "Checkout Service"),
+        ("What service does Atlas Client Portal use?", "supported", "Portal API"),
         ("When is C-101 due?", "supported", "2026-10-18"),
-        ("Which customer is C-101 for?", "supported", "Green Basket Stores"),
-        ("What could block Checkout Launch?", "conflict", "T-101"),
+        ("Which customer is C-101 for?", "supported", "Northstar Logistics"),
+        ("What could block Portal Launch?", "conflict", "T-101"),
         ("Which promise is affected by T-101?", "supported", "C-101"),
-        ("If Payment Gateway fails, what may be affected?", "supported", "may be affected"),
-        ("Does the done T-102 block Checkout Launch now?", "supported", "done"),
-        ("Who owns Payment Gateway?", "conflict", "Integrations"),
-        ("Who has worked on Payment Gateway?", "conflict", "Maya Rao"),
+        ("If Identity Gateway fails, what may be affected?", "supported", "may be affected"),
+        ("Does the done T-102 block Portal Launch now?", "supported", "done"),
+        ("Who owns Identity Gateway?", "conflict", "Integrations"),
+        ("Who has worked on Identity Gateway?", "conflict", "Maya Rao"),
         (
-            "Why rule out unconfirmed payments for Easy Checkout?",
+            "Why rule out unverified identities for Atlas Client Portal?",
             "supported",
-            "confirmed payment before an order is accepted",
+            "verified identity before client access is granted",
         ),
         ("What could block Launch?", "clarification", ""),
-        ("What is the contract amount for Green Basket Stores?", "insufficient_evidence", "No evidence"),
-        ("Who owns Customer Messages?", "supported", "No primary ownership"),
+        ("What is the contract amount for Northstar Logistics?", "insufficient_evidence", "No evidence"),
+        ("Who owns Notification Service?", "supported", "No primary ownership"),
     ],
 )
 def test_question_cases(world, question, state, required):
@@ -173,7 +173,7 @@ def test_structured_import_and_stale_revision(world):
         source_updated_at="2026-10-17T04:25:00Z",
         acl_groups=["engineering"],
         body="",
-        records={"entity_id": "ticket:T-101", "status": "done", "blocks": ["service:payments"]},
+        records={"entity_id": "ticket:T-101", "status": "done", "blocks": ["service:identity"]},
         expected_revision_id=old,
     )
     r = client.post(
@@ -207,7 +207,7 @@ def test_model_missing_and_injection_text_does_not_become_facts(world):
     job = client.get("/api/v1/jobs/" + r.json()["job_ids"][0]).json()
     assert job["status"] == "failed" and "LLM_API_KEY" in job["error"]
     assert repo.source("doc:new") is None
-    assert ask(client, "What could block Checkout Launch?")["execution_mode"] == "deterministic"
+    assert ask(client, "What could block Portal Launch?")["execution_mode"] == "deterministic"
 
 
 def test_pending_expired_claims_cycle_and_restart_storage(world, tmp_path):
@@ -216,27 +216,27 @@ def test_pending_expired_claims_cycle_and_restart_storage(world, tmp_path):
 
     repo, store, ingest, client = world
     login(client)
-    before = ask(client, "Who owns Payment Gateway?")
+    before = ask(client, "Who owns Identity Gateway?")
     # A dependency cycle terminates under the visited-ID and hop budgets.
-    record = json.loads((FIXTURES / "doc_checkout-architecture.json").read_text())
+    record = json.loads((FIXTURES / "doc_portal-architecture.json").read_text())
     env = SourceEnvelope.model_validate(record["envelope"])
     env.source_id = "doc:cycle"
-    env.body = "Payment Gateway depends on Checkout Service."
+    env.body = "Identity Gateway depends on Portal API."
     c = Candidate(
-        subject_id="service:payments",
+        subject_id="service:identity",
         predicate="DEPENDS_ON",
-        object_id="service:checkout",
+        object_id="service:portal",
         quote=env.body,
         start=0,
         end=len(env.body),
     )
     assert ingest.import_source(env, "operator", [c], True)["status"] == "complete"
-    assert ask(client, "What could block Checkout Launch?")["status"] == "complete"
+    assert ask(client, "What could block Portal Launch?")["status"] == "complete"
     # Pending and expired claims never enter ordinary retrieval.
     env.source_id = "doc:pending"
-    env.body = "Payment Gateway has primary owner Maya Rao."
+    env.body = "Identity Gateway has primary owner Maya Rao."
     c = Candidate(
-        subject_id="service:payments",
+        subject_id="service:identity",
         predicate="OWNED_BY",
         object_id="person:maya",
         quote=env.body,
@@ -249,7 +249,7 @@ def test_pending_expired_claims_cycle_and_restart_storage(world, tmp_path):
     c.valid_to_ms = 1
     env.source_id = "doc:expired"
     ingest.import_source(env, "operator", [c], True)
-    answer = ask(client, "Who owns Payment Gateway?")
+    answer = ask(client, "Who owns Identity Gateway?")
     assert all(e["source_id"] not in {"doc:pending", "doc:expired"} for e in answer["evidence"])
     reopened = Store(str(tmp_path / "operations.sqlite"))
     assert reopened.get(before["run_id"], "run", "demo_engineer")["answer"]["answer_state"] == "conflict"
@@ -267,7 +267,7 @@ def test_graph_outage_is_an_error_not_an_answer(world, monkeypatch):
     monkeypatch.setattr(repo, "claims", fail)
     sid = client.post("/api/v1/sessions", json={}).json()["id"]
     response = client.post(
-        "/api/v1/investigations", json={"session_id": sid, "question": "What could block Checkout Launch?"}
+        "/api/v1/investigations", json={"session_id": sid, "question": "What could block Portal Launch?"}
     )
     result = client.get("/api/v1/investigations/" + response.json()["run_id"]).json()
     assert result["status"] == "failed" and "answer" not in result
@@ -283,11 +283,11 @@ def test_followup_context_is_fresh_without_merging_unknown_entities(world):
         pending = client.post("/api/v1/investigations", json={"session_id": sid, "question": question}).json()
         return client.get("/api/v1/investigations/" + pending["run_id"]).json()
 
-    initial = send("What could block Easy Checkout?")
+    initial = send("What could block Atlas Client Portal?")
     assert any(f["category"] == "blocker" for f in initial["findings"])
     unknown = send("Who owns Mercury?")
     assert unknown["answer_state"] == "insufficient_evidence" and not unknown["evidence"]
     client.post("/api/v1/demo/apply-revision", json={"fixture_id": "t101_done"})
     followup = send("What could block it now?")
-    assert followup["entity_id"] == "project:easy-checkout"
+    assert followup["entity_id"] == "project:atlas-portal"
     assert not any(f["category"] == "blocker" for f in followup["findings"])

@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-aditya-rao",
+    "kind": "document",
+    "title": "Aditya Rao \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Partner API is the API used by delivery partners.\n\nAditya Rao worked on Partner API.\n\nAditya Rao worked on Infrastructure Alerts."
+  },
+  "claims": [
+    {
+      "subject_id": "person:aditya-rao",
+      "predicate": "WORKED_ON",
+      "object_id": "service:partner-api",
+      "scalar": null,
+      "quote": "Aditya Rao worked on Partner API.",
+      "start": 135,
+      "end": 168,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:aditya-rao",
+      "predicate": "WORKED_ON",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "Aditya Rao worked on Infrastructure Alerts.",
+      "start": 170,
+      "end": 213,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

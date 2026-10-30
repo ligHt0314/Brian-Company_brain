@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:claims-automation-brief",
+    "kind": "document",
+    "title": "Claims Automation \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Automate claims workflows for Meridian Insurance. This project is part of the fictional DigiPlus Services demonstration.\n\nAnanya Sen worked on Claims Automation."
+  },
+  "claims": [
+    {
+      "subject_id": "person:ananya-sen",
+      "predicate": "WORKED_ON",
+      "object_id": "project:claims-automation",
+      "scalar": null,
+      "quote": "Ananya Sen worked on Claims Automation.",
+      "start": 122,
+      "end": 161,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

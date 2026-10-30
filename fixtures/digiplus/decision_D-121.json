@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-121",
+    "kind": "decision",
+    "title": "D-121 \u00b7 Show the last milestone update time",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional recorded product decision. The quotation explains the reason; it is not a claim that this policy applies to every project.\n\nD-121 is about Delivery Operations: show the last milestone update time so clients know when delivery information may be stale."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-121",
+      "predicate": "ABOUT",
+      "object_id": "project:delivery-operations",
+      "scalar": null,
+      "quote": "D-121 is about Delivery Operations: show the last milestone update time so clients know when delivery information may be stale.",
+      "start": 136,
+      "end": 263,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

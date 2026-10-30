@@ -396,6 +396,161 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/meetings": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Meetings */
+        get: operations["meetings_api_v1_meetings_get"];
+        put?: never;
+        /** Create Meeting */
+        post: operations["create_meeting_api_v1_meetings_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/meetings/{id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Meeting Detail */
+        get: operations["meeting_detail_api_v1_meetings__id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        /** Update Meeting */
+        patch: operations["update_meeting_api_v1_meetings__id__patch"];
+        trace?: never;
+    };
+    "/api/v1/meetings/{id}/recap": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Recap */
+        post: operations["recap_api_v1_meetings__id__recap_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/meetings/{id}/confirm-recap": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Confirm Recap */
+        post: operations["confirm_recap_api_v1_meetings__id__confirm_recap_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/meetings/{id}/actions": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Create Action */
+        post: operations["create_action_api_v1_meetings__id__actions_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/actions": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Actions */
+        get: operations["actions_api_v1_actions_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/actions/{id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        /** Update Action */
+        patch: operations["update_action_api_v1_actions__id__patch"];
+        trace?: never;
+    };
+    "/api/v1/meetings/{id}/brief": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Catchup */
+        post: operations["catchup_api_v1_meetings__id__brief_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/meetings/{id}/notes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        /** Meeting Notes */
+        patch: operations["meeting_notes_api_v1_meetings__id__notes_patch"];
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -406,6 +561,88 @@ export interface components {
             expected_revision_id: string;
             /** Acl Groups */
             acl_groups: ("all_employees" | "engineering" | "leadership")[];
+        };
+        /** Action */
+        Action: {
+            /** Id */
+            id: string;
+            /** Title */
+            title: string;
+            /** Owner Id */
+            owner_id: string | null;
+            /** Due Date */
+            due_date: string | null;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "open" | "in_progress" | "blocked" | "done" | "cancelled";
+            /** Outcome */
+            outcome: string;
+            /** Version */
+            version: number;
+            /** Origin Meeting Id */
+            origin_meeting_id: string;
+            /** Meeting Ids */
+            meeting_ids: string[];
+            /** Quote */
+            quote: string;
+            /** Created At */
+            created_at: string;
+            /** Updated At */
+            updated_at: string;
+            /** History */
+            history: components["schemas"]["Event"][];
+            /** Acl Groups */
+            acl_groups: string[];
+        };
+        /** ActionCreate */
+        ActionCreate: {
+            /** Text */
+            text: string;
+            /** Quote */
+            quote: string;
+            /** Owner Id */
+            owner_id?: string | null;
+            /** Due Date */
+            due_date?: string | null;
+            /** Expected Version */
+            expected_version: number;
+        };
+        /** ActionDraft */
+        "ActionDraft-Input": {
+            /** Text */
+            text: string;
+            /** Quote */
+            quote: string;
+            /** Owner Id */
+            owner_id?: string | null;
+            /** Due Date */
+            due_date?: string | null;
+        };
+        /** ActionDraft */
+        "ActionDraft-Output": {
+            /** Text */
+            text: string;
+            /** Quote */
+            quote: string;
+            /** Owner Id */
+            owner_id: string | null;
+            /** Due Date */
+            due_date: string | null;
+        };
+        /** ActionPatch */
+        ActionPatch: {
+            /** Expected Version */
+            expected_version: number;
+            /** Owner Id */
+            owner_id?: string | null;
+            /** Due Date */
+            due_date?: string | null;
+            /** Status */
+            status?: ("open" | "in_progress" | "blocked" | "done" | "cancelled") | null;
+            /** Outcome */
+            outcome?: string | null;
         };
         /** AgentToolStep */
         AgentToolStep: {
@@ -496,6 +733,40 @@ export interface components {
              */
             metadata: string;
         };
+        /** Brief */
+        Brief: {
+            /** Meeting Id */
+            meeting_id: string;
+            /** Recipient Id */
+            recipient_id: string;
+            /**
+             * Mode
+             * @enum {string}
+             */
+            mode: "live_model" | "manual_context";
+            /** Warning */
+            warning: string | null;
+            /** Blocks */
+            blocks: components["schemas"]["BriefBlock"][];
+            /** References */
+            references: {
+                [key: string]: string;
+            };
+            /** Changes */
+            changes: components["schemas"]["Event"][];
+        };
+        /** BriefBlock */
+        BriefBlock: {
+            /** Text */
+            text: string;
+            /** Reference Ids */
+            reference_ids: string[];
+        };
+        /** BriefRequest */
+        BriefRequest: {
+            /** Recipient Id */
+            recipient_id: string;
+        };
         /** Change */
         Change: {
             /** Finding Id */
@@ -530,6 +801,13 @@ export interface components {
             /** Created At */
             created_at: string;
         };
+        /** DecisionDraft */
+        DecisionDraft: {
+            /** Text */
+            text: string;
+            /** Quote */
+            quote: string;
+        };
         /** Edge */
         Edge: {
             /** Id */
@@ -559,6 +837,17 @@ export interface components {
             label: string;
             /** Aliases */
             aliases: string[];
+        };
+        /** Event */
+        Event: {
+            /** At */
+            at: string;
+            /** Actor */
+            actor: string;
+            /** Event */
+            event: string;
+            /** Detail */
+            detail: string;
         };
         /** Evidence */
         Evidence: {
@@ -703,6 +992,17 @@ export interface components {
          * @enum {string}
          */
         Kind: "Person" | "Team" | "Project" | "Service" | "Customer" | "Ticket" | "Decision" | "Commitment";
+        /** KnowledgeLink */
+        KnowledgeLink: {
+            /** Source Id */
+            source_id: string;
+            /** Title */
+            title: string;
+            /** Evidence Id */
+            evidence_id: string | null;
+            /** Quote */
+            quote: string;
+        };
         /** Me */
         Me: {
             /** Id */
@@ -718,6 +1018,120 @@ export interface components {
              * @default true
              */
             demo: boolean;
+        };
+        /** Meeting */
+        Meeting: {
+            /** Id */
+            id: string;
+            /** Title */
+            title: string;
+            /**
+             * Kind
+             * @enum {string}
+             */
+            kind: "meeting" | "handover";
+            /** Agenda */
+            agenda: string;
+            /** Notes */
+            notes: string;
+            /** Scheduled At */
+            scheduled_at: string;
+            /** Participant Ids */
+            participant_ids: string[];
+            /** Absent Ids */
+            absent_ids: string[];
+            /** Project Id */
+            project_id: string;
+            /** Acl Groups */
+            acl_groups: string[];
+            /** Previous Meeting Id */
+            previous_meeting_id: string | null;
+            /** Action Ids */
+            action_ids: string[];
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "planned" | "in_progress" | "completed" | "archived";
+            /** Summary */
+            summary: string;
+            /** Decisions */
+            decisions: components["schemas"]["DecisionDraft"][];
+            /** Knowledge Links */
+            knowledge_links: components["schemas"]["KnowledgeLink"][];
+            /** Version */
+            version: number;
+            /** Created At */
+            created_at: string;
+            /** Updated At */
+            updated_at: string;
+            /** History */
+            history: components["schemas"]["Event"][];
+            /**
+             * Recap Confirmed
+             * @default false
+             */
+            recap_confirmed: boolean;
+        };
+        /** MeetingCreate */
+        MeetingCreate: {
+            /** Title */
+            title: string;
+            /**
+             * Kind
+             * @default meeting
+             * @enum {string}
+             */
+            kind: "meeting" | "handover";
+            /**
+             * Agenda
+             * @default
+             */
+            agenda: string;
+            /**
+             * Notes
+             * @default
+             */
+            notes: string;
+            /** Scheduled At */
+            scheduled_at: string;
+            /** Participant Ids */
+            participant_ids: string[];
+            /** Absent Ids */
+            absent_ids?: string[];
+            /** Project Id */
+            project_id: string;
+            /** Acl Groups */
+            acl_groups: ("engineering" | "leadership" | "all_employees")[];
+            /** Previous Meeting Id */
+            previous_meeting_id?: string | null;
+            /** Carry Action Ids */
+            carry_action_ids?: string[];
+        };
+        /** MeetingDetail */
+        MeetingDetail: {
+            meeting: components["schemas"]["Meeting"];
+            /** Actions */
+            actions: components["schemas"]["Action"][];
+        };
+        /** MeetingNotes */
+        MeetingNotes: {
+            /** Expected Version */
+            expected_version: number;
+            /** Notes */
+            notes: string;
+            /** Agenda */
+            agenda?: string | null;
+        };
+        /** MeetingPatch */
+        MeetingPatch: {
+            /** Expected Version */
+            expected_version: number;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "planned" | "in_progress" | "completed" | "archived";
         };
         /** Metrics */
         Metrics: {
@@ -784,6 +1198,52 @@ export interface components {
             assignee_id: string;
             /** Reason */
             reason: string;
+        };
+        /** Recap */
+        "Recap-Input": {
+            /** Summary */
+            summary: string;
+            /** Decisions */
+            decisions?: components["schemas"]["DecisionDraft"][];
+            /** Actions */
+            actions?: components["schemas"]["ActionDraft-Input"][];
+            /** Knowledge Source Ids */
+            knowledge_source_ids?: string[];
+        };
+        /** Recap */
+        "Recap-Output": {
+            /** Summary */
+            summary: string;
+            /** Decisions */
+            decisions: components["schemas"]["DecisionDraft"][];
+            /** Actions */
+            actions: components["schemas"]["ActionDraft-Output"][];
+            /** Knowledge Source Ids */
+            knowledge_source_ids: string[];
+        };
+        /** RecapConfirm */
+        RecapConfirm: {
+            /** Expected Version */
+            expected_version: number;
+            /** Draft Id */
+            draft_id?: string | null;
+            recap: components["schemas"]["Recap-Input"];
+        };
+        /** RecapDraft */
+        RecapDraft: {
+            /** Id */
+            id: string;
+            /** Meeting Id */
+            meeting_id: string;
+            /** Expected Version */
+            expected_version: number;
+            recap: components["schemas"]["Recap-Output"];
+            /**
+             * Mode
+             * @default live_model
+             * @constant
+             */
+            mode: "live_model";
         };
         /** ReviewDTO */
         ReviewDTO: {
@@ -1617,6 +2077,351 @@ export interface operations {
                 };
                 content: {
                     "application/json": unknown;
+                };
+            };
+        };
+    };
+    meetings_api_v1_meetings_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Meeting"][];
+                };
+            };
+        };
+    };
+    create_meeting_api_v1_meetings_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["MeetingCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Meeting"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    meeting_detail_api_v1_meetings__id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MeetingDetail"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    update_meeting_api_v1_meetings__id__patch: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["MeetingPatch"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Meeting"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    recap_api_v1_meetings__id__recap_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["RecapDraft"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    confirm_recap_api_v1_meetings__id__confirm_recap_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["RecapConfirm"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MeetingDetail"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    create_action_api_v1_meetings__id__actions_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ActionCreate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Action"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    actions_api_v1_actions_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Action"][];
+                };
+            };
+        };
+    };
+    update_action_api_v1_actions__id__patch: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ActionPatch"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Action"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    catchup_api_v1_meetings__id__brief_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["BriefRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Brief"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    meeting_notes_api_v1_meetings__id__notes_patch: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                id: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["MeetingNotes"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Meeting"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
                 };
             };
         };

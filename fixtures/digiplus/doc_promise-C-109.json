@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-109",
+    "kind": "document",
+    "title": "Aster Education \u00b7 Client Success promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-109 requires Client Success.\n\nC-109 is made to Aster Education.\n\nC-109 is due on 2026-10-25."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-109",
+      "predicate": "REQUIRES",
+      "object_id": "project:client-success",
+      "scalar": null,
+      "quote": "C-109 requires Client Success.",
+      "start": 165,
+      "end": 195,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-109",
+      "predicate": "MADE_TO",
+      "object_id": "customer:happy",
+      "scalar": null,
+      "quote": "C-109 is made to Aster Education.",
+      "start": 197,
+      "end": 230,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-109",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-25",
+      "quote": "C-109 is due on 2026-10-25.",
+      "start": 232,
+      "end": 259,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:claims-automation-plan",
+    "kind": "document",
+    "title": "Claims Automation \u00b7 delivery plan",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Business purpose: Automate claims workflows for Meridian Insurance. The facts below show which systems the project needs.\n\nClaims Automation uses Claims API.\n\nClaims API depends on Identity Gateway."
+  },
+  "claims": [
+    {
+      "subject_id": "project:claims-automation",
+      "predicate": "USES",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "Claims Automation uses Claims API.",
+      "start": 123,
+      "end": 157,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:claims",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Claims API depends on Identity Gateway.",
+      "start": 159,
+      "end": 198,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

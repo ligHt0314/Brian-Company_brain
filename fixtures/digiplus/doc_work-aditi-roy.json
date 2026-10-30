@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-aditi-roy",
+    "kind": "document",
+    "title": "Aditi Roy \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Support Queue is the queue for client support requests.\n\nAditi Roy worked on Support Queue.\n\nAditi Roy worked on Managed Cloud Migration."
+  },
+  "claims": [
+    {
+      "subject_id": "person:aditi-roy",
+      "predicate": "WORKED_ON",
+      "object_id": "service:support",
+      "scalar": null,
+      "quote": "Aditi Roy worked on Support Queue.",
+      "start": 141,
+      "end": 175,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:aditi-roy",
+      "predicate": "WORKED_ON",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "Aditi Roy worked on Managed Cloud Migration.",
+      "start": 177,
+      "end": 221,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

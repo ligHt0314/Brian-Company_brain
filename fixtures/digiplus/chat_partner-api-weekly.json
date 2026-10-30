@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:partner-api-weekly",
+    "kind": "chat",
+    "title": "Partner API \u00b7 weekly handover",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Fictional exported team discussion. The people below contributed to this system; that alone does not make them its owner.\n\nKiran Menon worked on Partner API."
+  },
+  "claims": [
+    {
+      "subject_id": "person:kiran-menon",
+      "predicate": "WORKED_ON",
+      "object_id": "service:partner-api",
+      "scalar": null,
+      "quote": "Kiran Menon worked on Partner API.",
+      "start": 123,
+      "end": 157,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

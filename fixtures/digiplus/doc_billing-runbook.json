@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:billing-runbook",
+    "kind": "document",
+    "title": "Billing API \u00b7 working guide",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Billing API means the service managing client invoicing. An owner is the team responsible for keeping this system working.\n\nBilling API has primary owner Application Engineering.\n\nBilling API depends on Identity Gateway."
+  },
+  "claims": [
+    {
+      "subject_id": "service:billing",
+      "predicate": "OWNED_BY",
+      "object_id": "team:applications",
+      "scalar": null,
+      "quote": "Billing API has primary owner Application Engineering.",
+      "start": 124,
+      "end": 178,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:billing",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Billing API depends on Identity Gateway.",
+      "start": 180,
+      "end": 220,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

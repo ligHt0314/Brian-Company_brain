@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-eli",
+    "kind": "document",
+    "title": "Eli Morgan \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Success Hub is the hub tracking client success follow-ups.\n\nEli Morgan worked on Success Hub.\n\nEli Morgan worked on Partner Workspace."
+  },
+  "claims": [
+    {
+      "subject_id": "person:eli",
+      "predicate": "WORKED_ON",
+      "object_id": "service:success",
+      "scalar": null,
+      "quote": "Eli Morgan worked on Success Hub.",
+      "start": 144,
+      "end": 177,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:eli",
+      "predicate": "WORKED_ON",
+      "object_id": "project:partner-workspace",
+      "scalar": null,
+      "quote": "Eli Morgan worked on Partner Workspace.",
+      "start": 179,
+      "end": 218,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

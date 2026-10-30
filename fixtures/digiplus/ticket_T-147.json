@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-147",
+    "kind": "ticket",
+    "title": "T-147 \u00b7 Capacity reading differs from monitoring baseline (check 4)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-147 blocks Resource Monitor.\n\nT-147 has status in_progress.\n\nNina Park worked on T-147."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-147",
+      "predicate": "BLOCKS",
+      "object_id": "service:monitor",
+      "scalar": null,
+      "quote": "T-147 blocks Resource Monitor.",
+      "start": 136,
+      "end": 166,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-147",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "in_progress",
+      "quote": "T-147 has status in_progress.",
+      "start": 168,
+      "end": 197,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:nina",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-147",
+      "scalar": null,
+      "quote": "Nina Park worked on T-147.",
+      "start": 199,
+      "end": 225,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

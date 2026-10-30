@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-101",
+    "kind": "decision",
+    "title": "D-101 \u00b7 Verify identity before granting client access",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "D-101 is about Atlas Client Portal: unverified identities are ruled out because Northstar Logistics requires verified identity before client access is granted. This prevents client users seeing an access confirmation when the identity provider has not verified the account."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-101",
+      "predicate": "ABOUT",
+      "object_id": "project:atlas-portal",
+      "scalar": null,
+      "quote": "D-101 is about Atlas Client Portal: unverified identities are ruled out because Northstar Logistics requires verified identity before client access is granted. This prevents client users seeing an access confirmation when the identity provider has not verified the account.",
+      "start": 0,
+      "end": 273,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

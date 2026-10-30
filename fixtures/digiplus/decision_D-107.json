@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-107",
+    "kind": "decision",
+    "title": "D-107 \u00b7 Check capacity before assigning consultants",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional recorded product decision. The quotation explains the reason; it is not a claim that this policy applies to every project.\n\nD-107 is about Infrastructure Alerts: check capacity before assigning consultants so delivery teams avoid over-allocation."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-107",
+      "predicate": "ABOUT",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "D-107 is about Infrastructure Alerts: check capacity before assigning consultants so delivery teams avoid over-allocation.",
+      "start": 136,
+      "end": 258,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

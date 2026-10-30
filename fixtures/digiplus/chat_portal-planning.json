@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:portal-planning",
+    "kind": "chat",
+    "title": "Portal Launch \u00b7 release planning",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Planning discussion: investigate dependencies and the customer promise before release review.\n\nLeah Chen worked on Atlas Client Portal.\n\nMaya Rao worked on Atlas Client Portal.\n\nDev Shah worked on Portal API."
+  },
+  "claims": [
+    {
+      "subject_id": "person:leah",
+      "predicate": "WORKED_ON",
+      "object_id": "project:atlas-portal",
+      "scalar": null,
+      "quote": "Leah Chen worked on Atlas Client Portal.",
+      "start": 95,
+      "end": 135,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:maya",
+      "predicate": "WORKED_ON",
+      "object_id": "project:atlas-portal",
+      "scalar": null,
+      "quote": "Maya Rao worked on Atlas Client Portal.",
+      "start": 137,
+      "end": 176,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:dev",
+      "predicate": "WORKED_ON",
+      "object_id": "service:portal",
+      "scalar": null,
+      "quote": "Dev Shah worked on Portal API.",
+      "start": 178,
+      "end": 208,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

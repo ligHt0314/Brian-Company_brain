@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:managed-cloud-migration-plan",
+    "kind": "document",
+    "title": "Managed Cloud Migration \u00b7 delivery plan",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Business purpose: Migrate Oakridge Media to managed cloud operations. The facts below show which systems the project needs.\n\nManaged Cloud Migration uses Billing API.\n\nBilling API depends on Identity Gateway."
+  },
+  "claims": [
+    {
+      "subject_id": "project:managed-cloud-migration",
+      "predicate": "USES",
+      "object_id": "service:billing",
+      "scalar": null,
+      "quote": "Managed Cloud Migration uses Billing API.",
+      "start": 125,
+      "end": 166,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:billing",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Billing API depends on Identity Gateway.",
+      "start": 168,
+      "end": 208,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

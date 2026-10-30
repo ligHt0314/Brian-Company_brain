@@ -29,6 +29,8 @@ async function proxy(
         upstream.headers.get("content-type") || "application/json",
       "Cache-Control": "no-store",
     });
+    const correlation = upstream.headers.get("x-request-id");
+    if (correlation) out.set("X-Request-ID", correlation);
     for (const cookie of upstream.headers.getSetCookie())
       out.append("Set-Cookie", cookie);
     return new Response(upstream.body, {
@@ -36,16 +38,18 @@ async function proxy(
       headers: out,
     });
   } catch {
+    const correlation = crypto.randomUUID();
     return Response.json(
       {
         error: {
+          request_id: correlation,
           code: "dependency_unavailable",
           message:
             "The API is unavailable. Check the local services and retry.",
           retryable: true,
         },
       },
-      { status: 503 },
+      { status: 503, headers: { "X-Request-ID": correlation } },
     );
   }
 }

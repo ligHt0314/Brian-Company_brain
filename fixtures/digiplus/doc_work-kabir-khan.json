@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-kabir-khan",
+    "kind": "document",
+    "title": "Kabir Khan \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Staffing Scheduler is the scheduler allocating consultants.\n\nKabir Khan worked on Staffing Scheduler.\n\nKabir Khan worked on Infrastructure Alerts."
+  },
+  "claims": [
+    {
+      "subject_id": "person:kabir-khan",
+      "predicate": "WORKED_ON",
+      "object_id": "service:staffing",
+      "scalar": null,
+      "quote": "Kabir Khan worked on Staffing Scheduler.",
+      "start": 145,
+      "end": 185,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:kabir-khan",
+      "predicate": "WORKED_ON",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "Kabir Khan worked on Infrastructure Alerts.",
+      "start": 187,
+      "end": 230,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

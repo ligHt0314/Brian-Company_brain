@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-105",
+    "kind": "document",
+    "title": "Summit Banking \u00b7 Delivery Operations promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-105 requires Delivery Operations.\n\nC-105 is made to Summit Banking.\n\nC-105 is due on 2026-10-21."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-105",
+      "predicate": "REQUIRES",
+      "object_id": "project:delivery-operations",
+      "scalar": null,
+      "quote": "C-105 requires Delivery Operations.",
+      "start": 165,
+      "end": 200,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-105",
+      "predicate": "MADE_TO",
+      "object_id": "customer:sunrise",
+      "scalar": null,
+      "quote": "C-105 is made to Summit Banking.",
+      "start": 202,
+      "end": 234,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-105",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-21",
+      "quote": "C-105 is due on 2026-10-21.",
+      "start": 236,
+      "end": 263,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

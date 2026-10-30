@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:delivery-console-runbook",
+    "kind": "document",
+    "title": "Delivery Console \u00b7 working guide",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Delivery Console means the console tracking client delivery milestones. An owner is the team responsible for keeping this system working.\n\nDelivery Console has primary owner Application Engineering.\n\nDelivery Console depends on Workflow Engine."
+  },
+  "claims": [
+    {
+      "subject_id": "service:delivery-console",
+      "predicate": "OWNED_BY",
+      "object_id": "team:applications",
+      "scalar": null,
+      "quote": "Delivery Console has primary owner Application Engineering.",
+      "start": 139,
+      "end": 198,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:delivery-console",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:workflow-engine",
+      "scalar": null,
+      "quote": "Delivery Console depends on Workflow Engine.",
+      "start": 200,
+      "end": 244,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

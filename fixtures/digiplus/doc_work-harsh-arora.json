@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-harsh-arora",
+    "kind": "document",
+    "title": "Harsh Arora \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Claims API is the API processing insurance claims.\n\nHarsh Arora worked on Claims API.\n\nHarsh Arora worked on Service Desk Modernization."
+  },
+  "claims": [
+    {
+      "subject_id": "person:harsh-arora",
+      "predicate": "WORKED_ON",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "Harsh Arora worked on Claims API.",
+      "start": 136,
+      "end": 169,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:harsh-arora",
+      "predicate": "WORKED_ON",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "Harsh Arora worked on Service Desk Modernization.",
+      "start": 171,
+      "end": 220,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

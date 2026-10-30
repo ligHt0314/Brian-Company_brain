@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-raj-malhotra",
+    "kind": "document",
+    "title": "Raj Malhotra \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Claims API is the API processing insurance claims.\n\nRaj Malhotra worked on Claims API.\n\nRaj Malhotra worked on Infrastructure Alerts."
+  },
+  "claims": [
+    {
+      "subject_id": "person:raj-malhotra",
+      "predicate": "WORKED_ON",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "Raj Malhotra worked on Claims API.",
+      "start": 136,
+      "end": 170,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:raj-malhotra",
+      "predicate": "WORKED_ON",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "Raj Malhotra worked on Infrastructure Alerts.",
+      "start": 172,
+      "end": 217,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

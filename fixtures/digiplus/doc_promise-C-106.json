@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-106",
+    "kind": "document",
+    "title": "Meridian Insurance \u00b7 Claims Automation promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-106 requires Claims Automation.\n\nC-106 is made to Meridian Insurance.\n\nC-106 is due on 2026-10-22."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-106",
+      "predicate": "REQUIRES",
+      "object_id": "project:claims-automation",
+      "scalar": null,
+      "quote": "C-106 requires Claims Automation.",
+      "start": 165,
+      "end": 198,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-106",
+      "predicate": "MADE_TO",
+      "object_id": "customer:family",
+      "scalar": null,
+      "quote": "C-106 is made to Meridian Insurance.",
+      "start": 200,
+      "end": 236,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-106",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-22",
+      "quote": "C-106 is due on 2026-10-22.",
+      "start": 238,
+      "end": 265,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

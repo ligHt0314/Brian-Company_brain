@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:partner-api-runbook",
+    "kind": "document",
+    "title": "Partner API \u00b7 working guide",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Partner API means the API used by delivery partners. An owner is the team responsible for keeping this system working.\n\nPartner API has primary owner Data Systems.\n\nPartner API depends on Configuration Registry."
+  },
+  "claims": [
+    {
+      "subject_id": "service:partner-api",
+      "predicate": "OWNED_BY",
+      "object_id": "team:data",
+      "scalar": null,
+      "quote": "Partner API has primary owner Data Systems.",
+      "start": 120,
+      "end": 163,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:partner-api",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:configuration",
+      "scalar": null,
+      "quote": "Partner API depends on Configuration Registry.",
+      "start": 165,
+      "end": 211,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

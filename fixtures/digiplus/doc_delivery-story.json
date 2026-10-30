@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:delivery-story",
+    "kind": "document",
+    "title": "Delivery Operations \u00b7 how the delivery chain works",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A delivery manager reviews a client milestone. Delivery Operations uses the Delivery Console and its Workflow Engine approval chain. Follow the evidence to see which releases a missing approval could affect.\n\nDelivery Operations uses Delivery Console.\n\nDelivery Console depends on Workflow Engine."
+  },
+  "claims": [
+    {
+      "subject_id": "project:delivery-operations",
+      "predicate": "USES",
+      "object_id": "service:delivery-console",
+      "scalar": null,
+      "quote": "Delivery Operations uses Delivery Console.",
+      "start": 209,
+      "end": 251,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:delivery-console",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:workflow-engine",
+      "scalar": null,
+      "quote": "Delivery Console depends on Workflow Engine.",
+      "start": 253,
+      "end": 297,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

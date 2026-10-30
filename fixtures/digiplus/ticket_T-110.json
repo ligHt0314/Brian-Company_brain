@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-110",
+    "kind": "ticket",
+    "title": "T-110 \u00b7 Claim reference missing from partner response (check 1)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-110 blocks Claims API.\n\nT-110 has status open.\n\nIsha Patel worked on T-110."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-110",
+      "predicate": "BLOCKS",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "T-110 blocks Claims API.",
+      "start": 136,
+      "end": 160,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-110",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "open",
+      "quote": "T-110 has status open.",
+      "start": 162,
+      "end": 184,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:isha-patel",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-110",
+      "scalar": null,
+      "quote": "Isha Patel worked on T-110.",
+      "start": 186,
+      "end": 213,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

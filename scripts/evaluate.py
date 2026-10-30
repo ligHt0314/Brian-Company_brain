@@ -163,7 +163,7 @@ with tempfile.TemporaryDirectory() as tmp:
         Ingestion(sample_repo, sample_store).seed()
         for index in range(30):
             answer = Investigator(sample_repo).run(
-                "benchmark_" + str(index), "What could block Easy Checkout?", ["all_employees", "engineering"]
+                "benchmark_" + str(index), "What could block Atlas Client Portal?", ["all_employees", "engineering"]
             )
             warm.append(answer.metrics.duration_ms)
     finally:

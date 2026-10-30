@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-153",
+    "kind": "ticket",
+    "title": "T-153 \u00b7 Approval workflow references a missing reviewer (check 4)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-153 blocks Workflow Engine.\n\nT-153 has status done.\n\nKabir Khan worked on T-153."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-153",
+      "predicate": "BLOCKS",
+      "object_id": "service:workflow-engine",
+      "scalar": null,
+      "quote": "T-153 blocks Workflow Engine.",
+      "start": 136,
+      "end": 165,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-153",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "done",
+      "quote": "T-153 has status done.",
+      "start": 167,
+      "end": 189,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:kabir-khan",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-153",
+      "scalar": null,
+      "quote": "Kabir Khan worked on T-153.",
+      "start": 191,
+      "end": 218,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

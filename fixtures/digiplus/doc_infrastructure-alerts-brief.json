@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:infrastructure-alerts-brief",
+    "kind": "document",
+    "title": "Infrastructure Alerts \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Monitor production capacity for Harbor Telecom. This project is part of the fictional DigiPlus Services demonstration.\n\nKabir Khan worked on Infrastructure Alerts."
+  },
+  "claims": [
+    {
+      "subject_id": "person:kabir-khan",
+      "predicate": "WORKED_ON",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "Kabir Khan worked on Infrastructure Alerts.",
+      "start": 120,
+      "end": 163,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

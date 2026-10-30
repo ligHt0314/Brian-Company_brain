@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-110",
+    "kind": "decision",
+    "title": "D-110 \u00b7 Keep configuration change history",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional recorded product decision. The quotation explains the reason; it is not a claim that this policy applies to every project.\n\nD-110 is about Partner Workspace: keep configuration change history so the incoming engineer can explain the deployed state."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-110",
+      "predicate": "ABOUT",
+      "object_id": "project:partner-workspace",
+      "scalar": null,
+      "quote": "D-110 is about Partner Workspace: keep configuration change history so the incoming engineer can explain the deployed state.",
+      "start": 136,
+      "end": 260,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

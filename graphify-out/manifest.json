@@ -1,0 +1,1730 @@
+{
+  "apps/web/app/[[...route]]/page.tsx": {
+    "mtime": 1793340223.0332506,
+    "seen": 1793346289.095125,
+    "ast_hash": "6d1f6013960d8657a7190d443745a895",
+    "semantic_hash": "6d1f6013960d8657a7190d443745a895"
+  },
+  "apps/web/app/api/[...path]/route.ts": {
+    "mtime": 1793342256.2584682,
+    "seen": 1793346289.095126,
+    "ast_hash": "ceab6c147777ea93ade11c9acc2b6da7",
+    "semantic_hash": "ceab6c147777ea93ade11c9acc2b6da7"
+  },
+  "apps/web/app/layout.tsx": {
+    "mtime": 1793345933.8743165,
+    "seen": 1793346289.095127,
+    "ast_hash": "cafc974ccb7d1cdcb383a586e89bc25d",
+    "semantic_hash": "cafc974ccb7d1cdcb383a586e89bc25d"
+  },
+  "apps/web/components/AnswerGraph.tsx": {
+    "mtime": 1793340852.679606,
+    "seen": 1793346289.095127,
+    "ast_hash": "6bd89ec38411c681fe08890df6626a6a",
+    "semantic_hash": "6bd89ec38411c681fe08890df6626a6a"
+  },
+  "apps/web/components/TicketStatusEditor.tsx": {
+    "mtime": 1793340852.6783936,
+    "seen": 1793346289.095128,
+    "ast_hash": "f267b1f8251b563db057daa293c4ca88",
+    "semantic_hash": "f267b1f8251b563db057daa293c4ca88"
+  },
+  "apps/web/components/Workspace.tsx": {
+    "mtime": 1793345934.7510083,
+    "seen": 1793346289.095128,
+    "ast_hash": "7e800d8a061014b5849f70087bf96483",
+    "semantic_hash": "7e800d8a061014b5849f70087bf96483"
+  },
+  "apps/web/components/WorkspaceGuide.tsx": {
+    "mtime": 1793341125.1933565,
+    "seen": 1793346289.095129,
+    "ast_hash": "e905a6490eed6fcf0fd5b16fd5e6bfd9",
+    "semantic_hash": "e905a6490eed6fcf0fd5b16fd5e6bfd9"
+  },
+  "apps/web/lib/api/client.ts": {
+    "mtime": 1793340388.956388,
+    "seen": 1793346289.095129,
+    "ast_hash": "58903b484a5f296f43b51d04092c0f4d",
+    "semantic_hash": "58903b484a5f296f43b51d04092c0f4d"
+  },
+  "apps/web/lib/api/openapi.json": {
+    "mtime": 1793342256.7040648,
+    "seen": 1793346289.095129,
+    "ast_hash": "c0609a4f4ca2b6c1ac6ca5eb764caaad",
+    "semantic_hash": "c0609a4f4ca2b6c1ac6ca5eb764caaad"
+  },
+  "apps/web/lib/api/schema.ts": {
+    "mtime": 1793342257.391954,
+    "seen": 1793346289.095129,
+    "ast_hash": "684416f4a0f0e7c274dd0404494969a5",
+    "semantic_hash": "684416f4a0f0e7c274dd0404494969a5"
+  },
+  "apps/web/lib/workspace-catalog.json": {
+    "mtime": 1793342119.7543626,
+    "seen": 1793346289.095129,
+    "ast_hash": "0dde8db2796e462907f7137132c7ca19",
+    "semantic_hash": "0dde8db2796e462907f7137132c7ca19"
+  },
+  "apps/web/next-env.d.ts": {
+    "mtime": 1792083256.351374,
+    "seen": 1793346289.0951302,
+    "ast_hash": "8195d2c60ce847a459ae9d308d6a5724",
+    "semantic_hash": "8195d2c60ce847a459ae9d308d6a5724"
+  },
+  "apps/web/next.config.ts": {
+    "mtime": 1792084051.0887783,
+    "seen": 1793346289.0951302,
+    "ast_hash": "d44584b988e79933882857e4378e8619",
+    "semantic_hash": "d44584b988e79933882857e4378e8619"
+  },
+  "apps/web/package.json": {
+    "mtime": 1792084050.4371464,
+    "seen": 1793346289.0951302,
+    "ast_hash": "9bc5dab69d00cf0a5ebce2c20442c302",
+    "semantic_hash": "9bc5dab69d00cf0a5ebce2c20442c302"
+  },
+  "apps/web/playwright.config.ts": {
+    "mtime": 1792088243.2596827,
+    "seen": 1793346289.095131,
+    "ast_hash": "ab0b7fbb0ddf96aef0b37f0fcb6434b6",
+    "semantic_hash": "ab0b7fbb0ddf96aef0b37f0fcb6434b6"
+  },
+  "apps/web/tsconfig.json": {
+    "mtime": 1792083158.9879825,
+    "seen": 1793346289.095131,
+    "ast_hash": "f98979b794efc346b2cfa3208858f257",
+    "semantic_hash": "f98979b794efc346b2cfa3208858f257"
+  },
+  "pyproject.toml": {
+    "mtime": 1792082281.8461654,
+    "seen": 1793346289.0951831,
+    "ast_hash": "e6325ec7e6a1519cbace351a9b005f1b",
+    "semantic_hash": "e6325ec7e6a1519cbace351a9b005f1b"
+  },
+  "scripts/build_fixtures.py": {
+    "mtime": 1793342119.6899824,
+    "seen": 1793346289.0951838,
+    "ast_hash": "565479e1d2393aed42f0d92b6ad480f5",
+    "semantic_hash": "565479e1d2393aed42f0d92b6ad480f5"
+  },
+  "scripts/check_contract.py": {
+    "mtime": 1793340852.6753924,
+    "seen": 1793346289.0951838,
+    "ast_hash": "87e98e26a481d1d9212b205f7169da1d",
+    "semantic_hash": "87e98e26a481d1d9212b205f7169da1d"
+  },
+  "scripts/evaluate.py": {
+    "mtime": 1793340852.6772227,
+    "seen": 1793346289.0951848,
+    "ast_hash": "488b4884394f4848171b1ae725ec749b",
+    "semantic_hash": "488b4884394f4848171b1ae725ec749b"
+  },
+  "scripts/export_openapi.py": {
+    "mtime": 1793340852.6774464,
+    "seen": 1793346289.0951848,
+    "ast_hash": "d36c7f8d258f57cd7d71a1f767510c64",
+    "semantic_hash": "d36c7f8d258f57cd7d71a1f767510c64"
+  },
+  "scripts/init_env.py": {
+    "mtime": 1793340852.675865,
+    "seen": 1793346289.0951848,
+    "ast_hash": "1c6ddc1fc4ee9b69d9f8e5b885648ddd",
+    "semantic_hash": "1c6ddc1fc4ee9b69d9f8e5b885648ddd"
+  },
+  "scripts/package_source.py": {
+    "mtime": 1793340852.6761923,
+    "seen": 1793346289.0951848,
+    "ast_hash": "90bee91300fc14c1cc5a22db5170f0f5",
+    "semantic_hash": "90bee91300fc14c1cc5a22db5170f0f5"
+  },
+  "scripts/record_demo.mjs": {
+    "mtime": 1792241877.741966,
+    "seen": 1793346289.095186,
+    "ast_hash": "63c8ee4a5fc47100f960cb6a6a6221a7",
+    "semantic_hash": "63c8ee4a5fc47100f960cb6a6a6221a7"
+  },
+  "scripts/replace_demo_dataset.py": {
+    "mtime": 1793342257.6736944,
+    "seen": 1793346289.095186,
+    "ast_hash": "f69f9160856d3218c7649520f4e4045b",
+    "semantic_hash": "f69f9160856d3218c7649520f4e4045b"
+  },
+  "scripts/reset.py": {
+    "mtime": 1793340852.6759782,
+    "seen": 1793346289.095186,
+    "ast_hash": "e9174b781bcdf0a211c89abed83127a5",
+    "semantic_hash": "e9174b781bcdf0a211c89abed83127a5"
+  },
+  "scripts/seed.py": {
+    "mtime": 1793340852.676593,
+    "seen": 1793346289.095186,
+    "ast_hash": "7bbb77a1907419d94f046152a7e6348a",
+    "semantic_hash": "7bbb77a1907419d94f046152a7e6348a"
+  },
+  "scripts/smoke.py": {
+    "mtime": 1793340852.6778731,
+    "seen": 1793346289.095187,
+    "ast_hash": "9d5c7a5b2eaf3268d1e5b44fe9306380",
+    "semantic_hash": "9d5c7a5b2eaf3268d1e5b44fe9306380"
+  },
+  "scripts/start-api.sh": {
+    "mtime": 1792083594.3744824,
+    "seen": 1793346289.095187,
+    "ast_hash": "634598455d6405d92c06a3e9c8dc3da0",
+    "semantic_hash": "634598455d6405d92c06a3e9c8dc3da0"
+  },
+  "scripts/verify_live_model.py": {
+    "mtime": 1793340852.6769886,
+    "seen": 1793346289.095187,
+    "ast_hash": "487d2eb3bd972571bac81ac9f49cc392",
+    "semantic_hash": "487d2eb3bd972571bac81ac9f49cc392"
+  },
+  "scripts/verify_persistence.py": {
+    "mtime": 1793345156.2664003,
+    "seen": 1793346289.095187,
+    "ast_hash": "06a0ad7e9d1adfbd41d443fde277366c",
+    "semantic_hash": "06a0ad7e9d1adfbd41d443fde277366c"
+  },
+  "services/api/app/__init__.py": {
+    "mtime": 1793340852.6652687,
+    "seen": 1793346289.095188,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/agent/__init__.py": {
+    "mtime": 1793340852.6707363,
+    "seen": 1793346289.095188,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/agent/loop.py": {
+    "mtime": 1793340852.6708806,
+    "seen": 1793346289.095188,
+    "ast_hash": "940e83e51207a293113f2dea0ee3106b",
+    "semantic_hash": "940e83e51207a293113f2dea0ee3106b"
+  },
+  "services/api/app/agent/provider.py": {
+    "mtime": 1793340975.6578298,
+    "seen": 1793346289.095188,
+    "ast_hash": "c27ad6f3008ae91a51e53133f16fca01",
+    "semantic_hash": "c27ad6f3008ae91a51e53133f16fca01"
+  },
+  "services/api/app/agent/tools.py": {
+    "mtime": 1793340852.6706681,
+    "seen": 1793346289.095189,
+    "ast_hash": "7bf95677a377245289581b67114f61dc",
+    "semantic_hash": "7bf95677a377245289581b67114f61dc"
+  },
+  "services/api/app/api/__init__.py": {
+    "mtime": 1793340852.6735938,
+    "seen": 1793346289.095189,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/auth/__init__.py": {
+    "mtime": 1793340852.6700952,
+    "seen": 1793346289.095189,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/auth/policy.py": {
+    "mtime": 1793340852.6700528,
+    "seen": 1793346289.095189,
+    "ast_hash": "aa359f1364e96cfd96bc7eaef49b45f4",
+    "semantic_hash": "aa359f1364e96cfd96bc7eaef49b45f4"
+  },
+  "services/api/app/config.py": {
+    "mtime": 1793341124.4666786,
+    "seen": 1793346289.09519,
+    "ast_hash": "d2fff771093664cc666a8b8e67f0a513",
+    "semantic_hash": "d2fff771093664cc666a8b8e67f0a513"
+  },
+  "services/api/app/domain/__init__.py": {
+    "mtime": 1793340852.6738703,
+    "seen": 1793346289.09519,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/domain/models.py": {
+    "mtime": 1793340852.6737995,
+    "seen": 1793346289.09519,
+    "ast_hash": "0bd11b77c60c603cca7cb3429a1f03d5",
+    "semantic_hash": "0bd11b77c60c603cca7cb3429a1f03d5"
+  },
+  "services/api/app/graph/__init__.py": {
+    "mtime": 1793340852.6701488,
+    "seen": 1793346289.09519,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/graph/repository.py": {
+    "mtime": 1793340852.7942595,
+    "seen": 1793346289.095191,
+    "ast_hash": "b00088505ccac01b02d2cdd79c74b84f",
+    "semantic_hash": "b00088505ccac01b02d2cdd79c74b84f"
+  },
+  "services/api/app/ingestion/__init__.py": {
+    "mtime": 1793340852.6696427,
+    "seen": 1793346289.095191,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/ingestion/service.py": {
+    "mtime": 1793340852.6694312,
+    "seen": 1793346289.095191,
+    "ast_hash": "cca796d610180088e91f76b59d559ce1",
+    "semantic_hash": "cca796d610180088e91f76b59d559ce1"
+  },
+  "services/api/app/ingestion/tickets.py": {
+    "mtime": 1793340852.6691132,
+    "seen": 1793346289.095191,
+    "ast_hash": "e92a688f10459876817a14a63e62b747",
+    "semantic_hash": "e92a688f10459876817a14a63e62b747"
+  },
+  "services/api/app/main.py": {
+    "mtime": 1793340975.7045476,
+    "seen": 1793346289.095192,
+    "ast_hash": "ae326f8830d438e2af0ebc36d25412cb",
+    "semantic_hash": "ae326f8830d438e2af0ebc36d25412cb"
+  },
+  "services/api/app/memory/__init__.py": {
+    "mtime": 1793340852.6698534,
+    "seen": 1793346289.095192,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/memory/store.py": {
+    "mtime": 1793340852.6698017,
+    "seen": 1793346289.095192,
+    "ast_hash": "22ee8886dd8b3ff3b53b400d3d9ed44a",
+    "semantic_hash": "22ee8886dd8b3ff3b53b400d3d9ed44a"
+  },
+  "services/api/app/reasoning/__init__.py": {
+    "mtime": 1793340852.6710489,
+    "seen": 1793346289.095192,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/reasoning/investigate.py": {
+    "mtime": 1793340852.6712677,
+    "seen": 1793346289.0951931,
+    "ast_hash": "25d99baf7dfe5bb4da66777364714437",
+    "semantic_hash": "25d99baf7dfe5bb4da66777364714437"
+  },
+  "services/api/app/reviews/__init__.py": {
+    "mtime": 1793340852.6739435,
+    "seen": 1793346289.0951931,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/tests/integration/conftest.py": {
+    "mtime": 1793340852.666851,
+    "seen": 1793346289.095194,
+    "ast_hash": "9edc61ced738d493bff75dfbfb9d925b",
+    "semantic_hash": "9edc61ced738d493bff75dfbfb9d925b"
+  },
+  "services/api/tests/integration/test_agent_tools.py": {
+    "mtime": 1793340852.6683638,
+    "seen": 1793346289.095194,
+    "ast_hash": "7b6e48321087a63254e9b9083dbb971e",
+    "semantic_hash": "7b6e48321087a63254e9b9083dbb971e"
+  },
+  "services/api/tests/integration/test_brightmart.py": {
+    "mtime": 1793340852.6672971,
+    "seen": 1793346289.0951948,
+    "ast_hash": "548db288212b67ad60e401fd97b50462",
+    "semantic_hash": "548db288212b67ad60e401fd97b50462"
+  },
+  "services/api/tests/integration/test_journey.py": {
+    "mtime": 1793340852.667942,
+    "seen": 1793346289.0951948,
+    "ast_hash": "3d3e543502eef6e9116029d9e250aab9",
+    "semantic_hash": "3d3e543502eef6e9116029d9e250aab9"
+  },
+  "services/api/tests/integration/test_ticket_status.py": {
+    "mtime": 1793340852.6676435,
+    "seen": 1793346289.0951948,
+    "ast_hash": "7404772cda620b02d63d834b44fc5d58",
+    "semantic_hash": "7404772cda620b02d63d834b44fc5d58"
+  },
+  "services/api/tests/unit/test_domain.py": {
+    "mtime": 1793340852.6665666,
+    "seen": 1793346289.095196,
+    "ast_hash": "a14be8e88289b24a5a03eecddbca6f07",
+    "semantic_hash": "a14be8e88289b24a5a03eecddbca6f07"
+  },
+  "tests/e2e/journey.spec.ts": {
+    "mtime": 1793340852.6810055,
+    "seen": 1793346289.095196,
+    "ast_hash": "f8aeca0a5f80ad8ba48ffeca90419e8e",
+    "semantic_hash": "f8aeca0a5f80ad8ba48ffeca90419e8e"
+  },
+  "AGENTS.md": {
+    "mtime": 1792346980.1250374,
+    "seen": 1793346289.095196,
+    "ast_hash": "5c4348bf6e1b6086e38261204b441e54",
+    "semantic_hash": "5c4348bf6e1b6086e38261204b441e54"
+  },
+  "Architecture.md": {
+    "mtime": 1792240280.7408488,
+    "seen": 1793346289.095208,
+    "ast_hash": "a1b593e52a9fec8abdba6f166a88e46f",
+    "semantic_hash": "a1b593e52a9fec8abdba6f166a88e46f"
+  },
+  "README.md": {
+    "mtime": 1793345933.9448304,
+    "seen": 1793346289.095208,
+    "ast_hash": "e9ba7d98053b3a2b45e30e5d5ea62533",
+    "semantic_hash": "e9ba7d98053b3a2b45e30e5d5ea62533"
+  },
+  "apps/web/AGENTS.md": {
+    "mtime": 1792083159.0361567,
+    "seen": 1793346289.095208,
+    "ast_hash": "c98dbebb744eadc1acc4b9f58bfe0f42",
+    "semantic_hash": "c98dbebb744eadc1acc4b9f58bfe0f42"
+  },
+  "compose.dev.yaml": {
+    "mtime": 1792082460.7349024,
+    "seen": 1793346289.095208,
+    "ast_hash": "bf6521e80769d7e7b77ee14e87d4503e",
+    "semantic_hash": "bf6521e80769d7e7b77ee14e87d4503e"
+  },
+  "compose.yaml": {
+    "mtime": 1793340373.3493457,
+    "seen": 1793346289.095209,
+    "ast_hash": "bd3ba2a5879ac1a53cbedb7e0248e6a1",
+    "semantic_hash": "bd3ba2a5879ac1a53cbedb7e0248e6a1"
+  },
+  "docs/BrightMart-Demo.md": {
+    "mtime": 1792242007.349281,
+    "seen": 1793346289.095209,
+    "ast_hash": "22f7458e2731b02903e59a5febdde12e",
+    "semantic_hash": "22f7458e2731b02903e59a5febdde12e"
+  },
+  "docs/BrightMart-Sourcebook.md": {
+    "mtime": 1792240327.1153302,
+    "seen": 1793346289.095209,
+    "ast_hash": "1bd4aba51554da675677fbc96fcc4f97",
+    "semantic_hash": "1bd4aba51554da675677fbc96fcc4f97"
+  },
+  "docs/Product-MVP.md": {
+    "mtime": 1792241877.74642,
+    "seen": 1793346289.09521,
+    "ast_hash": "04ff44ed31dd87243064dfa943a0f3f4",
+    "semantic_hash": "04ff44ed31dd87243064dfa943a0f3f4"
+  },
+  "docs/Verification.md": {
+    "mtime": 1792242052.1128345,
+    "seen": 1793346289.09521,
+    "ast_hash": "d18851429b41a897cd37a5f95d03a57b",
+    "semantic_hash": "d18851429b41a897cd37a5f95d03a57b"
+  },
+  "services/api/app/prompts/extract-v1.txt": {
+    "mtime": 1793340852.6734998,
+    "seen": 1793346289.095211,
+    "ast_hash": "a3338828c52b1614bf706982c4c71dbd",
+    "semantic_hash": "a3338828c52b1614bf706982c4c71dbd"
+  },
+  "services/api/app/prompts/planning-v1.1.txt": {
+    "mtime": 1793340852.6724777,
+    "seen": 1793346289.095211,
+    "ast_hash": "ffd69dc0a722e8b9c6789d4b9abfab9f",
+    "semantic_hash": "ffd69dc0a722e8b9c6789d4b9abfab9f"
+  },
+  "services/api/app/prompts/synthesis-v1.1.txt": {
+    "mtime": 1793340852.6726327,
+    "seen": 1793346289.095211,
+    "ast_hash": "606d2a5233565619cd9daeb0c4684106",
+    "semantic_hash": "606d2a5233565619cd9daeb0c4684106"
+  },
+  "services/api/app/prompts/tools-v1.2.txt": {
+    "mtime": 1793340852.6723135,
+    "seen": 1793346289.095212,
+    "ast_hash": "9aec0474eba1c758a82b317ae1bbeca6",
+    "semantic_hash": "9aec0474eba1c758a82b317ae1bbeca6"
+  },
+  "apps/web/components/MeetingsWorkspace.tsx": {
+    "mtime": 1793343664.883096,
+    "seen": 1793346289.095128,
+    "ast_hash": "9da3eb71a0287214e5d32f4e63b4c24b",
+    "semantic_hash": "9da3eb71a0287214e5d32f4e63b4c24b"
+  },
+  "fixtures/digiplus/chat_ambiguous-alias.json": {
+    "mtime": 1793342119.7293243,
+    "seen": 1793346289.095131,
+    "ast_hash": "f9fea205c445a16eacb76965bd3fc57f",
+    "semantic_hash": "f9fea205c445a16eacb76965bd3fc57f"
+  },
+  "fixtures/digiplus/chat_billing-weekly.json": {
+    "mtime": 1793342119.7369182,
+    "seen": 1793346289.0951319,
+    "ast_hash": "ba81c8ccc05c15f5e47bcee0045c5293",
+    "semantic_hash": "ba81c8ccc05c15f5e47bcee0045c5293"
+  },
+  "fixtures/digiplus/chat_claims-weekly.json": {
+    "mtime": 1793342119.7365098,
+    "seen": 1793346289.0951319,
+    "ast_hash": "fea63d71cb41ce2fdd7a1ded80424bb2",
+    "semantic_hash": "fea63d71cb41ce2fdd7a1ded80424bb2"
+  },
+  "fixtures/digiplus/chat_configuration-weekly.json": {
+    "mtime": 1793342119.736649,
+    "seen": 1793346289.0951328,
+    "ast_hash": "cfc85a69688c089cc56827efb07311ab",
+    "semantic_hash": "cfc85a69688c089cc56827efb07311ab"
+  },
+  "fixtures/digiplus/chat_dashboard-planning.json": {
+    "mtime": 1793342119.7292464,
+    "seen": 1793346289.0951328,
+    "ast_hash": "f608bb8a001e7247d1b11c89fa4c8b6d",
+    "semantic_hash": "f608bb8a001e7247d1b11c89fa4c8b6d"
+  },
+  "fixtures/digiplus/chat_delivery-console-weekly.json": {
+    "mtime": 1793342119.7363358,
+    "seen": 1793346289.0951328,
+    "ast_hash": "0efe32bc143cf2f513a4cf491fa7c078",
+    "semantic_hash": "0efe32bc143cf2f513a4cf491fa7c078"
+  },
+  "fixtures/digiplus/chat_events-weekly.json": {
+    "mtime": 1793342119.7369854,
+    "seen": 1793346289.0951328,
+    "ast_hash": "2bb3406f3a1e086ab3d50f53daae2181",
+    "semantic_hash": "2bb3406f3a1e086ab3d50f53daae2181"
+  },
+  "fixtures/digiplus/chat_handoff.json": {
+    "mtime": 1793342119.7289643,
+    "seen": 1793346289.095134,
+    "ast_hash": "176b946f7cea4bc8c769173caf365b47",
+    "semantic_hash": "176b946f7cea4bc8c769173caf365b47"
+  },
+  "fixtures/digiplus/chat_identity-help.json": {
+    "mtime": 1793342119.7290235,
+    "seen": 1793346289.095134,
+    "ast_hash": "6c8c65422edb7c57a22404826ef1c22b",
+    "semantic_hash": "6c8c65422edb7c57a22404826ef1c22b"
+  },
+  "fixtures/digiplus/chat_identity-weekly.json": {
+    "mtime": 1793342119.7360344,
+    "seen": 1793346289.095135,
+    "ast_hash": "4fe5d29189c38e33d8848f0111ca9f6f",
+    "semantic_hash": "4fe5d29189c38e33d8848f0111ca9f6f"
+  },
+  "fixtures/digiplus/chat_messages-weekly.json": {
+    "mtime": 1793342119.7361853,
+    "seen": 1793346289.095135,
+    "ast_hash": "f49703971b172ad5de6b9e2dbf1747da",
+    "semantic_hash": "f49703971b172ad5de6b9e2dbf1747da"
+  },
+  "fixtures/digiplus/chat_monitor-weekly.json": {
+    "mtime": 1793342119.7365773,
+    "seen": 1793346289.095135,
+    "ast_hash": "81e331981dce21db39387e814dc700ac",
+    "semantic_hash": "81e331981dce21db39387e814dc700ac"
+  },
+  "fixtures/digiplus/chat_partner-api-weekly.json": {
+    "mtime": 1793342119.7367833,
+    "seen": 1793346289.095136,
+    "ast_hash": "27df8f179305589a3cf6c9982bf99a2b",
+    "semantic_hash": "27df8f179305589a3cf6c9982bf99a2b"
+  },
+  "fixtures/digiplus/chat_portal-planning.json": {
+    "mtime": 1793342119.7291534,
+    "seen": 1793346289.095136,
+    "ast_hash": "0f1236b8b557b20afa6c70b3d1ed7e25",
+    "semantic_hash": "0f1236b8b557b20afa6c70b3d1ed7e25"
+  },
+  "fixtures/digiplus/chat_portal-weekly.json": {
+    "mtime": 1793342119.7358944,
+    "seen": 1793346289.095136,
+    "ast_hash": "8b4f5295b096368d5fa4987d142ead25",
+    "semantic_hash": "8b4f5295b096368d5fa4987d142ead25"
+  },
+  "fixtures/digiplus/chat_reporting-weekly.json": {
+    "mtime": 1793342119.7361085,
+    "seen": 1793346289.0951371,
+    "ast_hash": "e4ceed9b0874560830486f271ecca123",
+    "semantic_hash": "e4ceed9b0874560830486f271ecca123"
+  },
+  "fixtures/digiplus/chat_search-weekly.json": {
+    "mtime": 1793342119.7382357,
+    "seen": 1793346289.0951371,
+    "ast_hash": "25984960cb257101d18dfedd65c17e1f",
+    "semantic_hash": "25984960cb257101d18dfedd65c17e1f"
+  },
+  "fixtures/digiplus/chat_staffing-weekly.json": {
+    "mtime": 1793342119.7380848,
+    "seen": 1793346289.0951371,
+    "ast_hash": "4137330e60a40ef159793cdbf22b4e5a",
+    "semantic_hash": "4137330e60a40ef159793cdbf22b4e5a"
+  },
+  "fixtures/digiplus/chat_success-weekly.json": {
+    "mtime": 1793342119.7367148,
+    "seen": 1793346289.0951371,
+    "ast_hash": "1dbd079343169d4baa3a5ed42e6d05e7",
+    "semantic_hash": "1dbd079343169d4baa3a5ed42e6d05e7"
+  },
+  "fixtures/digiplus/chat_support-weekly.json": {
+    "mtime": 1793342119.7368522,
+    "seen": 1793346289.095138,
+    "ast_hash": "fd19689d9fb041d48f9092c2fcaf353d",
+    "semantic_hash": "fd19689d9fb041d48f9092c2fcaf353d"
+  },
+  "fixtures/digiplus/chat_workflow-engine-weekly.json": {
+    "mtime": 1793342119.7364256,
+    "seen": 1793346289.095138,
+    "ast_hash": "f803b9b74e8c92edb73b7564fef37dc8",
+    "semantic_hash": "f803b9b74e8c92edb73b7564fef37dc8"
+  },
+  "fixtures/digiplus/decision_D-101.json": {
+    "mtime": 1793342119.730187,
+    "seen": 1793346289.095138,
+    "ast_hash": "1ab562d699fae4e19b7ff990b5ec2733",
+    "semantic_hash": "1ab562d699fae4e19b7ff990b5ec2733"
+  },
+  "fixtures/digiplus/decision_D-102.json": {
+    "mtime": 1793342119.7299137,
+    "seen": 1793346289.095139,
+    "ast_hash": "2ebefe62cda372fdb63d405582de34a5",
+    "semantic_hash": "2ebefe62cda372fdb63d405582de34a5"
+  },
+  "fixtures/digiplus/decision_D-103.json": {
+    "mtime": 1793342119.7299733,
+    "seen": 1793346289.095139,
+    "ast_hash": "fd96547d87c696c588c1b1c3424fb6d4",
+    "semantic_hash": "fd96547d87c696c588c1b1c3424fb6d4"
+  },
+  "fixtures/digiplus/decision_D-104.json": {
+    "mtime": 1793342119.7301204,
+    "seen": 1793346289.095139,
+    "ast_hash": "e5fde371bba8fac28c266dd75117310b",
+    "semantic_hash": "e5fde371bba8fac28c266dd75117310b"
+  },
+  "fixtures/digiplus/decision_D-105.json": {
+    "mtime": 1793342119.7478583,
+    "seen": 1793346289.095139,
+    "ast_hash": "a058c61d56c827e9ae5142534f3828c7",
+    "semantic_hash": "a058c61d56c827e9ae5142534f3828c7"
+  },
+  "fixtures/digiplus/decision_D-106.json": {
+    "mtime": 1793342119.747919,
+    "seen": 1793346289.095139,
+    "ast_hash": "ac483f88fde7ef42bcb1d8cd34228acc",
+    "semantic_hash": "ac483f88fde7ef42bcb1d8cd34228acc"
+  },
+  "fixtures/digiplus/decision_D-107.json": {
+    "mtime": 1793342119.7479782,
+    "seen": 1793346289.09514,
+    "ast_hash": "c7c8773ac71d9e31ea462ab6d63ae67a",
+    "semantic_hash": "c7c8773ac71d9e31ea462ab6d63ae67a"
+  },
+  "fixtures/digiplus/decision_D-108.json": {
+    "mtime": 1793342119.7480326,
+    "seen": 1793346289.09514,
+    "ast_hash": "d8fd395c9392e6b33a37ce7043e9bba8",
+    "semantic_hash": "d8fd395c9392e6b33a37ce7043e9bba8"
+  },
+  "fixtures/digiplus/decision_D-109.json": {
+    "mtime": 1793342119.7480953,
+    "seen": 1793346289.09514,
+    "ast_hash": "c8f7a4074584b59e25ee2286ef8cbe7d",
+    "semantic_hash": "c8f7a4074584b59e25ee2286ef8cbe7d"
+  },
+  "fixtures/digiplus/decision_D-110.json": {
+    "mtime": 1793342119.748156,
+    "seen": 1793346289.09514,
+    "ast_hash": "fa4a1032716510b8045cd18cc6ac0e9d",
+    "semantic_hash": "fa4a1032716510b8045cd18cc6ac0e9d"
+  },
+  "fixtures/digiplus/decision_D-111.json": {
+    "mtime": 1793342119.7482316,
+    "seen": 1793346289.0951412,
+    "ast_hash": "f22bc5af4f467a1dfa4ec811e47c7ed5",
+    "semantic_hash": "f22bc5af4f467a1dfa4ec811e47c7ed5"
+  },
+  "fixtures/digiplus/decision_D-112.json": {
+    "mtime": 1793342119.7482977,
+    "seen": 1793346289.0951412,
+    "ast_hash": "768780b328034e84bb13c754f042894f",
+    "semantic_hash": "768780b328034e84bb13c754f042894f"
+  },
+  "fixtures/digiplus/decision_D-113.json": {
+    "mtime": 1793342119.7483637,
+    "seen": 1793346289.0951412,
+    "ast_hash": "6eb82852ad029c78aa79ddb60c6bd598",
+    "semantic_hash": "6eb82852ad029c78aa79ddb60c6bd598"
+  },
+  "fixtures/digiplus/decision_D-114.json": {
+    "mtime": 1793342119.7484279,
+    "seen": 1793346289.0951412,
+    "ast_hash": "86f4cb0fcce79a6d0ce77b1836faaa1f",
+    "semantic_hash": "86f4cb0fcce79a6d0ce77b1836faaa1f"
+  },
+  "fixtures/digiplus/decision_D-115.json": {
+    "mtime": 1793342119.748491,
+    "seen": 1793346289.095142,
+    "ast_hash": "c6715f05903f95e2c4f4fbc1ecf3bcb1",
+    "semantic_hash": "c6715f05903f95e2c4f4fbc1ecf3bcb1"
+  },
+  "fixtures/digiplus/decision_D-116.json": {
+    "mtime": 1793342119.7485855,
+    "seen": 1793346289.095142,
+    "ast_hash": "d6977c3ea6b3107b8cfdc64eeb7ab934",
+    "semantic_hash": "d6977c3ea6b3107b8cfdc64eeb7ab934"
+  },
+  "fixtures/digiplus/decision_D-117.json": {
+    "mtime": 1793342119.748648,
+    "seen": 1793346289.095142,
+    "ast_hash": "4fae06ef70d42adfc80fe1cc259e6e4f",
+    "semantic_hash": "4fae06ef70d42adfc80fe1cc259e6e4f"
+  },
+  "fixtures/digiplus/decision_D-118.json": {
+    "mtime": 1793342119.7487068,
+    "seen": 1793346289.095142,
+    "ast_hash": "0461551ee9ce34a8e3a7cca5479faf48",
+    "semantic_hash": "0461551ee9ce34a8e3a7cca5479faf48"
+  },
+  "fixtures/digiplus/decision_D-119.json": {
+    "mtime": 1793342119.7487748,
+    "seen": 1793346289.0951428,
+    "ast_hash": "eb5717ae0ccc9cbae02b104213ca6a8e",
+    "semantic_hash": "eb5717ae0ccc9cbae02b104213ca6a8e"
+  },
+  "fixtures/digiplus/decision_D-120.json": {
+    "mtime": 1793342119.7488387,
+    "seen": 1793346289.0951428,
+    "ast_hash": "0822c4f0485e5fa538718e30a8d09edb",
+    "semantic_hash": "0822c4f0485e5fa538718e30a8d09edb"
+  },
+  "fixtures/digiplus/decision_D-121.json": {
+    "mtime": 1793342119.7489033,
+    "seen": 1793346289.0951428,
+    "ast_hash": "a91a28f3dac5548bf1d3850cc9cd482c",
+    "semantic_hash": "a91a28f3dac5548bf1d3850cc9cd482c"
+  },
+  "fixtures/digiplus/decision_D-122.json": {
+    "mtime": 1793342119.7490366,
+    "seen": 1793346289.0951428,
+    "ast_hash": "4d9a63cf1cfd51ced3c312b5345b9548",
+    "semantic_hash": "4d9a63cf1cfd51ced3c312b5345b9548"
+  },
+  "fixtures/digiplus/decision_D-123.json": {
+    "mtime": 1793342119.749201,
+    "seen": 1793346289.095144,
+    "ast_hash": "8d25a565c291615d618471d233c6c218",
+    "semantic_hash": "8d25a565c291615d618471d233c6c218"
+  },
+  "fixtures/digiplus/decision_D-124.json": {
+    "mtime": 1793342119.7492726,
+    "seen": 1793346289.095144,
+    "ast_hash": "4f8b86c345059c9f0ae18e6f4c76423c",
+    "semantic_hash": "4f8b86c345059c9f0ae18e6f4c76423c"
+  },
+  "fixtures/digiplus/directory_digiplus.json": {
+    "mtime": 1793342119.7516391,
+    "seen": 1793346289.095144,
+    "ast_hash": "202072c5d102bd7ddac2002a96ff43da",
+    "semantic_hash": "202072c5d102bd7ddac2002a96ff43da"
+  },
+  "fixtures/digiplus/doc_billing-runbook.json": {
+    "mtime": 1793342119.7354608,
+    "seen": 1793346289.095144,
+    "ast_hash": "dd92a1ce000edc77960866d4cba8021e",
+    "semantic_hash": "dd92a1ce000edc77960866d4cba8021e"
+  },
+  "fixtures/digiplus/doc_claims-automation-brief.json": {
+    "mtime": 1793342119.7302468,
+    "seen": 1793346289.095145,
+    "ast_hash": "70c764ce478a9fb145a381a69f8cdfbc",
+    "semantic_hash": "70c764ce478a9fb145a381a69f8cdfbc"
+  },
+  "fixtures/digiplus/doc_claims-automation-plan.json": {
+    "mtime": 1793342119.7303119,
+    "seen": 1793346289.095145,
+    "ast_hash": "b774b74fbc5a4c0d6f1094901c7166ae",
+    "semantic_hash": "b774b74fbc5a4c0d6f1094901c7166ae"
+  },
+  "fixtures/digiplus/doc_claims-runbook.json": {
+    "mtime": 1793342119.7324462,
+    "seen": 1793346289.095145,
+    "ast_hash": "0c8a9b4d440d54df233f74532dc79cf1",
+    "semantic_hash": "0c8a9b4d440d54df233f74532dc79cf1"
+  },
+  "fixtures/digiplus/doc_client-success-brief.json": {
+    "mtime": 1793342119.7308512,
+    "seen": 1793346289.095145,
+    "ast_hash": "1957a194b823ebae0ea0661b86020f08",
+    "semantic_hash": "1957a194b823ebae0ea0661b86020f08"
+  },
+  "fixtures/digiplus/doc_client-success-plan.json": {
+    "mtime": 1793342119.7309268,
+    "seen": 1793346289.095146,
+    "ast_hash": "d739ecee68e2b8fc53fb466a8754b131",
+    "semantic_hash": "d739ecee68e2b8fc53fb466a8754b131"
+  },
+  "fixtures/digiplus/doc_configuration-runbook.json": {
+    "mtime": 1793342119.7327976,
+    "seen": 1793346289.095146,
+    "ast_hash": "c7901074e9af7e6b59fe55719238fae1",
+    "semantic_hash": "c7901074e9af7e6b59fe55719238fae1"
+  },
+  "fixtures/digiplus/doc_consultant-scheduling-brief.json": {
+    "mtime": 1793342119.7306619,
+    "seen": 1793346289.095146,
+    "ast_hash": "e07a04fa0069676a31280eac4b531864",
+    "semantic_hash": "e07a04fa0069676a31280eac4b531864"
+  },
+  "fixtures/digiplus/doc_consultant-scheduling-plan.json": {
+    "mtime": 1793342119.7307158,
+    "seen": 1793346289.095146,
+    "ast_hash": "ca5ae66c45a085a650bead9a1e4f4e05",
+    "semantic_hash": "ca5ae66c45a085a650bead9a1e4f4e05"
+  },
+  "fixtures/digiplus/doc_dashboard-overview.json": {
+    "mtime": 1793342119.7287705,
+    "seen": 1793346289.095146,
+    "ast_hash": "709c12d5681f55cbeac8e340d1b75eef",
+    "semantic_hash": "709c12d5681f55cbeac8e340d1b75eef"
+  },
+  "fixtures/digiplus/doc_delivery-console-runbook.json": {
+    "mtime": 1793342119.7321794,
+    "seen": 1793346289.095147,
+    "ast_hash": "3bcd11cd635df34d2d8584060be09028",
+    "semantic_hash": "3bcd11cd635df34d2d8584060be09028"
+  },
+  "fixtures/digiplus/doc_delivery-story.json": {
+    "mtime": 1793342119.751382,
+    "seen": 1793346289.095147,
+    "ast_hash": "7acf45ce756ac34556852e809ee153c6",
+    "semantic_hash": "7acf45ce756ac34556852e809ee153c6"
+  },
+  "fixtures/digiplus/doc_demo-welcome.json": {
+    "mtime": 1793342119.7514586,
+    "seen": 1793346289.095147,
+    "ast_hash": "fd25caa2f067f985c89d824d5a4ac7d6",
+    "semantic_hash": "fd25caa2f067f985c89d824d5a4ac7d6"
+  },
+  "fixtures/digiplus/doc_events-runbook.json": {
+    "mtime": 1793342119.7355351,
+    "seen": 1793346289.095148,
+    "ast_hash": "45e490bab7427e4459cc84c0cf774902",
+    "semantic_hash": "45e490bab7427e4459cc84c0cf774902"
+  },
+  "fixtures/digiplus/doc_identity-runbook.json": {
+    "mtime": 1793342119.7285788,
+    "seen": 1793346289.095148,
+    "ast_hash": "92439d427e7f8644cdd15017aecfcbf4",
+    "semantic_hash": "92439d427e7f8644cdd15017aecfcbf4"
+  },
+  "fixtures/digiplus/doc_infrastructure-alerts-brief.json": {
+    "mtime": 1793342119.7304437,
+    "seen": 1793346289.095148,
+    "ast_hash": "db50f481f8f9e6ca48f391346c92ca04",
+    "semantic_hash": "db50f481f8f9e6ca48f391346c92ca04"
+  },
+  "fixtures/digiplus/doc_infrastructure-alerts-plan.json": {
+    "mtime": 1793342119.7305737,
+    "seen": 1793346289.095148,
+    "ast_hash": "90dba99166d9612fe84f278807ce0a1e",
+    "semantic_hash": "90dba99166d9612fe84f278807ce0a1e"
+  },
+  "fixtures/digiplus/doc_leadership-1.json": {
+    "mtime": 1793342119.750964,
+    "seen": 1793346289.095149,
+    "ast_hash": "a79656c63bd2b5c7b9059c61f27ca4ab",
+    "semantic_hash": "a79656c63bd2b5c7b9059c61f27ca4ab"
+  },
+  "fixtures/digiplus/doc_leadership-2.json": {
+    "mtime": 1793342119.7510457,
+    "seen": 1793346289.095149,
+    "ast_hash": "3ce97f14dd7faea04a85e718b322f1de",
+    "semantic_hash": "3ce97f14dd7faea04a85e718b322f1de"
+  },
+  "fixtures/digiplus/doc_leadership-3.json": {
+    "mtime": 1793342119.7512023,
+    "seen": 1793346289.095149,
+    "ast_hash": "41df669a26a22eae81c8f116b191083c",
+    "semantic_hash": "41df669a26a22eae81c8f116b191083c"
+  },
+  "fixtures/digiplus/doc_leadership-note.json": {
+    "mtime": 1793342119.7289045,
+    "seen": 1793346289.095149,
+    "ast_hash": "f36e31b6a51ed31d67872fee8e9e49e4",
+    "semantic_hash": "f36e31b6a51ed31d67872fee8e9e49e4"
+  },
+  "fixtures/digiplus/doc_managed-cloud-migration-brief.json": {
+    "mtime": 1793342119.7314448,
+    "seen": 1793346289.09515,
+    "ast_hash": "c6d39dab5c0f51cbc7c4714a94b04b07",
+    "semantic_hash": "c6d39dab5c0f51cbc7c4714a94b04b07"
+  },
+  "fixtures/digiplus/doc_managed-cloud-migration-plan.json": {
+    "mtime": 1793342119.7320292,
+    "seen": 1793346289.09515,
+    "ast_hash": "a6a60cd82df703b1f947254182a481f9",
+    "semantic_hash": "a6a60cd82df703b1f947254182a481f9"
+  },
+  "fixtures/digiplus/doc_monitor-runbook.json": {
+    "mtime": 1793342119.732598,
+    "seen": 1793346289.09515,
+    "ast_hash": "815cf26123cb332dd35fccaad75f9d1c",
+    "semantic_hash": "815cf26123cb332dd35fccaad75f9d1c"
+  },
+  "fixtures/digiplus/doc_northstar-rollout.json": {
+    "mtime": 1793342119.7286465,
+    "seen": 1793346289.09515,
+    "ast_hash": "78f2cc3dda1fece01ea12cb57ba9dc89",
+    "semantic_hash": "78f2cc3dda1fece01ea12cb57ba9dc89"
+  },
+  "fixtures/digiplus/doc_partner-api-runbook.json": {
+    "mtime": 1793342119.7350955,
+    "seen": 1793346289.0951512,
+    "ast_hash": "a3a8ddced72954d1d0985ae55db79276",
+    "semantic_hash": "a3a8ddced72954d1d0985ae55db79276"
+  },
+  "fixtures/digiplus/doc_partner-workspace-brief.json": {
+    "mtime": 1793342119.7309983,
+    "seen": 1793346289.0951512,
+    "ast_hash": "ee148a2a2b7b17fecdc036308485afc6",
+    "semantic_hash": "ee148a2a2b7b17fecdc036308485afc6"
+  },
+  "fixtures/digiplus/doc_partner-workspace-plan.json": {
+    "mtime": 1793342119.7311513,
+    "seen": 1793346289.0951512,
+    "ast_hash": "3e818f45b7274ed311754d82e27d0663",
+    "semantic_hash": "3e818f45b7274ed311754d82e27d0663"
+  },
+  "fixtures/digiplus/doc_portal-architecture.json": {
+    "mtime": 1793342119.7284236,
+    "seen": 1793346289.0951512,
+    "ast_hash": "7fa49d2d66796bef5d8691802218434f",
+    "semantic_hash": "7fa49d2d66796bef5d8691802218434f"
+  },
+  "fixtures/digiplus/doc_portal-brief.json": {
+    "mtime": 1793342119.728708,
+    "seen": 1793346289.0951521,
+    "ast_hash": "2d40c6dcc20c3ceb308ea5622ff52723",
+    "semantic_hash": "2d40c6dcc20c3ceb308ea5622ff52723"
+  },
+  "fixtures/digiplus/doc_promise-C-104.json": {
+    "mtime": 1793342119.7493634,
+    "seen": 1793346289.0951521,
+    "ast_hash": "f52c3a36b8cb913c9b2e451bb79bd453",
+    "semantic_hash": "f52c3a36b8cb913c9b2e451bb79bd453"
+  },
+  "fixtures/digiplus/doc_promise-C-105.json": {
+    "mtime": 1793342119.7494516,
+    "seen": 1793346289.0951521,
+    "ast_hash": "ffb0c572f5525b1e0b9a87b5e84ba027",
+    "semantic_hash": "ffb0c572f5525b1e0b9a87b5e84ba027"
+  },
+  "fixtures/digiplus/doc_promise-C-106.json": {
+    "mtime": 1793342119.7495306,
+    "seen": 1793346289.0951521,
+    "ast_hash": "de4b974302123e924a51637743d5da49",
+    "semantic_hash": "de4b974302123e924a51637743d5da49"
+  },
+  "fixtures/digiplus/doc_promise-C-107.json": {
+    "mtime": 1793342119.7496104,
+    "seen": 1793346289.0951529,
+    "ast_hash": "4085fa50de2b625d7b344ae1a0c6a76e",
+    "semantic_hash": "4085fa50de2b625d7b344ae1a0c6a76e"
+  },
+  "fixtures/digiplus/doc_promise-C-108.json": {
+    "mtime": 1793342119.7497518,
+    "seen": 1793346289.0951529,
+    "ast_hash": "4f444d8d2a920916a4a9c64ac86b23c2",
+    "semantic_hash": "4f444d8d2a920916a4a9c64ac86b23c2"
+  },
+  "fixtures/digiplus/doc_promise-C-109.json": {
+    "mtime": 1793342119.749892,
+    "seen": 1793346289.0951529,
+    "ast_hash": "e5cb62cfdbe5649dd6ccd964ad9b13e8",
+    "semantic_hash": "e5cb62cfdbe5649dd6ccd964ad9b13e8"
+  },
+  "fixtures/digiplus/doc_promise-C-110.json": {
+    "mtime": 1793342119.7499673,
+    "seen": 1793346289.0951538,
+    "ast_hash": "954e43e09559e44d4e5fde81b372002f",
+    "semantic_hash": "954e43e09559e44d4e5fde81b372002f"
+  },
+  "fixtures/digiplus/doc_promise-C-111.json": {
+    "mtime": 1793342119.7500386,
+    "seen": 1793346289.0951538,
+    "ast_hash": "eae36695d6d0cfc8590be15ab77e90d5",
+    "semantic_hash": "eae36695d6d0cfc8590be15ab77e90d5"
+  },
+  "fixtures/digiplus/doc_promise-C-112.json": {
+    "mtime": 1793342119.7501101,
+    "seen": 1793346289.0951538,
+    "ast_hash": "f949e64078da1867488a19eb6f130ee5",
+    "semantic_hash": "f949e64078da1867488a19eb6f130ee5"
+  },
+  "fixtures/digiplus/doc_search-runbook.json": {
+    "mtime": 1793342119.7358196,
+    "seen": 1793346289.0951538,
+    "ast_hash": "44c496d41d37193ae6c458950284fced",
+    "semantic_hash": "44c496d41d37193ae6c458950284fced"
+  },
+  "fixtures/digiplus/doc_service-desk-modernization-brief.json": {
+    "mtime": 1793342119.7312331,
+    "seen": 1793346289.095155,
+    "ast_hash": "99de216abce0a5d7b7323965f068ea2f",
+    "semantic_hash": "99de216abce0a5d7b7323965f068ea2f"
+  },
+  "fixtures/digiplus/doc_service-desk-modernization-plan.json": {
+    "mtime": 1793342119.731384,
+    "seen": 1793346289.095155,
+    "ast_hash": "7451857a560ac021db7110c5961d457b",
+    "semantic_hash": "7451857a560ac021db7110c5961d457b"
+  },
+  "fixtures/digiplus/doc_staffing-runbook.json": {
+    "mtime": 1793342119.7356696,
+    "seen": 1793346289.095155,
+    "ast_hash": "1401af2053116aec3508ccc9a0e3e8ea",
+    "semantic_hash": "1401af2053116aec3508ccc9a0e3e8ea"
+  },
+  "fixtures/digiplus/doc_success-runbook.json": {
+    "mtime": 1793342119.7329586,
+    "seen": 1793346289.095156,
+    "ast_hash": "50e94ff94644d651be0e3143e7789931",
+    "semantic_hash": "50e94ff94644d651be0e3143e7789931"
+  },
+  "fixtures/digiplus/doc_support-runbook.json": {
+    "mtime": 1793342119.7353804,
+    "seen": 1793346289.095156,
+    "ast_hash": "a35ceeb0ea36bea94a1dfc89861d2d4b",
+    "semantic_hash": "a35ceeb0ea36bea94a1dfc89861d2d4b"
+  },
+  "fixtures/digiplus/doc_team-applications.json": {
+    "mtime": 1793342119.7504528,
+    "seen": 1793346289.095156,
+    "ast_hash": "ea7f5dbf35a1b13b352ca735580a2839",
+    "semantic_hash": "ea7f5dbf35a1b13b352ca735580a2839"
+  },
+  "fixtures/digiplus/doc_team-client-support.json": {
+    "mtime": 1793342119.750543,
+    "seen": 1793346289.095156,
+    "ast_hash": "2c6eb5c78c4c29b7423294a7f1bd5b09",
+    "semantic_hash": "2c6eb5c78c4c29b7423294a7f1bd5b09"
+  },
+  "fixtures/digiplus/doc_team-data.json": {
+    "mtime": 1793342119.7503176,
+    "seen": 1793346289.095156,
+    "ast_hash": "b812904aae930c29cd6bd5916f7a78da",
+    "semantic_hash": "b812904aae930c29cd6bd5916f7a78da"
+  },
+  "fixtures/digiplus/doc_team-delivery.json": {
+    "mtime": 1793342119.7503846,
+    "seen": 1793346289.095157,
+    "ast_hash": "f7eade55535bc055467915f114fc3d2b",
+    "semantic_hash": "f7eade55535bc055467915f114fc3d2b"
+  },
+  "fixtures/digiplus/doc_team-integrations.json": {
+    "mtime": 1793342119.7502484,
+    "seen": 1793346289.095157,
+    "ast_hash": "127d6e63b288bdc1f7e7da727da70ad7",
+    "semantic_hash": "127d6e63b288bdc1f7e7da727da70ad7"
+  },
+  "fixtures/digiplus/doc_team-platform.json": {
+    "mtime": 1793342119.7501771,
+    "seen": 1793346289.095158,
+    "ast_hash": "8b09abb32315631abaabf484fe87abb1",
+    "semantic_hash": "8b09abb32315631abaabf484fe87abb1"
+  },
+  "fixtures/digiplus/doc_team-reliability.json": {
+    "mtime": 1793342119.7507715,
+    "seen": 1793346289.095158,
+    "ast_hash": "5f98182a9be2cdfec6dfa03c85a3509b",
+    "semantic_hash": "5f98182a9be2cdfec6dfa03c85a3509b"
+  },
+  "fixtures/digiplus/doc_team-service-ops.json": {
+    "mtime": 1793342119.7506409,
+    "seen": 1793346289.095158,
+    "ast_hash": "8bbedd2bdc765e4a1b132269dd964caf",
+    "semantic_hash": "8bbedd2bdc765e4a1b132269dd964caf"
+  },
+  "fixtures/digiplus/doc_work-aarav-mehta.json": {
+    "mtime": 1793342119.738767,
+    "seen": 1793346289.095159,
+    "ast_hash": "5d87b783bf53eaadbe07fb4470c85056",
+    "semantic_hash": "5d87b783bf53eaadbe07fb4470c85056"
+  },
+  "fixtures/digiplus/doc_work-aditi-roy.json": {
+    "mtime": 1793342119.7407477,
+    "seen": 1793346289.095159,
+    "ast_hash": "34ece7544739b3f8a113aeb259a5498f",
+    "semantic_hash": "34ece7544739b3f8a113aeb259a5498f"
+  },
+  "fixtures/digiplus/doc_work-aditya-rao.json": {
+    "mtime": 1793342119.7397423,
+    "seen": 1793346289.095159,
+    "ast_hash": "bb0abe3b09c13b13f3ac128c7681144b",
+    "semantic_hash": "bb0abe3b09c13b13f3ac128c7681144b"
+  },
+  "fixtures/digiplus/doc_work-amit-verma.json": {
+    "mtime": 1793342119.7401555,
+    "seen": 1793346289.095159,
+    "ast_hash": "b9733dbf7fa6851dd4b46bc6edcc946f",
+    "semantic_hash": "b9733dbf7fa6851dd4b46bc6edcc946f"
+  },
+  "fixtures/digiplus/doc_work-ananya-sen.json": {
+    "mtime": 1793342119.7390494,
+    "seen": 1793346289.09516,
+    "ast_hash": "99a3d02b610ec41997324e04bb7de664",
+    "semantic_hash": "99a3d02b610ec41997324e04bb7de664"
+  },
+  "fixtures/digiplus/doc_work-anika-jain.json": {
+    "mtime": 1793342119.7399497,
+    "seen": 1793346289.09516,
+    "ast_hash": "e1d51de3b4a5839aa556f81387dc9afa",
+    "semantic_hash": "e1d51de3b4a5839aa556f81387dc9afa"
+  },
+  "fixtures/digiplus/doc_work-arjun-iyer.json": {
+    "mtime": 1793342119.7392783,
+    "seen": 1793346289.09516,
+    "ast_hash": "919adc5a355eea644e84d65d172fe5b9",
+    "semantic_hash": "919adc5a355eea644e84d65d172fe5b9"
+  },
+  "fixtures/digiplus/doc_work-dev.json": {
+    "mtime": 1793342119.7384198,
+    "seen": 1793346289.0951612,
+    "ast_hash": "83a59e8fdc4b3a4c5ed5c70d7b06f6d6",
+    "semantic_hash": "83a59e8fdc4b3a4c5ed5c70d7b06f6d6"
+  },
+  "fixtures/digiplus/doc_work-diya-kapoor.json": {
+    "mtime": 1793342119.739543,
+    "seen": 1793346289.0951612,
+    "ast_hash": "598f9b289ee306e5515c5b620ddeb395",
+    "semantic_hash": "598f9b289ee306e5515c5b620ddeb395"
+  },
+  "fixtures/digiplus/doc_work-eli.json": {
+    "mtime": 1793342119.738681,
+    "seen": 1793346289.0951612,
+    "ast_hash": "4ad1f54c1d67a14d84e87cec6bd86789",
+    "semantic_hash": "4ad1f54c1d67a14d84e87cec6bd86789"
+  },
+  "fixtures/digiplus/doc_work-harsh-arora.json": {
+    "mtime": 1793342119.7412572,
+    "seen": 1793346289.0951612,
+    "ast_hash": "36d47f4bc9e9d1761972ad278d5d56fe",
+    "semantic_hash": "36d47f4bc9e9d1761972ad278d5d56fe"
+  },
+  "fixtures/digiplus/doc_work-ibrahim-noor.json": {
+    "mtime": 1793342119.7410638,
+    "seen": 1793346289.0951622,
+    "ast_hash": "6923c03cfd0947015c082714b14990c3",
+    "semantic_hash": "6923c03cfd0947015c082714b14990c3"
+  },
+  "fixtures/digiplus/doc_work-isha-patel.json": {
+    "mtime": 1793342119.738834,
+    "seen": 1793346289.0951622,
+    "ast_hash": "32ab15d06f230e337245bd6aa47f48a5",
+    "semantic_hash": "32ab15d06f230e337245bd6aa47f48a5"
+  },
+  "fixtures/digiplus/doc_work-kabir-khan.json": {
+    "mtime": 1793342119.739124,
+    "seen": 1793346289.0951622,
+    "ast_hash": "3121737a22e1fac97c16781aa3b02bf4",
+    "semantic_hash": "3121737a22e1fac97c16781aa3b02bf4"
+  },
+  "fixtures/digiplus/doc_work-kavya-rao.json": {
+    "mtime": 1793342119.741007,
+    "seen": 1793346289.0951622,
+    "ast_hash": "233511f81474d26dae6c457a0f938bfd",
+    "semantic_hash": "233511f81474d26dae6c457a0f938bfd"
+  },
+  "fixtures/digiplus/doc_work-kiran-menon.json": {
+    "mtime": 1793342119.740023,
+    "seen": 1793346289.0951622,
+    "ast_hash": "0ad5ef71e6a2eb764a1fe7834a517f8f",
+    "semantic_hash": "0ad5ef71e6a2eb764a1fe7834a517f8f"
+  },
+  "fixtures/digiplus/doc_work-leah.json": {
+    "mtime": 1793342119.7384844,
+    "seen": 1793346289.0951629,
+    "ast_hash": "527796f9a76b0316bfed7151c01a2cab",
+    "semantic_hash": "527796f9a76b0316bfed7151c01a2cab"
+  },
+  "fixtures/digiplus/doc_work-lina-fernandes.json": {
+    "mtime": 1793342119.7414238,
+    "seen": 1793346289.0951629,
+    "ast_hash": "b542b61514cea2f964222918e4c7029c",
+    "semantic_hash": "b542b61514cea2f964222918e4c7029c"
+  },
+  "fixtures/digiplus/doc_work-manav-suri.json": {
+    "mtime": 1793342119.7408214,
+    "seen": 1793346289.0951629,
+    "ast_hash": "16a3a66506f08b4fa3625cd570f3ced9",
+    "semantic_hash": "16a3a66506f08b4fa3625cd570f3ced9"
+  },
+  "fixtures/digiplus/doc_work-maya.json": {
+    "mtime": 1793342119.7383049,
+    "seen": 1793346289.0951629,
+    "ast_hash": "aaf5819f2f74027593f8193d6090c04a",
+    "semantic_hash": "aaf5819f2f74027593f8193d6090c04a"
+  },
+  "fixtures/digiplus/doc_work-meera-nair.json": {
+    "mtime": 1793342119.7391994,
+    "seen": 1793346289.0951638,
+    "ast_hash": "664b6dcd0fa1c76a5270b61a1a69d226",
+    "semantic_hash": "664b6dcd0fa1c76a5270b61a1a69d226"
+  },
+  "fixtures/digiplus/doc_work-neel-gupta.json": {
+    "mtime": 1793342119.7396014,
+    "seen": 1793346289.0951638,
+    "ast_hash": "23c387da098feb3cab77e54c4820c713",
+    "semantic_hash": "23c387da098feb3cab77e54c4820c713"
+  },
+  "fixtures/digiplus/doc_work-nina.json": {
+    "mtime": 1793342119.7386212,
+    "seen": 1793346289.0951638,
+    "ast_hash": "4b6268e8e54c66402d3350d996f7758c",
+    "semantic_hash": "4b6268e8e54c66402d3350d996f7758c"
+  },
+  "fixtures/digiplus/doc_work-nisha-reddy.json": {
+    "mtime": 1793342119.7404583,
+    "seen": 1793346289.0951638,
+    "ast_hash": "4b74d98106cfc61c9539770cf555b5ed",
+    "semantic_hash": "4b74d98106cfc61c9539770cf555b5ed"
+  },
+  "fixtures/digiplus/doc_work-omar.json": {
+    "mtime": 1793342119.7385554,
+    "seen": 1793346289.095165,
+    "ast_hash": "0469f81438c8bf6e36cb7075689c8c81",
+    "semantic_hash": "0469f81438c8bf6e36cb7075689c8c81"
+  },
+  "fixtures/digiplus/doc_work-pooja-desai.json": {
+    "mtime": 1793342119.74009,
+    "seen": 1793346289.095165,
+    "ast_hash": "d7e538529ec8ad1ab8a835bd08daf666",
+    "semantic_hash": "d7e538529ec8ad1ab8a835bd08daf666"
+  },
+  "fixtures/digiplus/doc_work-priya-dutta.json": {
+    "mtime": 1793342119.7411227,
+    "seen": 1793346289.095165,
+    "ast_hash": "2beb21a69bf7b574bc135fee61471e56",
+    "semantic_hash": "2beb21a69bf7b574bc135fee61471e56"
+  },
+  "fixtures/digiplus/doc_work-raj-malhotra.json": {
+    "mtime": 1793342119.7403238,
+    "seen": 1793346289.095165,
+    "ast_hash": "676cc5d72deb6b81b54837845bbe30aa",
+    "semantic_hash": "676cc5d72deb6b81b54837845bbe30aa"
+  },
+  "fixtures/digiplus/doc_work-rehan-shah.json": {
+    "mtime": 1793342119.7398849,
+    "seen": 1793346289.095166,
+    "ast_hash": "a3d57096be48e2e4354dcf4c4c2f7232",
+    "semantic_hash": "a3d57096be48e2e4354dcf4c4c2f7232"
+  },
+  "fixtures/digiplus/doc_work-riya-bhat.json": {
+    "mtime": 1793342119.740603,
+    "seen": 1793346289.095166,
+    "ast_hash": "2ee6a0e8f920b0bd7d7594f6411d9e6a",
+    "semantic_hash": "2ee6a0e8f920b0bd7d7594f6411d9e6a"
+  },
+  "fixtures/digiplus/doc_work-rohan-das.json": {
+    "mtime": 1793342119.738944,
+    "seen": 1793346289.095166,
+    "ast_hash": "ce55ca6fba2f3d2cd1d34269da04868f",
+    "semantic_hash": "ce55ca6fba2f3d2cd1d34269da04868f"
+  },
+  "fixtures/digiplus/doc_work-sana-sheikh.json": {
+    "mtime": 1793342119.7402213,
+    "seen": 1793346289.095166,
+    "ast_hash": "9c03917e6602a212b9f27228b894e8e2",
+    "semantic_hash": "9c03917e6602a212b9f27228b894e8e2"
+  },
+  "fixtures/digiplus/doc_work-sara-thomas.json": {
+    "mtime": 1793342119.739391,
+    "seen": 1793346289.095166,
+    "ast_hash": "7e3dde512ae1de35efe2683c5c3c8582",
+    "semantic_hash": "7e3dde512ae1de35efe2683c5c3c8582"
+  },
+  "fixtures/digiplus/doc_work-siddharth-pai.json": {
+    "mtime": 1793342119.7409499,
+    "seen": 1793346289.095167,
+    "ast_hash": "5345e49f6ea92fdfd2d00f1100965832",
+    "semantic_hash": "5345e49f6ea92fdfd2d00f1100965832"
+  },
+  "fixtures/digiplus/doc_work-simran-kaur.json": {
+    "mtime": 1793342119.7408912,
+    "seen": 1793346289.095167,
+    "ast_hash": "c54a60867c426af5356704f275368b56",
+    "semantic_hash": "c54a60867c426af5356704f275368b56"
+  },
+  "fixtures/digiplus/doc_work-tara-bose.json": {
+    "mtime": 1793342119.7396703,
+    "seen": 1793346289.095167,
+    "ast_hash": "b101fde96d0df6c2536d7c98f38a6405",
+    "semantic_hash": "b101fde96d0df6c2536d7c98f38a6405"
+  },
+  "fixtures/digiplus/doc_work-varun-sethi.json": {
+    "mtime": 1793342119.7405243,
+    "seen": 1793346289.095168,
+    "ast_hash": "7231121241241d154c81691ae55fdf39",
+    "semantic_hash": "7231121241241d154c81691ae55fdf39"
+  },
+  "fixtures/digiplus/doc_work-vikram-joshi.json": {
+    "mtime": 1793342119.7394674,
+    "seen": 1793346289.095168,
+    "ast_hash": "54218c0ae018e1396e8f2202dad86dd4",
+    "semantic_hash": "54218c0ae018e1396e8f2202dad86dd4"
+  },
+  "fixtures/digiplus/doc_work-yash-kulkarni.json": {
+    "mtime": 1793342119.740673,
+    "seen": 1793346289.095168,
+    "ast_hash": "1c8e6e2d8b0cb17a88293caca5f3e86c",
+    "semantic_hash": "1c8e6e2d8b0cb17a88293caca5f3e86c"
+  },
+  "fixtures/digiplus/doc_work-zoya-malik.json": {
+    "mtime": 1793342119.7398143,
+    "seen": 1793346289.095168,
+    "ast_hash": "697424753afd7a69d448d93169a7be80",
+    "semantic_hash": "697424753afd7a69d448d93169a7be80"
+  },
+  "fixtures/digiplus/doc_workflow-engine-runbook.json": {
+    "mtime": 1793342119.7323656,
+    "seen": 1793346289.095169,
+    "ast_hash": "97f651115d6e222048759d5d3c35a326",
+    "semantic_hash": "97f651115d6e222048759d5d3c35a326"
+  },
+  "fixtures/digiplus/manifest.json": {
+    "mtime": 1793342119.756193,
+    "seen": 1793346289.095169,
+    "ast_hash": "4cd19712588ccd4899906e28cc90515b",
+    "semantic_hash": "4cd19712588ccd4899906e28cc90515b"
+  },
+  "fixtures/digiplus/registry.json": {
+    "mtime": 1793342119.7282515,
+    "seen": 1793346289.095169,
+    "ast_hash": "a69aed72d471693f816e25f06ff76f15",
+    "semantic_hash": "a69aed72d471693f816e25f06ff76f15"
+  },
+  "fixtures/digiplus/ticket_T-101.json": {
+    "mtime": 1793342119.729382,
+    "seen": 1793346289.095169,
+    "ast_hash": "da569ded8d3985ba8fe4c132780c0ad6",
+    "semantic_hash": "da569ded8d3985ba8fe4c132780c0ad6"
+  },
+  "fixtures/digiplus/ticket_T-102.json": {
+    "mtime": 1793342119.7294343,
+    "seen": 1793346289.095169,
+    "ast_hash": "f5581c6bee182b525287c22dc578063f",
+    "semantic_hash": "f5581c6bee182b525287c22dc578063f"
+  },
+  "fixtures/digiplus/ticket_T-103.json": {
+    "mtime": 1793342119.729487,
+    "seen": 1793346289.09517,
+    "ast_hash": "311950612bc3ef2842045a1223934457",
+    "semantic_hash": "311950612bc3ef2842045a1223934457"
+  },
+  "fixtures/digiplus/ticket_T-104.json": {
+    "mtime": 1793342119.7295454,
+    "seen": 1793346289.09517,
+    "ast_hash": "70d49b44c74f138860cb5fa9e3d8bb19",
+    "semantic_hash": "70d49b44c74f138860cb5fa9e3d8bb19"
+  },
+  "fixtures/digiplus/ticket_T-105.json": {
+    "mtime": 1793342119.7296157,
+    "seen": 1793346289.09517,
+    "ast_hash": "a9e625505665795fd9febc581260c6a0",
+    "semantic_hash": "a9e625505665795fd9febc581260c6a0"
+  },
+  "fixtures/digiplus/ticket_T-106.json": {
+    "mtime": 1793342119.7296836,
+    "seen": 1793346289.09517,
+    "ast_hash": "f08e60f8f13003bcca76931ab6605a47",
+    "semantic_hash": "f08e60f8f13003bcca76931ab6605a47"
+  },
+  "fixtures/digiplus/ticket_T-107.json": {
+    "mtime": 1793342119.7297835,
+    "seen": 1793346289.095171,
+    "ast_hash": "636f088e893858327f320f98c6aefce4",
+    "semantic_hash": "636f088e893858327f320f98c6aefce4"
+  },
+  "fixtures/digiplus/ticket_T-108.json": {
+    "mtime": 1793342119.729846,
+    "seen": 1793346289.095171,
+    "ast_hash": "08e4d442965753ac2d7f5cb9dcbbf13c",
+    "semantic_hash": "08e4d442965753ac2d7f5cb9dcbbf13c"
+  },
+  "fixtures/digiplus/ticket_T-109.json": {
+    "mtime": 1793342119.7416303,
+    "seen": 1793346289.095171,
+    "ast_hash": "c5f0c06dc73f1bff24e21f9f4a9c0d9a",
+    "semantic_hash": "c5f0c06dc73f1bff24e21f9f4a9c0d9a"
+  },
+  "fixtures/digiplus/ticket_T-110.json": {
+    "mtime": 1793342119.741697,
+    "seen": 1793346289.095171,
+    "ast_hash": "f4d49f14532ae1173236ffdfaf3367de",
+    "semantic_hash": "f4d49f14532ae1173236ffdfaf3367de"
+  },
+  "fixtures/digiplus/ticket_T-111.json": {
+    "mtime": 1793342119.7417567,
+    "seen": 1793346289.0951722,
+    "ast_hash": "09acf8bbd7d70a79586a8b4650f5edab",
+    "semantic_hash": "09acf8bbd7d70a79586a8b4650f5edab"
+  },
+  "fixtures/digiplus/ticket_T-112.json": {
+    "mtime": 1793342119.7419424,
+    "seen": 1793346289.0951722,
+    "ast_hash": "d89856164b02b39e973b43ba768b3bd8",
+    "semantic_hash": "d89856164b02b39e973b43ba768b3bd8"
+  },
+  "fixtures/digiplus/ticket_T-113.json": {
+    "mtime": 1793342119.7420127,
+    "seen": 1793346289.0951722,
+    "ast_hash": "5097b1dcb17e183abf7e39b89b674f01",
+    "semantic_hash": "5097b1dcb17e183abf7e39b89b674f01"
+  },
+  "fixtures/digiplus/ticket_T-114.json": {
+    "mtime": 1793342119.7427742,
+    "seen": 1793346289.0951722,
+    "ast_hash": "01c562adc96950f3b03ee2df59761e8e",
+    "semantic_hash": "01c562adc96950f3b03ee2df59761e8e"
+  },
+  "fixtures/digiplus/ticket_T-115.json": {
+    "mtime": 1793342119.742984,
+    "seen": 1793346289.0951731,
+    "ast_hash": "bfee3e12ca1a4b79418c65a287af109e",
+    "semantic_hash": "bfee3e12ca1a4b79418c65a287af109e"
+  },
+  "fixtures/digiplus/ticket_T-116.json": {
+    "mtime": 1793342119.7436516,
+    "seen": 1793346289.0951731,
+    "ast_hash": "20baf3ae92059e19b80d217fe96d7135",
+    "semantic_hash": "20baf3ae92059e19b80d217fe96d7135"
+  },
+  "fixtures/digiplus/ticket_T-117.json": {
+    "mtime": 1793342119.7437458,
+    "seen": 1793346289.0951731,
+    "ast_hash": "fe6f37f07361295c04480008429fec5a",
+    "semantic_hash": "fe6f37f07361295c04480008429fec5a"
+  },
+  "fixtures/digiplus/ticket_T-118.json": {
+    "mtime": 1793342119.7439575,
+    "seen": 1793346289.0951731,
+    "ast_hash": "b5875a6f0d6597950ba016cf93120658",
+    "semantic_hash": "b5875a6f0d6597950ba016cf93120658"
+  },
+  "fixtures/digiplus/ticket_T-119.json": {
+    "mtime": 1793342119.7441227,
+    "seen": 1793346289.0951731,
+    "ast_hash": "3b1fc7fae2909062a5a8c9585cdfd36d",
+    "semantic_hash": "3b1fc7fae2909062a5a8c9585cdfd36d"
+  },
+  "fixtures/digiplus/ticket_T-120.json": {
+    "mtime": 1793342119.7446604,
+    "seen": 1793346289.0951738,
+    "ast_hash": "ec9942156598f444555973b1a29a7d6a",
+    "semantic_hash": "ec9942156598f444555973b1a29a7d6a"
+  },
+  "fixtures/digiplus/ticket_T-121.json": {
+    "mtime": 1793342119.7447376,
+    "seen": 1793346289.0951738,
+    "ast_hash": "137717715fe63571f9c9990458f7b845",
+    "semantic_hash": "137717715fe63571f9c9990458f7b845"
+  },
+  "fixtures/digiplus/ticket_T-122.json": {
+    "mtime": 1793342119.7448056,
+    "seen": 1793346289.0951738,
+    "ast_hash": "0baf6b32345e1d6022532a10283d2487",
+    "semantic_hash": "0baf6b32345e1d6022532a10283d2487"
+  },
+  "fixtures/digiplus/ticket_T-123.json": {
+    "mtime": 1793342119.744941,
+    "seen": 1793346289.0951738,
+    "ast_hash": "7140a748bab35b54ab2d3e4b55643b85",
+    "semantic_hash": "7140a748bab35b54ab2d3e4b55643b85"
+  },
+  "fixtures/digiplus/ticket_T-124.json": {
+    "mtime": 1793342119.7450008,
+    "seen": 1793346289.0951738,
+    "ast_hash": "d1705dcc486cf6cade1c9925e5dff6f9",
+    "semantic_hash": "d1705dcc486cf6cade1c9925e5dff6f9"
+  },
+  "fixtures/digiplus/ticket_T-125.json": {
+    "mtime": 1793342119.7450588,
+    "seen": 1793346289.095175,
+    "ast_hash": "acde3c28337ee381e1df4d89609a6beb",
+    "semantic_hash": "acde3c28337ee381e1df4d89609a6beb"
+  },
+  "fixtures/digiplus/ticket_T-126.json": {
+    "mtime": 1793342119.7451208,
+    "seen": 1793346289.095175,
+    "ast_hash": "5f00ccd4f1223eba9d5ce688db5ce005",
+    "semantic_hash": "5f00ccd4f1223eba9d5ce688db5ce005"
+  },
+  "fixtures/digiplus/ticket_T-127.json": {
+    "mtime": 1793342119.7451816,
+    "seen": 1793346289.095175,
+    "ast_hash": "0f61ee1d321e8e8806fad360c80067ec",
+    "semantic_hash": "0f61ee1d321e8e8806fad360c80067ec"
+  },
+  "fixtures/digiplus/ticket_T-128.json": {
+    "mtime": 1793342119.7452419,
+    "seen": 1793346289.095175,
+    "ast_hash": "99859cdfd48f5004714daafce2a06857",
+    "semantic_hash": "99859cdfd48f5004714daafce2a06857"
+  },
+  "fixtures/digiplus/ticket_T-129.json": {
+    "mtime": 1793342119.7452965,
+    "seen": 1793346289.095176,
+    "ast_hash": "30a86b0e29691ef3927820fc6d588439",
+    "semantic_hash": "30a86b0e29691ef3927820fc6d588439"
+  },
+  "fixtures/digiplus/ticket_T-130.json": {
+    "mtime": 1793342119.74535,
+    "seen": 1793346289.095176,
+    "ast_hash": "9b64260d526382a55b0e3d5d6ba67ac2",
+    "semantic_hash": "9b64260d526382a55b0e3d5d6ba67ac2"
+  },
+  "fixtures/digiplus/ticket_T-131.json": {
+    "mtime": 1793342119.745415,
+    "seen": 1793346289.095176,
+    "ast_hash": "421f567ae91fef0b1ab2f9b55f5b0a43",
+    "semantic_hash": "421f567ae91fef0b1ab2f9b55f5b0a43"
+  },
+  "fixtures/digiplus/ticket_T-132.json": {
+    "mtime": 1793342119.7454827,
+    "seen": 1793346289.095176,
+    "ast_hash": "0df9088666e9850059c4d69ad61ab8bd",
+    "semantic_hash": "0df9088666e9850059c4d69ad61ab8bd"
+  },
+  "fixtures/digiplus/ticket_T-133.json": {
+    "mtime": 1793342119.7456243,
+    "seen": 1793346289.095177,
+    "ast_hash": "45a979971e5edbcbb7d9da2bcf72d1b5",
+    "semantic_hash": "45a979971e5edbcbb7d9da2bcf72d1b5"
+  },
+  "fixtures/digiplus/ticket_T-134.json": {
+    "mtime": 1793342119.745697,
+    "seen": 1793346289.095177,
+    "ast_hash": "9e48aa9150c9c0ec5f80f1429cd3e804",
+    "semantic_hash": "9e48aa9150c9c0ec5f80f1429cd3e804"
+  },
+  "fixtures/digiplus/ticket_T-135.json": {
+    "mtime": 1793342119.7457666,
+    "seen": 1793346289.095177,
+    "ast_hash": "21e37d37205cc153debaf8986a224e0c",
+    "semantic_hash": "21e37d37205cc153debaf8986a224e0c"
+  },
+  "fixtures/digiplus/ticket_T-136.json": {
+    "mtime": 1793342119.7458375,
+    "seen": 1793346289.095177,
+    "ast_hash": "77939b1c36b3d0f3f7b007fc802071e2",
+    "semantic_hash": "77939b1c36b3d0f3f7b007fc802071e2"
+  },
+  "fixtures/digiplus/ticket_T-137.json": {
+    "mtime": 1793342119.745895,
+    "seen": 1793346289.095178,
+    "ast_hash": "3de59a813df7875fdccdeae3af2fa97e",
+    "semantic_hash": "3de59a813df7875fdccdeae3af2fa97e"
+  },
+  "fixtures/digiplus/ticket_T-138.json": {
+    "mtime": 1793342119.746024,
+    "seen": 1793346289.095178,
+    "ast_hash": "f1cfe558d3408713c96856a4531a2eb8",
+    "semantic_hash": "f1cfe558d3408713c96856a4531a2eb8"
+  },
+  "fixtures/digiplus/ticket_T-139.json": {
+    "mtime": 1793342119.7460968,
+    "seen": 1793346289.095178,
+    "ast_hash": "9b6767df13e5c7b24ea89aaba1f62648",
+    "semantic_hash": "9b6767df13e5c7b24ea89aaba1f62648"
+  },
+  "fixtures/digiplus/ticket_T-140.json": {
+    "mtime": 1793342119.7461653,
+    "seen": 1793346289.095178,
+    "ast_hash": "ddc80cff81b5c6596f89c84bf5fef7b6",
+    "semantic_hash": "ddc80cff81b5c6596f89c84bf5fef7b6"
+  },
+  "fixtures/digiplus/ticket_T-141.json": {
+    "mtime": 1793342119.7462354,
+    "seen": 1793346289.095179,
+    "ast_hash": "6cbd63d0fa49cdc95f53d1b83a6a4b2b",
+    "semantic_hash": "6cbd63d0fa49cdc95f53d1b83a6a4b2b"
+  },
+  "fixtures/digiplus/ticket_T-142.json": {
+    "mtime": 1793342119.7463017,
+    "seen": 1793346289.095179,
+    "ast_hash": "a50def67d227264d02d513a216f8dc42",
+    "semantic_hash": "a50def67d227264d02d513a216f8dc42"
+  },
+  "fixtures/digiplus/ticket_T-143.json": {
+    "mtime": 1793342119.7463763,
+    "seen": 1793346289.095179,
+    "ast_hash": "be9c0a0fa08666472da97fd8bccb932f",
+    "semantic_hash": "be9c0a0fa08666472da97fd8bccb932f"
+  },
+  "fixtures/digiplus/ticket_T-144.json": {
+    "mtime": 1793342119.7464368,
+    "seen": 1793346289.095179,
+    "ast_hash": "13d951ee88d8e2fc7ba9940ca76ed60f",
+    "semantic_hash": "13d951ee88d8e2fc7ba9940ca76ed60f"
+  },
+  "fixtures/digiplus/ticket_T-145.json": {
+    "mtime": 1793342119.746493,
+    "seen": 1793346289.095179,
+    "ast_hash": "736eaf0d52138c2a317de483a6adb5f1",
+    "semantic_hash": "736eaf0d52138c2a317de483a6adb5f1"
+  },
+  "fixtures/digiplus/ticket_T-146.json": {
+    "mtime": 1793342119.74662,
+    "seen": 1793346289.09518,
+    "ast_hash": "8bbed1f4b43251fa47c7b638de6fa23b",
+    "semantic_hash": "8bbed1f4b43251fa47c7b638de6fa23b"
+  },
+  "fixtures/digiplus/ticket_T-147.json": {
+    "mtime": 1793342119.7467558,
+    "seen": 1793346289.09518,
+    "ast_hash": "eeb786062702ef4b1b25a6b0bf97de0d",
+    "semantic_hash": "eeb786062702ef4b1b25a6b0bf97de0d"
+  },
+  "fixtures/digiplus/ticket_T-148.json": {
+    "mtime": 1793342119.7468226,
+    "seen": 1793346289.09518,
+    "ast_hash": "69aa6f2bda4023c915d807d6db2b4d1d",
+    "semantic_hash": "69aa6f2bda4023c915d807d6db2b4d1d"
+  },
+  "fixtures/digiplus/ticket_T-149.json": {
+    "mtime": 1793342119.7468886,
+    "seen": 1793346289.095181,
+    "ast_hash": "40b5ab473a80fde52d9c8c1957efb237",
+    "semantic_hash": "40b5ab473a80fde52d9c8c1957efb237"
+  },
+  "fixtures/digiplus/ticket_T-150.json": {
+    "mtime": 1793342119.7469559,
+    "seen": 1793346289.095181,
+    "ast_hash": "4514800ab322a69e4a656b04614ad6fd",
+    "semantic_hash": "4514800ab322a69e4a656b04614ad6fd"
+  },
+  "fixtures/digiplus/ticket_T-151.json": {
+    "mtime": 1793342119.7470207,
+    "seen": 1793346289.095181,
+    "ast_hash": "f8993ec59b09f17cb02dc86fd2a7321b",
+    "semantic_hash": "f8993ec59b09f17cb02dc86fd2a7321b"
+  },
+  "fixtures/digiplus/ticket_T-152.json": {
+    "mtime": 1793342119.747094,
+    "seen": 1793346289.095181,
+    "ast_hash": "0fee10799ad00b4030a5440dbb0ad3da",
+    "semantic_hash": "0fee10799ad00b4030a5440dbb0ad3da"
+  },
+  "fixtures/digiplus/ticket_T-153.json": {
+    "mtime": 1793342119.7471654,
+    "seen": 1793346289.095181,
+    "ast_hash": "b8167e63ac8e532df935c50d93944242",
+    "semantic_hash": "b8167e63ac8e532df935c50d93944242"
+  },
+  "fixtures/digiplus/ticket_T-154.json": {
+    "mtime": 1793342119.7472298,
+    "seen": 1793346289.0951822,
+    "ast_hash": "5ae408407001bb051469b1a90c9c62a0",
+    "semantic_hash": "5ae408407001bb051469b1a90c9c62a0"
+  },
+  "fixtures/digiplus/ticket_T-155.json": {
+    "mtime": 1793342119.7473936,
+    "seen": 1793346289.0951822,
+    "ast_hash": "e509b350b193f99a4be483c4fff35810",
+    "semantic_hash": "e509b350b193f99a4be483c4fff35810"
+  },
+  "fixtures/digiplus/ticket_T-156.json": {
+    "mtime": 1793342119.7474627,
+    "seen": 1793346289.0951822,
+    "ast_hash": "01a9ead34e89515f302e41e12bb882e0",
+    "semantic_hash": "01a9ead34e89515f302e41e12bb882e0"
+  },
+  "fixtures/digiplus/ticket_T-157.json": {
+    "mtime": 1793342119.7475302,
+    "seen": 1793346289.0951822,
+    "ast_hash": "ba8e98c73c3be2a732047b0114d899c5",
+    "semantic_hash": "ba8e98c73c3be2a732047b0114d899c5"
+  },
+  "fixtures/digiplus/ticket_T-158.json": {
+    "mtime": 1793342119.7475972,
+    "seen": 1793346289.0951831,
+    "ast_hash": "0ff67a838d5b302e3d05bd058c9d70de",
+    "semantic_hash": "0ff67a838d5b302e3d05bd058c9d70de"
+  },
+  "fixtures/digiplus/ticket_T-159.json": {
+    "mtime": 1793342119.747735,
+    "seen": 1793346289.0951831,
+    "ast_hash": "fd8d1a860247c8aba1f199472a83d0f8",
+    "semantic_hash": "fd8d1a860247c8aba1f199472a83d0f8"
+  },
+  "fixtures/digiplus/ticket_T-160.json": {
+    "mtime": 1793342119.7477992,
+    "seen": 1793346289.0951831,
+    "ast_hash": "46cc9ffd689278433e779577cc8c8667",
+    "semantic_hash": "46cc9ffd689278433e779577cc8c8667"
+  },
+  "fixtures/digiplus/workflows.json": {
+    "mtime": 1793342119.7555344,
+    "seen": 1793346289.0951831,
+    "ast_hash": "b2929d6f54e2b6511a9e6a72e7b2ca7c",
+    "semantic_hash": "b2929d6f54e2b6511a9e6a72e7b2ca7c"
+  },
+  "scripts/build_workflows.py": {
+    "mtime": 1793341811.2090824,
+    "seen": 1793346289.0951838,
+    "ast_hash": "78b2e0ff54891dd915aad3fd4d089290",
+    "semantic_hash": "78b2e0ff54891dd915aad3fd4d089290"
+  },
+  "scripts/verify_work_live.py": {
+    "mtime": 1793341955.9524763,
+    "seen": 1793346289.095187,
+    "ast_hash": "fca833ddf9ebe36448f68a68d92f7c81",
+    "semantic_hash": "fca833ddf9ebe36448f68a68d92f7c81"
+  },
+  "services/api/app/observability.py": {
+    "mtime": 1793340852.6654932,
+    "seen": 1793346289.095192,
+    "ast_hash": "ef8195ffa417730dfb09e88aa3bce36a",
+    "semantic_hash": "ef8195ffa417730dfb09e88aa3bce36a"
+  },
+  "services/api/app/work/__init__.py": {
+    "mtime": 1793340852.6718833,
+    "seen": 1793346289.0951931,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "services/api/app/work/models.py": {
+    "mtime": 1793342256.2581713,
+    "seen": 1793346289.0951931,
+    "ast_hash": "367a2503d979b8b735947918061541f3",
+    "semantic_hash": "367a2503d979b8b735947918061541f3"
+  },
+  "services/api/app/work/routes.py": {
+    "mtime": 1793341857.4155016,
+    "seen": 1793346289.095194,
+    "ast_hash": "81673f4e97f068de08d34f958448109d",
+    "semantic_hash": "81673f4e97f068de08d34f958448109d"
+  },
+  "services/api/app/work/service.py": {
+    "mtime": 1793343609.6038482,
+    "seen": 1793346289.095194,
+    "ast_hash": "d2b23d85dd32a1c393f9f4881647c895",
+    "semantic_hash": "d2b23d85dd32a1c393f9f4881647c895"
+  },
+  "services/api/tests/integration/test_work.py": {
+    "mtime": 1793343609.6038454,
+    "seen": 1793346289.0951948,
+    "ast_hash": "29ced2ff8d109c86c1e88196ddaeda18",
+    "semantic_hash": "29ced2ff8d109c86c1e88196ddaeda18"
+  },
+  "docs/DigiPlus Services-Sourcebook.md": {
+    "mtime": 1793342119.752422,
+    "seen": 1793346289.09521,
+    "ast_hash": "7cd572b172c2e0a7c66b62c2762241e8",
+    "semantic_hash": "7cd572b172c2e0a7c66b62c2762241e8"
+  },
+  "fixtures/digiplus/README.md": {
+    "mtime": 1793342119.755773,
+    "seen": 1793346289.09521,
+    "ast_hash": "ac0df3927909a10d13a16e7052bbbd08",
+    "semantic_hash": "ac0df3927909a10d13a16e7052bbbd08"
+  }
+}

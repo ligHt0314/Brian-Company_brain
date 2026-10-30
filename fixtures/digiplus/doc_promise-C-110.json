@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-110",
+    "kind": "document",
+    "title": "Cobalt Energy \u00b7 Partner Workspace promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-110 requires Partner Workspace.\n\nC-110 is made to Cobalt Energy.\n\nC-110 is due on 2026-10-26."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-110",
+      "predicate": "REQUIRES",
+      "object_id": "project:partner-workspace",
+      "scalar": null,
+      "quote": "C-110 requires Partner Workspace.",
+      "start": 165,
+      "end": 198,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-110",
+      "predicate": "MADE_TO",
+      "object_id": "customer:neighbour",
+      "scalar": null,
+      "quote": "C-110 is made to Cobalt Energy.",
+      "start": 200,
+      "end": 231,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-110",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-26",
+      "quote": "C-110 is due on 2026-10-26.",
+      "start": 233,
+      "end": 260,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

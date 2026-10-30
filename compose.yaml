@@ -19,8 +19,9 @@ services:
       FALKORDB_HOST: falkordb
       FALKORDB_PORT: 6379
       ALLOWED_ORIGIN: ${ALLOWED_ORIGIN:-http://localhost:3000}
-      SQLITE_PATH: /data/operations.sqlite
+      SQLITE_PATH: /data/digiplus.sqlite
       UPLOAD_DIR: /data/originals
+      LOG_PATH: /data/logs/application.jsonl
     volumes:
       - api-data:/data
     depends_on:

@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:leadership-note",
+    "kind": "document",
+    "title": "Leadership \u00b7 commercial planning",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "leadership"
+    ],
+    "body": "CONFIDENTIAL_DIGIPLUS_COPPER_731. Fictional leadership-only commercial planning marker.\n\nAtlas Client Portal has primary owner Leah Chen."
+  },
+  "claims": [
+    {
+      "subject_id": "project:atlas-portal",
+      "predicate": "OWNED_BY",
+      "object_id": "person:leah",
+      "scalar": null,
+      "quote": "Atlas Client Portal has primary owner Leah Chen.",
+      "start": 89,
+      "end": 137,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:consultant-scheduling-plan",
+    "kind": "document",
+    "title": "Consultant Scheduling \u00b7 delivery plan",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Business purpose: Schedule consulting teams for Vertex Manufacturing. The facts below show which systems the project needs.\n\nConsultant Scheduling uses Staffing Scheduler.\n\nStaffing Scheduler depends on Resource Monitor."
+  },
+  "claims": [
+    {
+      "subject_id": "project:consultant-scheduling",
+      "predicate": "USES",
+      "object_id": "service:staffing",
+      "scalar": null,
+      "quote": "Consultant Scheduling uses Staffing Scheduler.",
+      "start": 125,
+      "end": 171,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:staffing",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:monitor",
+      "scalar": null,
+      "quote": "Staffing Scheduler depends on Resource Monitor.",
+      "start": 173,
+      "end": 220,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

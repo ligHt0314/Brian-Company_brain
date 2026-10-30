@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "decision:D-106",
+    "kind": "decision",
+    "title": "D-106 \u00b7 Keep a partner claim reference",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional recorded product decision. The quotation explains the reason; it is not a claim that this policy applies to every project.\n\nD-106 is about Claims Automation: keep a partner claim reference so support can trace the original claim."
+  },
+  "claims": [
+    {
+      "subject_id": "decision:D-106",
+      "predicate": "ABOUT",
+      "object_id": "project:claims-automation",
+      "scalar": null,
+      "quote": "D-106 is about Claims Automation: keep a partner claim reference so support can trace the original claim.",
+      "start": 136,
+      "end": 241,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -21,6 +21,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 import asyncio
 from app.config import settings
+from app.observability import configure, event, request_id
 from app.auth.policy import current_user, require, unavailable, serializer, PERSONAS
 from app.domain.models import (
     Answer,
@@ -54,6 +55,9 @@ from app.graph.repository import Repository
 from app.ingestion.service import Ingestion, registry, FIXTURES
 from app.memory.store import Store
 from app.reasoning.investigate import Investigator
+from app.work.routes import router as work_router
+
+configure()
 
 repo = Repository()
 store = Store(settings.sqlite_path)
@@ -82,7 +86,7 @@ def error(status: int, code: str, message: str, retryable=False):
                 "code": code,
                 "message": message,
                 "retryable": retryable,
-                "request_id": uid("req", now_iso()),
+                "request_id": request_id.get(),
             }
         },
     )
@@ -161,11 +165,41 @@ async def policy(request: Request, call_next):
         bucket.append(clock)
     try:
         response = await call_next(request)
-    except Exception:
+    except Exception as exc:
+        event(
+            "request_error",
+            level=40,
+            error_type=type(exc).__name__,
+            route=getattr(request.scope.get("route"), "path", "unmatched"),
+        )
         return error(503, "dependency_unavailable", "A service is unavailable. Please retry.", True)
     response.headers["Cache-Control"] = "no-store"
     response.headers["X-Content-Type-Options"] = "nosniff"
     return response
+
+
+@app.middleware("http")
+async def tracing(request: Request, call_next):
+    correlation = uid("req", secrets.token_hex(16))
+    token = request_id.set(correlation)
+    started = time.monotonic()
+    try:
+        response = await call_next(request)
+        response.headers["X-Request-ID"] = correlation
+        event(
+            "request_completed",
+            method=request.method,
+            status=response.status_code,
+            level=30 if response.status_code >= 400 else 20,
+            route=getattr(request.scope.get("route"), "path", "unmatched"),
+            duration_ms=round((time.monotonic() - started) * 1000),
+        )
+        return response
+    except Exception as exc:
+        event("request_failed", level=40, method=request.method, error_type=type(exc).__name__)
+        raise
+    finally:
+        request_id.reset(token)
 
 
 @app.exception_handler(HTTPException)
@@ -622,7 +656,7 @@ def apply_revision(body: RevisionRequest, user: User, background: BackgroundTask
     if not settings.demo_mode:
         unavailable()
     if body.fixture_id == "restrict_runbook":
-        sid = "doc:payments-runbook"
+        sid = "doc:identity-runbook"
         source = repo.source(sid)
         return access(
             sid,
@@ -639,7 +673,7 @@ def apply_revision(body: RevisionRequest, user: User, background: BackgroundTask
         candidates = []
         pos = 0
         for predicate, scalar, quote in [
-            ("BLOCKS", None, "T-101 blocks Payment Gateway."),
+            ("BLOCKS", None, "T-101 blocks Identity Gateway."),
             ("STATUS", "done", "T-101 has status done."),
         ]:
             start = env.body.index(quote, pos)
@@ -648,7 +682,7 @@ def apply_revision(body: RevisionRequest, user: User, background: BackgroundTask
                 Candidate(
                     subject_id="ticket:T-101",
                     predicate=predicate,
-                    object_id="service:payments" if predicate == "BLOCKS" else None,
+                    object_id="service:identity" if predicate == "BLOCKS" else None,
                     scalar=scalar,
                     quote=quote,
                     start=start,
@@ -786,7 +820,7 @@ def reviews(user: User):
 @app.post("/api/v1/demo/reset")
 def reset(request: Request, user: User):
     require(user, "import")
-    if not settings.demo_mode or settings.falkordb_graph != "company_brain_brightmart_demo":
+    if not settings.demo_mode or settings.falkordb_graph != "company_brain_digiplus_services":
         unavailable()
     if not settings.operator_reset_token or not secrets.compare_digest(
         request.headers.get("x-operator-token", ""), settings.operator_reset_token
@@ -799,3 +833,6 @@ def reset(request: Request, user: User):
         repo.query("MATCH (m:GraphMeta {id:'meta'}) SET m.epoch=$epoch", {"epoch": previous_epoch + 1}, True)
         ingestion.seed()
     return {"status": "reset"}
+
+
+app.include_router(work_router)

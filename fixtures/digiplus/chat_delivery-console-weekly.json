@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:delivery-console-weekly",
+    "kind": "chat",
+    "title": "Delivery Console \u00b7 weekly handover",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Fictional exported team discussion. The people below contributed to this system; that alone does not make them its owner.\n\nNeel Gupta worked on Delivery Console."
+  },
+  "claims": [
+    {
+      "subject_id": "person:neel-gupta",
+      "predicate": "WORKED_ON",
+      "object_id": "service:delivery-console",
+      "scalar": null,
+      "quote": "Neel Gupta worked on Delivery Console.",
+      "start": 123,
+      "end": 161,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

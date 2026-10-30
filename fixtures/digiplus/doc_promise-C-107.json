@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:promise-C-107",
+    "kind": "document",
+    "title": "Harbor Telecom \u00b7 Infrastructure Alerts promise",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional customer promise: the project must be available before this rollout can be considered complete. A dependency risk is not proof the date will be missed.\n\nC-107 requires Infrastructure Alerts.\n\nC-107 is made to Harbor Telecom.\n\nC-107 is due on 2026-10-23."
+  },
+  "claims": [
+    {
+      "subject_id": "commitment:C-107",
+      "predicate": "REQUIRES",
+      "object_id": "project:infrastructure-alerts",
+      "scalar": null,
+      "quote": "C-107 requires Infrastructure Alerts.",
+      "start": 165,
+      "end": 202,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-107",
+      "predicate": "MADE_TO",
+      "object_id": "customer:city",
+      "scalar": null,
+      "quote": "C-107 is made to Harbor Telecom.",
+      "start": 204,
+      "end": 236,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-107",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-23",
+      "quote": "C-107 is due on 2026-10-23.",
+      "start": 238,
+      "end": 265,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

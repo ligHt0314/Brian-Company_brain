@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-112",
+    "kind": "ticket",
+    "title": "T-112 \u00b7 Consultant allocation can be double-booked (check 1)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-112 blocks Staffing Scheduler.\n\nT-112 has status done.\n\nAnanya Sen worked on T-112."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-112",
+      "predicate": "BLOCKS",
+      "object_id": "service:staffing",
+      "scalar": null,
+      "quote": "T-112 blocks Staffing Scheduler.",
+      "start": 136,
+      "end": 168,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-112",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "done",
+      "quote": "T-112 has status done.",
+      "start": 170,
+      "end": 192,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:ananya-sen",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-112",
+      "scalar": null,
+      "quote": "Ananya Sen worked on T-112.",
+      "start": 194,
+      "end": 221,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import time
 from urllib.parse import urlparse
 import httpx
 from app.config import settings, ROOT
+from app.observability import event
 from app.domain.models import Extraction, Plan, Block, Strict
 from pydantic import ValidationError
 
@@ -43,16 +44,35 @@ class Provider:
             if google:
                 payload["reasoning_effort"] = "minimal" if "flash-lite" in settings.llm_model else "low"
             with httpx.Client(timeout=httpx.Timeout(timeout, connect=min(3.0, timeout))) as client:
-                response = client.post(
-                    settings.llm_base_url.rstrip("/") + "/chat/completions",
-                    headers={"Authorization": "Bearer " + settings.llm_api_key},
-                    json=payload,
+                started = time.monotonic()
+                try:
+                    response = client.post(
+                        settings.llm_base_url.rstrip("/") + "/chat/completions",
+                        headers={"Authorization": "Bearer " + settings.llm_api_key},
+                        json=payload,
+                    )
+                    response.raise_for_status()
+                    content = response.json()["choices"][0]["message"]["content"]
+                except Exception as exc:
+                    event(
+                        "ai_call",
+                        level=30,
+                        model=settings.llm_model,
+                        outcome="failed",
+                        error_type=type(exc).__name__,
+                        duration_ms=round((time.monotonic() - started) * 1000),
+                    )
+                    raise
+                event(
+                    "ai_call",
+                    model=settings.llm_model,
+                    outcome="success",
+                    duration_ms=round((time.monotonic() - started) * 1000),
                 )
-                response.raise_for_status()
-                content = response.json()["choices"][0]["message"]["content"]
             try:
                 return schema.model_validate_json(content)
             except (ValidationError, ValueError):
+                event("ai_schema_invalid", level=30, model=settings.llm_model, attempt=attempt + 1)
                 if attempt:
                     raise ValueError("Model response failed schema validation")
                 messages.append({"role": "assistant", "content": content})

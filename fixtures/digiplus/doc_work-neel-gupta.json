@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-neel-gupta",
+    "kind": "document",
+    "title": "Neel Gupta \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Configuration Registry is the registry of deployed applications and configuration.\n\nNeel Gupta worked on Configuration Registry.\n\nNeel Gupta worked on Delivery Operations."
+  },
+  "claims": [
+    {
+      "subject_id": "person:neel-gupta",
+      "predicate": "WORKED_ON",
+      "object_id": "service:configuration",
+      "scalar": null,
+      "quote": "Neel Gupta worked on Configuration Registry.",
+      "start": 168,
+      "end": 212,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:neel-gupta",
+      "predicate": "WORKED_ON",
+      "object_id": "project:delivery-operations",
+      "scalar": null,
+      "quote": "Neel Gupta worked on Delivery Operations.",
+      "start": 214,
+      "end": 255,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

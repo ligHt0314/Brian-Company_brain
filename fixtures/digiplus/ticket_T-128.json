@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-128",
+    "kind": "ticket",
+    "title": "T-128 \u00b7 Client invoice reconciliation fails (check 2)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-128 blocks Billing API.\n\nT-128 has status open.\n\nSana Sheikh worked on T-128."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-128",
+      "predicate": "BLOCKS",
+      "object_id": "service:billing",
+      "scalar": null,
+      "quote": "T-128 blocks Billing API.",
+      "start": 136,
+      "end": 161,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-128",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "open",
+      "quote": "T-128 has status open.",
+      "start": 163,
+      "end": 185,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:sana-sheikh",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-128",
+      "scalar": null,
+      "quote": "Sana Sheikh worked on T-128.",
+      "start": 187,
+      "end": 215,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

@@ -10,7 +10,7 @@ from app.graph.repository import Repository
 from app.config import settings, ROOT
 from app.domain.models import now_iso
 
-if not settings.demo_mode or settings.falkordb_graph != "company_brain_brightmart_demo":
+if not settings.demo_mode or settings.falkordb_graph != "company_brain_digiplus_services":
     raise SystemExit("This check is restricted to the configured synthetic demo graph.")
 repo = Repository()
 compose = ["docker", "compose", "-f", "compose.yaml", "-f", "compose.dev.yaml"]
@@ -49,7 +49,7 @@ with httpx.Client(base_url="http://127.0.0.1:3000/api/v1", headers=headers, time
     client.post("/demo/session", json={"persona": "Engineer"}).raise_for_status()
     session = client.post("/sessions", json={}).json()["id"]
     run = client.post(
-        "/investigations", json={"session_id": session, "question": "What could block Easy Checkout?"}
+        "/investigations", json={"session_id": session, "question": "What could block Atlas Client Portal?"}
     ).json()["run_id"]
     for _ in range(30):
         result = client.get("/investigations/" + run).json()
@@ -68,7 +68,7 @@ with httpx.Client(base_url="http://127.0.0.1:3000/api/v1", headers=headers, time
         live = client.get("/health/live").status_code
         ready = client.get("/health/ready").status_code
         pending = client.post(
-            "/investigations", json={"session_id": session, "question": "What could block Easy Checkout?"}
+            "/investigations", json={"session_id": session, "question": "What could block Atlas Client Portal?"}
         ).json()["run_id"]
         for _ in range(30):
             failed = client.get("/investigations/" + pending).json()

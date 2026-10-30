@@ -1,0 +1,70 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:portal-architecture",
+    "kind": "document",
+    "title": "Atlas Client Portal \u00b7 architecture",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Identity verification relies on verified client identities. Dependency changes require a release review.\n\nAtlas Client Portal uses Portal API.\n\nPortal API depends on Identity Gateway.\n\nPortal API has primary owner Platform Engineering.\n\nMaya Rao worked on Portal API.\n\nLeah Chen worked on Atlas Client Portal."
+  },
+  "claims": [
+    {
+      "subject_id": "project:atlas-portal",
+      "predicate": "USES",
+      "object_id": "service:portal",
+      "scalar": null,
+      "quote": "Atlas Client Portal uses Portal API.",
+      "start": 106,
+      "end": 142,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:portal",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Portal API depends on Identity Gateway.",
+      "start": 144,
+      "end": 183,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:portal",
+      "predicate": "OWNED_BY",
+      "object_id": "team:platform",
+      "scalar": null,
+      "quote": "Portal API has primary owner Platform Engineering.",
+      "start": 185,
+      "end": 235,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:maya",
+      "predicate": "WORKED_ON",
+      "object_id": "service:portal",
+      "scalar": null,
+      "quote": "Maya Rao worked on Portal API.",
+      "start": 237,
+      "end": 267,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:leah",
+      "predicate": "WORKED_ON",
+      "object_id": "project:atlas-portal",
+      "scalar": null,
+      "quote": "Leah Chen worked on Atlas Client Portal.",
+      "start": 269,
+      "end": 309,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

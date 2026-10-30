@@ -1,0 +1,70 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:dashboard-overview",
+    "kind": "document",
+    "title": "Client Insights \u00b7 project overview",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Client Insights uses Analytics API.\n\nAnalytics API has primary owner Data Systems.\n\nC-102 requires Client Insights.\n\nC-102 is made to Cedar Health.\n\nC-102 is due on 2026-10-30."
+  },
+  "claims": [
+    {
+      "subject_id": "project:client-insights",
+      "predicate": "USES",
+      "object_id": "service:reporting",
+      "scalar": null,
+      "quote": "Client Insights uses Analytics API.",
+      "start": 0,
+      "end": 35,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:reporting",
+      "predicate": "OWNED_BY",
+      "object_id": "team:data",
+      "scalar": null,
+      "quote": "Analytics API has primary owner Data Systems.",
+      "start": 37,
+      "end": 82,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-102",
+      "predicate": "REQUIRES",
+      "object_id": "project:client-insights",
+      "scalar": null,
+      "quote": "C-102 requires Client Insights.",
+      "start": 84,
+      "end": 115,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-102",
+      "predicate": "MADE_TO",
+      "object_id": "customer:cedar",
+      "scalar": null,
+      "quote": "C-102 is made to Cedar Health.",
+      "start": 117,
+      "end": 147,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "commitment:C-102",
+      "predicate": "DUE_ON",
+      "object_id": null,
+      "scalar": "2026-10-30",
+      "quote": "C-102 is due on 2026-10-30.",
+      "start": 149,
+      "end": 176,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

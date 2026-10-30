@@ -1,0 +1,14 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:demo-welcome",
+    "kind": "document",
+    "title": "Start here \u00b7 the DigiPlus Services story",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "DigiPlus Services is a fictional IT consulting and managed services company. Start with Atlas Client Portal: an identity verification check is blocked, two teams disagree about the Identity Gateway owner, and Northstar Logistics has a rollout promise. Other projects cover client delivery, claims, infrastructure, consultant staffing, partner services and reports. All people and records are invented. The demonstration guide explains the questions to ask; the agent answers from indexed evidence, not this guide.\n\n"
+  },
+  "claims": []
+}

@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-ibrahim-noor",
+    "kind": "document",
+    "title": "Ibrahim Noor \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Delivery Console is the console tracking client delivery milestones.\n\nIbrahim Noor worked on Delivery Console.\n\nIbrahim Noor worked on Client Success."
+  },
+  "claims": [
+    {
+      "subject_id": "person:ibrahim-noor",
+      "predicate": "WORKED_ON",
+      "object_id": "service:delivery-console",
+      "scalar": null,
+      "quote": "Ibrahim Noor worked on Delivery Console.",
+      "start": 154,
+      "end": 194,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:ibrahim-noor",
+      "predicate": "WORKED_ON",
+      "object_id": "project:client-success",
+      "scalar": null,
+      "quote": "Ibrahim Noor worked on Client Success.",
+      "start": 196,
+      "end": 234,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

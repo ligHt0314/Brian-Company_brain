@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-arjun-iyer",
+    "kind": "document",
+    "title": "Arjun Iyer \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Delivery Console is the console tracking client delivery milestones.\n\nArjun Iyer worked on Delivery Console.\n\nArjun Iyer worked on Client Success."
+  },
+  "claims": [
+    {
+      "subject_id": "person:arjun-iyer",
+      "predicate": "WORKED_ON",
+      "object_id": "service:delivery-console",
+      "scalar": null,
+      "quote": "Arjun Iyer worked on Delivery Console.",
+      "start": 154,
+      "end": 192,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:arjun-iyer",
+      "predicate": "WORKED_ON",
+      "object_id": "project:client-success",
+      "scalar": null,
+      "quote": "Arjun Iyer worked on Client Success.",
+      "start": 194,
+      "end": 230,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

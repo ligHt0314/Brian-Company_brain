@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-158",
+    "kind": "ticket",
+    "title": "T-158 \u00b7 Claim reference missing from partner response (check 5)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-158 blocks Claims API.\n\nT-158 has status open.\n\nDiya Kapoor worked on T-158."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-158",
+      "predicate": "BLOCKS",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "T-158 blocks Claims API.",
+      "start": 136,
+      "end": 160,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-158",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "open",
+      "quote": "T-158 has status open.",
+      "start": 162,
+      "end": 184,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:diya-kapoor",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-158",
+      "scalar": null,
+      "quote": "Diya Kapoor worked on T-158.",
+      "start": 186,
+      "end": 214,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

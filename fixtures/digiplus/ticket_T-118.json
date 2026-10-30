@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-118",
+    "kind": "ticket",
+    "title": "T-118 \u00b7 Operational event arrives out of order (check 1)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-118 blocks Event Pipeline.\n\nT-118 has status done.\n\nDiya Kapoor worked on T-118."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-118",
+      "predicate": "BLOCKS",
+      "object_id": "service:events",
+      "scalar": null,
+      "quote": "T-118 blocks Event Pipeline.",
+      "start": 136,
+      "end": 164,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-118",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "done",
+      "quote": "T-118 has status done.",
+      "start": 166,
+      "end": 188,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:diya-kapoor",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-118",
+      "scalar": null,
+      "quote": "Diya Kapoor worked on T-118.",
+      "start": 190,
+      "end": 218,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

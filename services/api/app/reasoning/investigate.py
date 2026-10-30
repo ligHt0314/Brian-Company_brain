@@ -29,7 +29,7 @@ def classify(question: str) -> str:
     q = question.lower()
     if any(x in q for x in ["owner", "owns", "worked on", "who has", "newer chat"]):
         return "owner_lookup"
-    if any(x in q for x in ["why", "decision", "unconfirmed payments", "rule out"]):
+    if any(x in q for x in ["why", "decision", "unverified identities", "rule out"]):
         return "decision_lookup"
     if any(x in q for x in ["if ", "unavailable", "fails", "impact"]):
         return "change_impact"

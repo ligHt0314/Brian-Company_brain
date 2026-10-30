@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:identity-help",
+    "kind": "chat",
+    "title": "Identity Gateway \u00b7 implementation help",
+    "source_updated_at": "2026-10-14T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Maya and Dev shared their implementation experience. Contribution is not formal ownership.\n\nMaya Rao worked on Identity Gateway.\n\nDev Shah worked on Identity Gateway.\n\nNina Park worked on Portal API."
+  },
+  "claims": [
+    {
+      "subject_id": "person:maya",
+      "predicate": "WORKED_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Maya Rao worked on Identity Gateway.",
+      "start": 92,
+      "end": 128,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:dev",
+      "predicate": "WORKED_ON",
+      "object_id": "service:identity",
+      "scalar": null,
+      "quote": "Dev Shah worked on Identity Gateway.",
+      "start": 130,
+      "end": 166,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:nina",
+      "predicate": "WORKED_ON",
+      "object_id": "service:portal",
+      "scalar": null,
+      "quote": "Nina Park worked on Portal API.",
+      "start": 168,
+      "end": 199,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

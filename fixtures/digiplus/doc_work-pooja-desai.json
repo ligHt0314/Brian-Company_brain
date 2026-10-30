@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-pooja-desai",
+    "kind": "document",
+    "title": "Pooja Desai \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Knowledge Search is the search service for team knowledge.\n\nPooja Desai worked on Knowledge Search.\n\nPooja Desai worked on Managed Cloud Migration."
+  },
+  "claims": [
+    {
+      "subject_id": "person:pooja-desai",
+      "predicate": "WORKED_ON",
+      "object_id": "service:search",
+      "scalar": null,
+      "quote": "Pooja Desai worked on Knowledge Search.",
+      "start": 144,
+      "end": 183,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:pooja-desai",
+      "predicate": "WORKED_ON",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "Pooja Desai worked on Managed Cloud Migration.",
+      "start": 185,
+      "end": 231,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

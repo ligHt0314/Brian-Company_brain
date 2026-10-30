@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:consultant-scheduling-brief",
+    "kind": "document",
+    "title": "Consultant Scheduling \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Schedule consulting teams for Vertex Manufacturing. This project is part of the fictional DigiPlus Services demonstration.\n\nMeera Nair worked on Consultant Scheduling."
+  },
+  "claims": [
+    {
+      "subject_id": "person:meera-nair",
+      "predicate": "WORKED_ON",
+      "object_id": "project:consultant-scheduling",
+      "scalar": null,
+      "quote": "Meera Nair worked on Consultant Scheduling.",
+      "start": 124,
+      "end": 167,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

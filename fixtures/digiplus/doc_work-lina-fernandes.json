@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-lina-fernandes",
+    "kind": "document",
+    "title": "Lina Fernandes \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Resource Monitor is the system monitoring infrastructure capacity.\n\nLina Fernandes worked on Resource Monitor.\n\nLina Fernandes worked on Managed Cloud Migration."
+  },
+  "claims": [
+    {
+      "subject_id": "person:lina-fernandes",
+      "predicate": "WORKED_ON",
+      "object_id": "service:monitor",
+      "scalar": null,
+      "quote": "Lina Fernandes worked on Resource Monitor.",
+      "start": 152,
+      "end": 194,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:lina-fernandes",
+      "predicate": "WORKED_ON",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "Lina Fernandes worked on Managed Cloud Migration.",
+      "start": 196,
+      "end": 245,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

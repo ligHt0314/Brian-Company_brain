@@ -6,7 +6,7 @@ from app.config import settings, ROOT
 from app.domain.models import Candidate, PREDICATES, SourceEnvelope, uid, now_iso, ms
 from app.agent.provider import Provider
 
-FIXTURES = ROOT / "fixtures/brightmart"
+FIXTURES = ROOT / "fixtures/digiplus"
 
 
 def registry() -> list[dict]:
@@ -353,4 +353,6 @@ class Ingestion:
                     env, "operator", [Candidate.model_validate(c) for c in record["claims"]], True
                 )
             )
+        from app.work.service import Work
+        Work(self.repo, self.store).seed()
         return results

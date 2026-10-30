@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-rehan-shah",
+    "kind": "document",
+    "title": "Rehan Shah \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Billing API is the service managing client invoicing.\n\nRehan Shah worked on Billing API.\n\nRehan Shah worked on Client Success."
+  },
+  "claims": [
+    {
+      "subject_id": "person:rehan-shah",
+      "predicate": "WORKED_ON",
+      "object_id": "service:billing",
+      "scalar": null,
+      "quote": "Rehan Shah worked on Billing API.",
+      "start": 139,
+      "end": 172,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:rehan-shah",
+      "predicate": "WORKED_ON",
+      "object_id": "project:client-success",
+      "scalar": null,
+      "quote": "Rehan Shah worked on Client Success.",
+      "start": 174,
+      "end": 210,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

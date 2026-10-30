@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "chat:monitor-weekly",
+    "kind": "chat",
+    "title": "Resource Monitor \u00b7 weekly handover",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Fictional exported team discussion. The people below contributed to this system; that alone does not make them its owner.\n\nZoya Malik worked on Resource Monitor."
+  },
+  "claims": [
+    {
+      "subject_id": "person:zoya-malik",
+      "predicate": "WORKED_ON",
+      "object_id": "service:monitor",
+      "scalar": null,
+      "quote": "Zoya Malik worked on Resource Monitor.",
+      "start": 123,
+      "end": 161,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

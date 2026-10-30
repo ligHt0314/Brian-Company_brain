@@ -12,7 +12,7 @@ def test_status_edit_preserves_contributions_and_supports_any_ticket(world):
     assert client.get("/api/v1/sources/ticket:T-106/ticket").status_code == 403
     login(client, "Lead")
     details = client.get("/api/v1/sources/ticket:T-106/ticket").json()
-    assert details["status"] == "done" and details["blocked_entities"] == ["service:payments"]
+    assert details["status"] == "done" and details["blocked_entities"] == ["service:identity"]
     old_revision = details["expected_revision_id"]
     edited = client.post(
         "/api/v1/sources/ticket:T-106/ticket-status",
@@ -40,14 +40,14 @@ def test_status_edit_preserves_contributions_and_supports_any_ticket(world):
 def test_ticket_completion_changes_risk_without_fixture_shortcut(world):
     repo, store, ingest, client = world
     login(client, "Lead")
-    before = ask(client, "What could block Easy Checkout?")
+    before = ask(client, "What could block Atlas Client Portal?")
     details = client.get("/api/v1/sources/ticket:T-101/ticket").json()
     receipt = client.post(
         "/api/v1/sources/ticket:T-101/ticket-status",
         json={"status": "done", "expected_revision_id": details["expected_revision_id"]},
     ).json()
     assert client.get("/api/v1/jobs/" + receipt["job_ids"][0]).json()["status"] == "complete"
-    after = ask(client, "What could block Easy Checkout?", previous_run_id=before["run_id"])
+    after = ask(client, "What could block Atlas Client Portal?", previous_run_id=before["run_id"])
     assert not any(
         f["category"] == "blocker" and "ticket:T-101" in f["entity_ids"] for f in after["findings"]
     )
@@ -60,7 +60,7 @@ def test_ticket_completion_changes_risk_without_fixture_shortcut(world):
         json={"status": "blocked", "expected_revision_id": details["expected_revision_id"]},
     ).json()
     assert client.get("/api/v1/jobs/" + restored["job_ids"][0]).json()["status"] == "complete"
-    assert any(f["category"] == "blocker" for f in ask(client, "What could block Easy Checkout?")["findings"])
+    assert any(f["category"] == "blocker" for f in ask(client, "What could block Atlas Client Portal?")["findings"])
 
 
 def test_status_edit_preserves_pending_claim_and_validity(world):

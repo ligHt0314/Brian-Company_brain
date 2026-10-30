@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:client-success-brief",
+    "kind": "document",
+    "title": "Client Success \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Coordinate client success follow-ups for Aster Education. This project is part of the fictional DigiPlus Services demonstration.\n\nArjun Iyer worked on Client Success."
+  },
+  "claims": [
+    {
+      "subject_id": "person:arjun-iyer",
+      "predicate": "WORKED_ON",
+      "object_id": "project:client-success",
+      "scalar": null,
+      "quote": "Arjun Iyer worked on Client Success.",
+      "start": 130,
+      "end": 166,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

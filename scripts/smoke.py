@@ -10,7 +10,7 @@ with httpx.Client(base_url=base, headers=headers, timeout=30) as client:
     client.post("/demo/session", json={"persona": "Engineer"}).raise_for_status()
     session = client.post("/sessions", json={}).json()["id"]
     response = client.post(
-        "/investigations", json={"session_id": session, "question": "What could block Easy Checkout?"}
+        "/investigations", json={"session_id": session, "question": "What could block Atlas Client Portal?"}
     )
     response.raise_for_status()
     for _ in range(40):

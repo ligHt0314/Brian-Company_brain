@@ -1,0 +1,48 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "ticket:T-143",
+    "kind": "ticket",
+    "title": "T-143 \u00b7 Knowledge search misses common terms (check 3)",
+    "source_updated_at": "2026-10-17T03:30:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A fictional work item. Status done or cancelled means it is not an active blocker; open, in_progress or blocked still needs attention.\n\nT-143 blocks Knowledge Search.\n\nT-143 has status in_progress.\n\nMaya Rao worked on T-143."
+  },
+  "claims": [
+    {
+      "subject_id": "ticket:T-143",
+      "predicate": "BLOCKS",
+      "object_id": "service:search",
+      "scalar": null,
+      "quote": "T-143 blocks Knowledge Search.",
+      "start": 136,
+      "end": 166,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "ticket:T-143",
+      "predicate": "STATUS",
+      "object_id": null,
+      "scalar": "in_progress",
+      "quote": "T-143 has status in_progress.",
+      "start": 168,
+      "end": 197,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:maya",
+      "predicate": "WORKED_ON",
+      "object_id": "ticket:T-143",
+      "scalar": null,
+      "quote": "Maya Rao worked on T-143.",
+      "start": 199,
+      "end": 224,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

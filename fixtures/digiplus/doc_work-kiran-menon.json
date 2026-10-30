@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-kiran-menon",
+    "kind": "document",
+    "title": "Kiran Menon \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Staffing Scheduler is the scheduler allocating consultants.\n\nKiran Menon worked on Staffing Scheduler.\n\nKiran Menon worked on Service Desk Modernization."
+  },
+  "claims": [
+    {
+      "subject_id": "person:kiran-menon",
+      "predicate": "WORKED_ON",
+      "object_id": "service:staffing",
+      "scalar": null,
+      "quote": "Kiran Menon worked on Staffing Scheduler.",
+      "start": 145,
+      "end": 186,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:kiran-menon",
+      "predicate": "WORKED_ON",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "Kiran Menon worked on Service Desk Modernization.",
+      "start": 188,
+      "end": 237,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

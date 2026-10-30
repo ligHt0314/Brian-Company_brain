@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-diya-kapoor",
+    "kind": "document",
+    "title": "Diya Kapoor \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Resource Monitor is the system monitoring infrastructure capacity.\n\nDiya Kapoor worked on Resource Monitor.\n\nDiya Kapoor worked on Managed Cloud Migration."
+  },
+  "claims": [
+    {
+      "subject_id": "person:diya-kapoor",
+      "predicate": "WORKED_ON",
+      "object_id": "service:monitor",
+      "scalar": null,
+      "quote": "Diya Kapoor worked on Resource Monitor.",
+      "start": 152,
+      "end": 191,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:diya-kapoor",
+      "predicate": "WORKED_ON",
+      "object_id": "project:managed-cloud-migration",
+      "scalar": null,
+      "quote": "Diya Kapoor worked on Managed Cloud Migration.",
+      "start": 193,
+      "end": 239,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

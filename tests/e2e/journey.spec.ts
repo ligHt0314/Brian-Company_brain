@@ -30,19 +30,19 @@ test('investigate, inspect evidence with keyboard, graph, and review',async({pag
  await expect(page.getByRole('heading',{name:'1 known blocker and an ownership conflict'})).not.toBeVisible();
  await page.getByRole('button',{name:'Find launch risks'}).click();
  await expect(page.getByRole('heading',{name:'More evidence is needed'})).toBeVisible();
- await expect(page.getByText('T-101 blocks Payment Gateway')).not.toBeVisible();
+ await expect(page.getByText('T-101 blocks Identity Gateway')).not.toBeVisible();
 });
 
 test('source browsing, filters and private history',async({page})=>{
  await page.goto('/sources');
  await expect(page.getByRole('heading',{name:'Sources',exact:true})).toBeVisible();
- await page.getByRole('textbox',{name:'Search sources'}).fill('Payment Gateway');
- await expect(page.getByRole('button',{name:'Payment Gateway · operational runbook'})).toBeVisible();
- await page.getByRole('button',{name:'Payment Gateway · operational runbook'}).click();
+ await page.getByRole('textbox',{name:'Search sources'}).fill('Identity Gateway');
+ await expect(page.getByRole('button',{name:'Identity Gateway · operational runbook'})).toBeVisible();
+ await page.getByRole('button',{name:'Identity Gateway · operational runbook'}).click();
  await expect(page.getByRole('heading',{name:'Source history'})).toBeVisible();
  await page.keyboard.press('Escape');
  await page.getByRole('combobox',{name:'Workspace role'}).selectOption('Viewer');
- await expect(page.getByRole('button',{name:'Payment Gateway · operational runbook'})).not.toBeVisible();
+ await expect(page.getByRole('button',{name:'Identity Gateway · operational runbook'})).not.toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
 });
 
@@ -73,7 +73,7 @@ test('a source revision changes the investigation and explains the removed block
  }finally{
   const sourceResponse=await page.request.get('/api/v1/sources?limit=100&q=T-101');
   const source=(await sourceResponse.json()).items.find((s:{id:string})=>s.id==='ticket:T-101');
-  const envelope={schema_version:'1.0',source_id:'ticket:T-101',kind:'ticket',title:'T-101 · Payment confirmation check',source_updated_at:'2026-10-17T03:30:00Z',acl_groups:['engineering'],body:'',expected_revision_id:source.active_revision_id,records:{entity_id:'ticket:T-101',status:'blocked',blocks:['service:payments']}};
+  const envelope={schema_version:'1.0',source_id:'ticket:T-101',kind:'ticket',title:'T-101 · Identity verification check',source_updated_at:'2026-10-17T03:30:00Z',acl_groups:['engineering'],body:'',expected_revision_id:source.active_revision_id,records:{entity_id:'ticket:T-101',status:'blocked',blocks:['service:identity']}};
   const imported=await page.request.post('/api/v1/imports',{headers,multipart:{files:{name:'ticket.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(envelope))}}});
   expect(imported.ok()).toBeTruthy();
   const jobId=(await imported.json()).job_ids[0];
@@ -94,7 +94,7 @@ test('workspace handbook opens an editable question and all source pages are sea
  await page.goto('/guide');
  await expect(page.getByRole('heading',{name:'Work with a clearer picture.',exact:true})).toBeVisible();
  await expect(page.getByRole('heading',{name:'Know what each system does'})).toBeVisible();
- await expect(page.getByRole('heading',{name:'Fresh Subscriptions',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Managed Cloud Migration',exact:true})).toBeVisible();
  await expect(page.locator('body')).not.toContainText(/\bdemo\b|\bsynthetic\b|\bfictional\b/i);
  await page.getByRole('textbox',{name:'Search people'}).fill('Maya');
  await expect(page.locator('.peopleDirectory')).toContainText('Maya Rao');
@@ -102,8 +102,8 @@ test('workspace handbook opens an editable question and all source pages are sea
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
  await page.screenshot({path:`test-results/guide-${test.info().project.name}.png`,fullPage:true});
  await page.getByRole('button',{name:'Try this question'}).first().click();
- await expect(page.getByRole('textbox',{name:'Investigation question'})).toHaveValue('What could block Easy Checkout, and which customer commitment is affected?');
- await expect(page.getByRole('combobox',{name:'Investigation entity'}).getByRole('option',{name:'Fresh Subscriptions'})).toHaveCount(1);
+ await expect(page.getByRole('textbox',{name:'Investigation question'})).toHaveValue('What could block Atlas Client Portal, and which customer commitment is affected?');
+ await expect(page.getByRole('combobox',{name:'Investigation entity'}).getByRole('option',{name:'Managed Cloud Migration'})).toHaveCount(1);
  await page.goto('/sources');
  await page.getByRole('textbox',{name:'Search sources'}).fill('T-160');
  await expect(page.locator('.sourceTableCard tbody tr')).toHaveCount(1);

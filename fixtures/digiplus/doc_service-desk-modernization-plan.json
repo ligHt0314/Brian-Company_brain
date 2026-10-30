@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:service-desk-modernization-plan",
+    "kind": "document",
+    "title": "Service Desk Modernization \u00b7 delivery plan",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Business purpose: Modernize the support desk for Pioneer Travel. The facts below show which systems the project needs.\n\nService Desk Modernization uses Support Queue.\n\nSupport Queue depends on Notification Service."
+  },
+  "claims": [
+    {
+      "subject_id": "project:service-desk-modernization",
+      "predicate": "USES",
+      "object_id": "service:support",
+      "scalar": null,
+      "quote": "Service Desk Modernization uses Support Queue.",
+      "start": 120,
+      "end": 166,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:support",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:messages",
+      "scalar": null,
+      "quote": "Support Queue depends on Notification Service.",
+      "start": 168,
+      "end": 214,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

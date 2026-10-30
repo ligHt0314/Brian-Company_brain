@@ -1,0 +1,26 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:partner-workspace-brief",
+    "kind": "document",
+    "title": "Partner Workspace \u00b7 plain-language project brief",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "all_employees"
+    ],
+    "body": "Deliver a partner workspace for Cobalt Energy. This project is part of the fictional DigiPlus Services demonstration.\n\nSara Thomas worked on Partner Workspace."
+  },
+  "claims": [
+    {
+      "subject_id": "person:sara-thomas",
+      "predicate": "WORKED_ON",
+      "object_id": "project:partner-workspace",
+      "scalar": null,
+      "quote": "Sara Thomas worked on Partner Workspace.",
+      "start": 119,
+      "end": 159,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

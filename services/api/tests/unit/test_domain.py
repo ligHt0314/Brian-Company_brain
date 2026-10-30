@@ -11,12 +11,12 @@ def candidate(**kw):
 
 
 def test_exact_unicode_spans():
-    body = "🙂 Maya Rao worked on Payment Gateway."
-    quote = "Maya Rao worked on Payment Gateway."
+    body = "🙂 Maya Rao worked on Identity Gateway."
+    quote = "Maya Rao worked on Identity Gateway."
     c = Candidate(
         subject_id="person:maya",
         predicate="WORKED_ON",
-        object_id="service:payments",
+        object_id="service:identity",
         quote=quote,
         start=2,
         end=len(body),
@@ -28,7 +28,7 @@ def test_exact_unicode_spans():
 
 def test_predicate_types_and_scalar_rules():
     with pytest.raises(ValidationError):
-        candidate(object_id="team:payments")
+        candidate(object_id="team:platform")
     with pytest.raises(ValidationError):
         Candidate(
             subject_id="ticket:T-101", predicate="STATUS", scalar="ready", quote="ready", start=0, end=5
@@ -36,7 +36,7 @@ def test_predicate_types_and_scalar_rules():
     c = Candidate(
         subject_id="person:maya",
         predicate="USES",
-        object_id="service:payments",
+        object_id="service:identity",
         quote="uses",
         start=0,
         end=4,
@@ -74,12 +74,12 @@ def test_alias_resolution_prefers_unique_name():
     from app.reasoning.investigate import resolve
 
     entities = [Entity.model_validate(e) for e in registry()]
-    assert [e.id for e in resolve("Investigate launch risks for Checkout Launch", entities)] == [
-        "project:easy-checkout"
+    assert [e.id for e in resolve("Investigate launch risks for Portal Launch", entities)] == [
+        "project:atlas-portal"
     ]
     assert sorted(e.id for e in resolve("What could block Launch?", entities)) == [
-        "project:easy-checkout",
-        "project:sales-dashboard",
+        "project:atlas-portal",
+        "project:client-insights",
     ]
 
 
@@ -124,7 +124,7 @@ def test_model_offsets_are_anchored_only_to_unique_exact_quotes(monkeypatch):
     from app.agent.provider import Provider
     from app.domain.models import Extraction
 
-    quote = "Maya Rao worked on Customer Messages."
+    quote = "Maya Rao worked on Notification Service."
     body = "🙂 " + quote
     c = Candidate(
         subject_id="person:maya",
@@ -163,7 +163,7 @@ def test_gemini_request_parameters_and_deadline(monkeypatch):
         def json(self):
             return {
                 "choices": [
-                    {"message": {"content": '{"intent":"release_risk","entity_id":"project:easy-checkout"}'}}
+                    {"message": {"content": '{"intent":"release_risk","entity_id":"project:atlas-portal"}'}}
                 ]
             }
 
@@ -182,7 +182,7 @@ def test_gemini_request_parameters_and_deadline(monkeypatch):
             return Result()
 
     monkeypatch.setattr(provider_module.httpx, "Client", Client)
-    assert Provider().plan("What could block Checkout Launch?", registry()).intent == "release_risk"
+    assert Provider().plan("What could block Portal Launch?", registry()).intent == "release_risk"
     assert captured[0]["temperature"] == 1 and captured[0]["reasoning_effort"] == "minimal"
     assert captured[0]["max_completion_tokens"] == 4096
     with pytest.raises(TimeoutError, match="deadline"):

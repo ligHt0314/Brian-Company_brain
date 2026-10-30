@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:client-success-plan",
+    "kind": "document",
+    "title": "Client Success \u00b7 delivery plan",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "Business purpose: Coordinate client success follow-ups for Aster Education. The facts below show which systems the project needs.\n\nClient Success uses Success Hub.\n\nSuccess Hub depends on Notification Service."
+  },
+  "claims": [
+    {
+      "subject_id": "project:client-success",
+      "predicate": "USES",
+      "object_id": "service:success",
+      "scalar": null,
+      "quote": "Client Success uses Success Hub.",
+      "start": 131,
+      "end": 163,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "service:success",
+      "predicate": "DEPENDS_ON",
+      "object_id": "service:messages",
+      "scalar": null,
+      "quote": "Success Hub depends on Notification Service.",
+      "start": 165,
+      "end": 209,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

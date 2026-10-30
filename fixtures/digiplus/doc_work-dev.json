@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-dev",
+    "kind": "document",
+    "title": "Dev Shah \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Workflow Engine is the engine coordinating approval workflows.\n\nDev Shah worked on Workflow Engine.\n\nDev Shah worked on Claims Automation."
+  },
+  "claims": [
+    {
+      "subject_id": "person:dev",
+      "predicate": "WORKED_ON",
+      "object_id": "service:workflow-engine",
+      "scalar": null,
+      "quote": "Dev Shah worked on Workflow Engine.",
+      "start": 148,
+      "end": 183,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:dev",
+      "predicate": "WORKED_ON",
+      "object_id": "project:claims-automation",
+      "scalar": null,
+      "quote": "Dev Shah worked on Claims Automation.",
+      "start": 185,
+      "end": 222,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

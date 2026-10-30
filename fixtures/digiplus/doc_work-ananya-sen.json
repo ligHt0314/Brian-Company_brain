@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-ananya-sen",
+    "kind": "document",
+    "title": "Ananya Sen \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Event Pipeline is the pipeline carrying operational events.\n\nAnanya Sen worked on Event Pipeline.\n\nAnanya Sen worked on Claims Automation."
+  },
+  "claims": [
+    {
+      "subject_id": "person:ananya-sen",
+      "predicate": "WORKED_ON",
+      "object_id": "service:events",
+      "scalar": null,
+      "quote": "Ananya Sen worked on Event Pipeline.",
+      "start": 145,
+      "end": 181,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:ananya-sen",
+      "predicate": "WORKED_ON",
+      "object_id": "project:claims-automation",
+      "scalar": null,
+      "quote": "Ananya Sen worked on Claims Automation.",
+      "start": 183,
+      "end": 222,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}

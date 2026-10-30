@@ -1,0 +1,37 @@
+{
+  "envelope": {
+    "schema_version": "1.0",
+    "source_id": "doc:work-vikram-joshi",
+    "kind": "document",
+    "title": "Vikram Joshi \u00b7 contribution notes",
+    "source_updated_at": "2026-10-16T04:00:00Z",
+    "acl_groups": [
+      "engineering"
+    ],
+    "body": "A record of work performed, not a claim about seniority, availability or ownership. Claims API is the API processing insurance claims.\n\nVikram Joshi worked on Claims API.\n\nVikram Joshi worked on Service Desk Modernization."
+  },
+  "claims": [
+    {
+      "subject_id": "person:vikram-joshi",
+      "predicate": "WORKED_ON",
+      "object_id": "service:claims",
+      "scalar": null,
+      "quote": "Vikram Joshi worked on Claims API.",
+      "start": 136,
+      "end": 170,
+      "scope": "primary",
+      "extraction_score": 1.0
+    },
+    {
+      "subject_id": "person:vikram-joshi",
+      "predicate": "WORKED_ON",
+      "object_id": "project:service-desk-modernization",
+      "scalar": null,
+      "quote": "Vikram Joshi worked on Service Desk Modernization.",
+      "start": 172,
+      "end": 222,
+      "scope": "primary",
+      "extraction_score": 1.0
+    }
+  ]
+}
